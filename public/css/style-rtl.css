@@ -1,0 +1,67 @@
+/*Style rtl*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
+
+body{
+	font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+.header .navbar-nav {
+    padding: 15px 65px 15px 15px;
+}
+
+.navbar-collapse:after {
+    left: auto;
+    right: 0;
+    border-right: 0px solid transparent;
+    border-left: 30px solid transparent;
+}
+.navbar-collapse {
+    background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%);
+}
+
+.header .nav-link:before {
+    left: auto;
+    right: 0;
+}
+
+.steps-label .progress-bar {
+    background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%);
+    border-radius: 0;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+
+.steps-label .progress ul li i {
+    right: -5px;
+}
+
+.input-building label i {
+    right: auto;
+    left: 15px;
+}
+
+.steps .btn-success .fa-circle-chevron-right:before{
+    content: "\f137";
+}
+
+.steps .btn-secondary .fa-circle-chevron-left:before{
+    content: "\f138";
+}
+.form-label i {
+    transform: rotateY(180deg);
+}
+
+.steps-label .progress ul li:last-child i.active {
+    right: auto;
+    left: -5px;
+}
+
+
+@media (max-width: 991.9px){
+
+	.header .navbar-nav{
+		padding: 15px;
+	}
+
+}

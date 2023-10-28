@@ -1,0 +1,97 @@
+<template>
+    <div :class="loadingObject">
+        <slot />
+    </div>
+</template>
+
+<script>
+export default {
+    name: 'ContentLoader',
+    computed: {
+        loadingObject() {
+            return {
+                loading: true,
+                'loading-rounded': this.rounded,
+                'loading-animated': this.animated
+            };
+        }
+    },
+    props: {
+        rounded: {
+            type: Boolean,
+            default: true
+        },
+        animated: {
+            type: Boolean,
+            default: true
+        }
+    }
+};
+</script>
+
+<style lang="scss" >
+// Variable
+$silver: #ccc;
+$gallery: #eee;
+$border-radius: 6px;
+$line-height: 25px;
+$loading-spacing: 10px;
+
+@keyframes loadingAnimation {
+    0% {
+        transform: translate3d(-30%, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+@mixin loading {
+    position: relative;
+    overflow: hidden;
+    height: $line-height;
+    background-color: $gallery;
+
+    .loading-rounded & {
+        border-radius: $border-radius;
+    }
+
+    .loading-animated &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 1000px;
+        height: 100%;
+        background: linear-gradient(
+                to right,
+                transparent 0%,
+                darken($gallery, 5%) 15%,
+                transparent 30%
+        );
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-name: loadingAnimation;
+        animation-timing-function: linear;
+    }
+}
+
+@mixin loading-spacing {
+    [class^='loading-'] + & {
+        margin-top: 2 * $loading-spacing;
+    }
+}
+
+.loading-item {
+    @include loading;
+    @include loading-spacing;
+
+    width: 100%;
+    height: $line-height;
+    margin-bottom: $loading-spacing;
+    overflow: hidden;
+}
+</style>

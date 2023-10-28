@@ -1,0 +1,2482 @@
+[
+  {
+    "iso_numeric": "20",
+    "iso_alpha_2": "AD",
+    "name_en": "Andorra",
+    "name_ar": "أندورا",
+    "name_native": "Andorra",
+    "calling_codes": "376",
+    "currencies": "EUR",
+    "languages": "ca"
+  },
+  {
+    "iso_numeric": "784",
+    "iso_alpha_2": "AE",
+    "name_en": "United Arab Emirates",
+    "name_ar": "الإمارات العربية المتحدة",
+    "name_native": "الإمارات العربية المتحدة",
+    "calling_codes": "971",
+    "currencies": "AED",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "4",
+    "iso_alpha_2": "AF",
+    "name_en": "Afghanistan",
+    "name_ar": "أفغانستان",
+    "name_native": "افغانستان",
+    "calling_codes": "93",
+    "currencies": "AFN",
+    "languages": "ps,uz,tk"
+  },
+  {
+    "iso_numeric": "28",
+    "iso_alpha_2": "AG",
+    "name_en": "Antigua & Barbuda",
+    "name_ar": "أنتيغوا وبربودا",
+    "name_native": "Antigua and Barbuda",
+    "calling_codes": "1268",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "660",
+    "iso_alpha_2": "AI",
+    "name_en": "Anguilla",
+    "name_ar": "أنغويلا",
+    "name_native": "Anguilla",
+    "calling_codes": "1264",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "8",
+    "iso_alpha_2": "AL",
+    "name_en": "Albania",
+    "name_ar": "ألبانيا",
+    "name_native": "Shqipëria",
+    "calling_codes": "355",
+    "currencies": "ALL",
+    "languages": "sq"
+  },
+  {
+    "iso_numeric": "51",
+    "iso_alpha_2": "AM",
+    "name_en": "Armenia",
+    "name_ar": "أرمينيا",
+    "name_native": "Հայաստան",
+    "calling_codes": "374",
+    "currencies": "AMD",
+    "languages": "hy,ru"
+  },
+  {
+    "iso_numeric": "24",
+    "iso_alpha_2": "AO",
+    "name_en": "Angola",
+    "name_ar": "أنغولا",
+    "name_native": "Angola",
+    "calling_codes": "244",
+    "currencies": "AOA",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "10",
+    "iso_alpha_2": "AQ",
+    "name_en": "Antarctica",
+    "name_ar": "أنتاركتيكا",
+    "name_native": "Antarctica",
+    "calling_codes": "672",
+    "currencies": "",
+    "languages": ""
+  },
+  {
+    "iso_numeric": "32",
+    "iso_alpha_2": "AR",
+    "name_en": "Argentina",
+    "name_ar": "الأرجنتين",
+    "name_native": "Argentina",
+    "calling_codes": "54",
+    "currencies": "ARS",
+    "languages": "es,gn"
+  },
+  {
+    "iso_numeric": "16",
+    "iso_alpha_2": "AS",
+    "name_en": "American Samoa",
+    "name_ar": "ساموا الأمريكية",
+    "name_native": "American Samoa",
+    "calling_codes": "1684",
+    "currencies": "USD",
+    "languages": "en,sm"
+  },
+  {
+    "iso_numeric": "40",
+    "iso_alpha_2": "AT",
+    "name_en": "Austria",
+    "name_ar": "النمسا",
+    "name_native": "Österreich",
+    "calling_codes": "43",
+    "currencies": "EUR",
+    "languages": "de"
+  },
+  {
+    "iso_numeric": "36",
+    "iso_alpha_2": "AU",
+    "name_en": "Australia",
+    "name_ar": "أستراليا",
+    "name_native": "Australia",
+    "calling_codes": "61",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "533",
+    "iso_alpha_2": "AW",
+    "name_en": "Aruba",
+    "name_ar": "أروبا",
+    "name_native": "Aruba",
+    "calling_codes": "297",
+    "currencies": "AWG",
+    "languages": "nl,pa"
+  },
+  {
+    "iso_numeric": "248",
+    "iso_alpha_2": "AX",
+    "name_en": "Aland Islands",
+    "name_ar": "جزر آلاند",
+    "name_native": "Åland",
+    "calling_codes": "358",
+    "currencies": "EUR",
+    "languages": "sv"
+  },
+  {
+    "iso_numeric": "31",
+    "iso_alpha_2": "AZ",
+    "name_en": "Azerbaijan",
+    "name_ar": "أذربيجان",
+    "name_native": "Azərbaycan",
+    "calling_codes": "994",
+    "currencies": "AZN",
+    "languages": "az"
+  },
+  {
+    "iso_numeric": "70",
+    "iso_alpha_2": "BA",
+    "name_en": "Bosnia & Herzegovina",
+    "name_ar": "البوسنة والهرسك",
+    "name_native": "Bosna i Hercegovina",
+    "calling_codes": "387",
+    "currencies": "BAM",
+    "languages": "bs,hr,sr"
+  },
+  {
+    "iso_numeric": "52",
+    "iso_alpha_2": "BB",
+    "name_en": "Barbados",
+    "name_ar": "بربادوس",
+    "name_native": "Barbados",
+    "calling_codes": "1246",
+    "currencies": "BBD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "50",
+    "iso_alpha_2": "BD",
+    "name_en": "Bangladesh",
+    "name_ar": "بنغلاديش",
+    "name_native": "Bangladesh",
+    "calling_codes": "880",
+    "currencies": "BDT",
+    "languages": "bn"
+  },
+  {
+    "iso_numeric": "56",
+    "iso_alpha_2": "BE",
+    "name_en": "Belgium",
+    "name_ar": "بلجيكا",
+    "name_native": "België",
+    "calling_codes": "32",
+    "currencies": "EUR",
+    "languages": "nl,fr,de"
+  },
+  {
+    "iso_numeric": "854",
+    "iso_alpha_2": "BF",
+    "name_en": "Burkina Faso",
+    "name_ar": "بوركينا فاسو",
+    "name_native": "Burkina Faso",
+    "calling_codes": "226",
+    "currencies": "XOF",
+    "languages": "fr,ff"
+  },
+  {
+    "iso_numeric": "100",
+    "iso_alpha_2": "BG",
+    "name_en": "Bulgaria",
+    "name_ar": "بلغاريا",
+    "name_native": "България",
+    "calling_codes": "359",
+    "currencies": "BGN",
+    "languages": "bg"
+  },
+  {
+    "iso_numeric": "48",
+    "iso_alpha_2": "BH",
+    "name_en": "Bahrain",
+    "name_ar": "البحرين",
+    "name_native": "‏البحرين",
+    "calling_codes": "973",
+    "currencies": "BHD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "108",
+    "iso_alpha_2": "BI",
+    "name_en": "Burundi",
+    "name_ar": "بوروندي",
+    "name_native": "Burundi",
+    "calling_codes": "257",
+    "currencies": "BIF",
+    "languages": "fr,rn"
+  },
+  {
+    "iso_numeric": "204",
+    "iso_alpha_2": "BJ",
+    "name_en": "Benin",
+    "name_ar": "بنين",
+    "name_native": "Bénin",
+    "calling_codes": "229",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "652",
+    "iso_alpha_2": "BL",
+    "name_en": "Saint Barthélemy",
+    "name_ar": "سان بارتليمي",
+    "name_native": "Saint-Barthélemy",
+    "calling_codes": "590",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "60",
+    "iso_alpha_2": "BM",
+    "name_en": "Bermuda",
+    "name_ar": "برمودا",
+    "name_native": "Bermuda",
+    "calling_codes": "1441",
+    "currencies": "BMD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "96",
+    "iso_alpha_2": "BN",
+    "name_en": "Brunei",
+    "name_ar": "بروناي",
+    "name_native": "Negara Brunei Darussalam",
+    "calling_codes": "673",
+    "currencies": "BND",
+    "languages": "ms"
+  },
+  {
+    "iso_numeric": "68",
+    "iso_alpha_2": "BO",
+    "name_en": "Bolivia",
+    "name_ar": "بوليفيا",
+    "name_native": "Bolivia",
+    "calling_codes": "591",
+    "currencies": "BOB,BOV",
+    "languages": "es,ay,qu"
+  },
+  {
+    "iso_numeric": "535",
+    "iso_alpha_2": "BQ",
+    "name_en": "Caribbean Netherlands \\ Bonaire",
+    "name_ar": "هولندا الكاريبية",
+    "name_native": "Bonaire",
+    "calling_codes": "5997",
+    "currencies": "USD",
+    "languages": "nl"
+  },
+  {
+    "iso_numeric": "76",
+    "iso_alpha_2": "BR",
+    "name_en": "Brazil",
+    "name_ar": "البرازيل",
+    "name_native": "Brasil",
+    "calling_codes": "55",
+    "currencies": "BRL",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "44",
+    "iso_alpha_2": "BS",
+    "name_en": "Bahamas",
+    "name_ar": "البهاما",
+    "name_native": "Bahamas",
+    "calling_codes": "1242",
+    "currencies": "BSD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "64",
+    "iso_alpha_2": "BT",
+    "name_en": "Bhutan",
+    "name_ar": "بوتان",
+    "name_native": "ʼbrug-yul",
+    "calling_codes": "975",
+    "currencies": "BTN,INR",
+    "languages": "dz"
+  },
+  {
+    "iso_numeric": "74",
+    "iso_alpha_2": "BV",
+    "name_en": "Bouvet Island",
+    "name_ar": "جزيرة بوفيه",
+    "name_native": "Bouvetøya",
+    "calling_codes": "47",
+    "currencies": "NOK",
+    "languages": "no,nb,nn"
+  },
+  {
+    "iso_numeric": "72",
+    "iso_alpha_2": "BW",
+    "name_en": "Botswana",
+    "name_ar": "بوتسوانا",
+    "name_native": "Botswana",
+    "calling_codes": "267",
+    "currencies": "BWP",
+    "languages": "en,tn"
+  },
+  {
+    "iso_numeric": "112",
+    "iso_alpha_2": "BY",
+    "name_en": "Belarus",
+    "name_ar": "بيلاروس",
+    "name_native": "Белару́сь",
+    "calling_codes": "375",
+    "currencies": "BYR",
+    "languages": "be,ru"
+  },
+  {
+    "iso_numeric": "84",
+    "iso_alpha_2": "BZ",
+    "name_en": "Belize",
+    "name_ar": "بليز",
+    "name_native": "Belize",
+    "calling_codes": "501",
+    "currencies": "BZD",
+    "languages": "en,es"
+  },
+  {
+    "iso_numeric": "124",
+    "iso_alpha_2": "CA",
+    "name_en": "Canada",
+    "name_ar": "كندا",
+    "name_native": "Canada",
+    "calling_codes": "1",
+    "currencies": "CAD",
+    "languages": "en,fr"
+  },
+  {
+    "iso_numeric": "166",
+    "iso_alpha_2": "CC",
+    "name_en": "Cocos Islands (Keeling)",
+    "name_ar": "جزر كوكوس (كيلينغ)",
+    "name_native": "Cocos (Keeling) Islands",
+    "calling_codes": "61",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "180",
+    "iso_alpha_2": "CD",
+    "name_en": "Congo - Kinshasa",
+    "name_ar": "الكونغو - كينشاسا",
+    "name_native": "République démocratique du Congo",
+    "calling_codes": "243",
+    "currencies": "CDF",
+    "languages": "fr,ln,kg,sw,lu"
+  },
+  {
+    "iso_numeric": "140",
+    "iso_alpha_2": "CF",
+    "name_en": "Central African Republic",
+    "name_ar": "جمهورية أفريقيا الوسطى",
+    "name_native": "Ködörösêse tî Bêafrîka",
+    "calling_codes": "236",
+    "currencies": "XAF",
+    "languages": "fr,sg"
+  },
+  {
+    "iso_numeric": "178",
+    "iso_alpha_2": "CG",
+    "name_en": "Congo - Brazzaville",
+    "name_ar": "الكونغو - برازافيل",
+    "name_native": "République du Congo",
+    "calling_codes": "242",
+    "currencies": "XAF",
+    "languages": "fr,ln"
+  },
+  {
+    "iso_numeric": "756",
+    "iso_alpha_2": "CH",
+    "name_en": "Switzerland",
+    "name_ar": "سويسرا",
+    "name_native": "Schweiz",
+    "calling_codes": "41",
+    "currencies": "CHE,CHF,CHW",
+    "languages": "de,fr,it"
+  },
+  {
+    "iso_numeric": "384",
+    "iso_alpha_2": "CI",
+    "name_en": "Ivory Coast",
+    "name_ar": "ساحل العاج",
+    "name_native": "Côte d'Ivoire",
+    "calling_codes": "225",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "184",
+    "iso_alpha_2": "CK",
+    "name_en": "Cook Islands",
+    "name_ar": "جزر كوك",
+    "name_native": "Cook Islands",
+    "calling_codes": "682",
+    "currencies": "NZD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "152",
+    "iso_alpha_2": "CL",
+    "name_en": "Chile",
+    "name_ar": "تشيلي",
+    "name_native": "Chile",
+    "calling_codes": "56",
+    "currencies": "CLF,CLP",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "120",
+    "iso_alpha_2": "CM",
+    "name_en": "Cameroon",
+    "name_ar": "الكاميرون",
+    "name_native": "Cameroon",
+    "calling_codes": "237",
+    "currencies": "XAF",
+    "languages": "en,fr"
+  },
+  {
+    "iso_numeric": "156",
+    "iso_alpha_2": "CN",
+    "name_en": "China",
+    "name_ar": "الصين",
+    "name_native": "中国",
+    "calling_codes": "86",
+    "currencies": "CNY",
+    "languages": "zh"
+  },
+  {
+    "iso_numeric": "170",
+    "iso_alpha_2": "CO",
+    "name_en": "Colombia",
+    "name_ar": "كولومبيا",
+    "name_native": "Colombia",
+    "calling_codes": "57",
+    "currencies": "COP",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "188",
+    "iso_alpha_2": "CR",
+    "name_en": "Costa Rica",
+    "name_ar": "كوستاريكا",
+    "name_native": "Costa Rica",
+    "calling_codes": "506",
+    "currencies": "CRC",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "192",
+    "iso_alpha_2": "CU",
+    "name_en": "Cuba",
+    "name_ar": "كوبا",
+    "name_native": "Cuba",
+    "calling_codes": "53",
+    "currencies": "CUC,CUP",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "132",
+    "iso_alpha_2": "CV",
+    "name_en": "Cape Verde",
+    "name_ar": "الرأس الأخضر",
+    "name_native": "Cabo Verde",
+    "calling_codes": "238",
+    "currencies": "CVE",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "531",
+    "iso_alpha_2": "CW",
+    "name_en": "Curacao",
+    "name_ar": "كوراساو",
+    "name_native": "Curaçao",
+    "calling_codes": "5999",
+    "currencies": "ANG",
+    "languages": "nl,pa,en"
+  },
+  {
+    "iso_numeric": "162",
+    "iso_alpha_2": "CX",
+    "name_en": "Christmas Island",
+    "name_ar": "جزيرة كريسماس",
+    "name_native": "Christmas Island",
+    "calling_codes": "61",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "196",
+    "iso_alpha_2": "CY",
+    "name_en": "Cyprus",
+    "name_ar": "قبرص",
+    "name_native": "Κύπρος",
+    "calling_codes": "357",
+    "currencies": "EUR",
+    "languages": "el,tr,hy"
+  },
+  {
+    "iso_numeric": "203",
+    "iso_alpha_2": "CZ",
+    "name_en": "Czech Republic",
+    "name_ar": "التشيك",
+    "name_native": "Česká republika",
+    "calling_codes": "420",
+    "currencies": "CZK",
+    "languages": "cs,sk"
+  },
+  {
+    "iso_numeric": "276",
+    "iso_alpha_2": "DE",
+    "name_en": "Germany",
+    "name_ar": "ألمانيا",
+    "name_native": "Deutschland",
+    "calling_codes": "49",
+    "currencies": "EUR",
+    "languages": "de"
+  },
+  {
+    "iso_numeric": "262",
+    "iso_alpha_2": "DJ",
+    "name_en": "Djibouti",
+    "name_ar": "جيبوتي",
+    "name_native": "Djibouti",
+    "calling_codes": "253",
+    "currencies": "DJF",
+    "languages": "fr,ar"
+  },
+  {
+    "iso_numeric": "208",
+    "iso_alpha_2": "DK",
+    "name_en": "Denmark",
+    "name_ar": "الدانمرك",
+    "name_native": "Danmark",
+    "calling_codes": "45",
+    "currencies": "DKK",
+    "languages": "da"
+  },
+  {
+    "iso_numeric": "212",
+    "iso_alpha_2": "DM",
+    "name_en": "Dominica",
+    "name_ar": "دومينيكا",
+    "name_native": "Dominica",
+    "calling_codes": "1767",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "214",
+    "iso_alpha_2": "DO",
+    "name_en": "Dominican Republic",
+    "name_ar": "جمهورية الدومينيكان",
+    "name_native": "República Dominicana",
+    "calling_codes": "180,918,291,849",
+    "currencies": "DOP",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "12",
+    "iso_alpha_2": "DZ",
+    "name_en": "Algeria",
+    "name_ar": "الجزائر",
+    "name_native": "الجزائر",
+    "calling_codes": "213",
+    "currencies": "DZD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "218",
+    "iso_alpha_2": "EC",
+    "name_en": "Ecuador",
+    "name_ar": "الإكوادور",
+    "name_native": "Ecuador",
+    "calling_codes": "593",
+    "currencies": "USD",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "233",
+    "iso_alpha_2": "EE",
+    "name_en": "Estonia",
+    "name_ar": "إستونيا",
+    "name_native": "Eesti",
+    "calling_codes": "372",
+    "currencies": "EUR",
+    "languages": "et"
+  },
+  {
+    "iso_numeric": "818",
+    "iso_alpha_2": "EG",
+    "name_en": "Egypt",
+    "name_ar": "مصر",
+    "name_native": "مصر‎",
+    "calling_codes": "20",
+    "currencies": "EGP",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "732",
+    "iso_alpha_2": "EH",
+    "name_en": "Western Sahara",
+    "name_ar": "الصحراء الغربية",
+    "name_native": "الصحراء الغربية",
+    "calling_codes": "212",
+    "currencies": "MAD,DZD,MRU",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "232",
+    "iso_alpha_2": "ER",
+    "name_en": "Eritrea",
+    "name_ar": "إريتريا",
+    "name_native": "ኤርትራ",
+    "calling_codes": "291",
+    "currencies": "ERN",
+    "languages": "ti,ar,en"
+  },
+  {
+    "iso_numeric": "724",
+    "iso_alpha_2": "ES",
+    "name_en": "Spain",
+    "name_ar": "إسبانيا",
+    "name_native": "España",
+    "calling_codes": "34",
+    "currencies": "EUR",
+    "languages": "es,eu,ca,gl,oc"
+  },
+  {
+    "iso_numeric": "231",
+    "iso_alpha_2": "ET",
+    "name_en": "Ethiopia",
+    "name_ar": "إثيوبيا",
+    "name_native": "ኢትዮጵያ",
+    "calling_codes": "251",
+    "currencies": "ETB",
+    "languages": "am"
+  },
+  {
+    "iso_numeric": "246",
+    "iso_alpha_2": "FI",
+    "name_en": "Finland",
+    "name_ar": "فنلندا",
+    "name_native": "Suomi",
+    "calling_codes": "358",
+    "currencies": "EUR",
+    "languages": "fi,sv"
+  },
+  {
+    "iso_numeric": "242",
+    "iso_alpha_2": "FJ",
+    "name_en": "Fiji",
+    "name_ar": "فيجي",
+    "name_native": "Fiji",
+    "calling_codes": "679",
+    "currencies": "FJD",
+    "languages": "en,fj,hi,ur"
+  },
+  {
+    "iso_numeric": "238",
+    "iso_alpha_2": "FK",
+    "name_en": "Falkland Islands (Islas Malvinas)",
+    "name_ar": "جزر فوكلاند",
+    "name_native": "Falkland Islands",
+    "calling_codes": "500",
+    "currencies": "FKP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "583",
+    "iso_alpha_2": "FM",
+    "name_en": "Micronesia",
+    "name_ar": "ميكرونيزيا",
+    "name_native": "Micronesia",
+    "calling_codes": "691",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "234",
+    "iso_alpha_2": "FO",
+    "name_en": "Faroe Islands",
+    "name_ar": "جزر فارو",
+    "name_native": "Føroyar",
+    "calling_codes": "298",
+    "currencies": "DKK",
+    "languages": "fo"
+  },
+  {
+    "iso_numeric": "250",
+    "iso_alpha_2": "FR",
+    "name_en": "France",
+    "name_ar": "فرنسا",
+    "name_native": "France",
+    "calling_codes": "33",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "266",
+    "iso_alpha_2": "GA",
+    "name_en": "Gabon",
+    "name_ar": "الغابون",
+    "name_native": "Gabon",
+    "calling_codes": "241",
+    "currencies": "XAF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "826",
+    "iso_alpha_2": "GB",
+    "name_en": "United Kingdom",
+    "name_ar": "المملكة المتحدة",
+    "name_native": "United Kingdom",
+    "calling_codes": "44",
+    "currencies": "GBP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "308",
+    "iso_alpha_2": "GD",
+    "name_en": "Grenada",
+    "name_ar": "غرينادا",
+    "name_native": "Grenada",
+    "calling_codes": "1473",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "268",
+    "iso_alpha_2": "GE",
+    "name_en": "Georgia",
+    "name_ar": "جورجيا",
+    "name_native": "საქართველო",
+    "calling_codes": "995",
+    "currencies": "GEL",
+    "languages": "ka"
+  },
+  {
+    "iso_numeric": "254",
+    "iso_alpha_2": "GF",
+    "name_en": "French Guiana",
+    "name_ar": "غويانا الفرنسية",
+    "name_native": "Guyane française",
+    "calling_codes": "594",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "831",
+    "iso_alpha_2": "GG",
+    "name_en": "Guernsey",
+    "name_ar": "غيرنزي",
+    "name_native": "Guernsey",
+    "calling_codes": "44",
+    "currencies": "GBP",
+    "languages": "en,fr"
+  },
+  {
+    "iso_numeric": "288",
+    "iso_alpha_2": "GH",
+    "name_en": "Ghana",
+    "name_ar": "غانا",
+    "name_native": "Ghana",
+    "calling_codes": "233",
+    "currencies": "GHS",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "292",
+    "iso_alpha_2": "GI",
+    "name_en": "Gibraltar",
+    "name_ar": "جبل طارق",
+    "name_native": "Gibraltar",
+    "calling_codes": "350",
+    "currencies": "GIP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "304",
+    "iso_alpha_2": "GL",
+    "name_en": "Greenland",
+    "name_ar": "غرينلاند",
+    "name_native": "Kalaallit Nunaat",
+    "calling_codes": "299",
+    "currencies": "DKK",
+    "languages": "kl"
+  },
+  {
+    "iso_numeric": "270",
+    "iso_alpha_2": "GM",
+    "name_en": "Gambia",
+    "name_ar": "غامبيا",
+    "name_native": "Gambia",
+    "calling_codes": "220",
+    "currencies": "GMD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "324",
+    "iso_alpha_2": "GN",
+    "name_en": "Guinea",
+    "name_ar": "غينيا",
+    "name_native": "Guinée",
+    "calling_codes": "224",
+    "currencies": "GNF",
+    "languages": "fr,ff"
+  },
+  {
+    "iso_numeric": "312",
+    "iso_alpha_2": "GP",
+    "name_en": "Guadeloupe",
+    "name_ar": "غوادلوب",
+    "name_native": "Guadeloupe",
+    "calling_codes": "590",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "226",
+    "iso_alpha_2": "GQ",
+    "name_en": "Equatorial Guinea",
+    "name_ar": "غينيا الاستوائية",
+    "name_native": "Guinea Ecuatorial",
+    "calling_codes": "240",
+    "currencies": "XAF",
+    "languages": "es,fr"
+  },
+  {
+    "iso_numeric": "300",
+    "iso_alpha_2": "GR",
+    "name_en": "Greece",
+    "name_ar": "اليونان",
+    "name_native": "Ελλάδα",
+    "calling_codes": "30",
+    "currencies": "EUR",
+    "languages": "el"
+  },
+  {
+    "iso_numeric": "239",
+    "iso_alpha_2": "GS",
+    "name_en": "South Georgia & South Sandwich Islands",
+    "name_ar": "جورجيا الجنوبية وجزر ساندويتش الجنوبية",
+    "name_native": "South Georgia",
+    "calling_codes": "500",
+    "currencies": "GBP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "320",
+    "iso_alpha_2": "GT",
+    "name_en": "Guatemala",
+    "name_ar": "غواتيمالا",
+    "name_native": "Guatemala",
+    "calling_codes": "502",
+    "currencies": "GTQ",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "316",
+    "iso_alpha_2": "GU",
+    "name_en": "Guam",
+    "name_ar": "غوام",
+    "name_native": "Guam",
+    "calling_codes": "1671",
+    "currencies": "USD",
+    "languages": "en,ch,es"
+  },
+  {
+    "iso_numeric": "624",
+    "iso_alpha_2": "GW",
+    "name_en": "Guinea-Bissau",
+    "name_ar": "غينيا بيساو",
+    "name_native": "Guiné-Bissau",
+    "calling_codes": "245",
+    "currencies": "XOF",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "328",
+    "iso_alpha_2": "GY",
+    "name_en": "Guyana",
+    "name_ar": "غيانا",
+    "name_native": "Guyana",
+    "calling_codes": "592",
+    "currencies": "GYD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "344",
+    "iso_alpha_2": "HK",
+    "name_en": "Hong Kong",
+    "name_ar": "هونغ كونغ",
+    "name_native": "香港",
+    "calling_codes": "852",
+    "currencies": "HKD",
+    "languages": "zh,en"
+  },
+  {
+    "iso_numeric": "334",
+    "iso_alpha_2": "HM",
+    "name_en": "Heard & McDonald Islands",
+    "name_ar": "جزيرة هيرد وجزر ماكدونالد",
+    "name_native": "Heard Island and McDonald Islands",
+    "calling_codes": "61",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "340",
+    "iso_alpha_2": "HN",
+    "name_en": "Honduras",
+    "name_ar": "هندوراس",
+    "name_native": "Honduras",
+    "calling_codes": "504",
+    "currencies": "HNL",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "191",
+    "iso_alpha_2": "HR",
+    "name_en": "Croatia",
+    "name_ar": "كرواتيا",
+    "name_native": "Hrvatska",
+    "calling_codes": "385",
+    "currencies": "HRK",
+    "languages": "hr"
+  },
+  {
+    "iso_numeric": "332",
+    "iso_alpha_2": "HT",
+    "name_en": "Haiti",
+    "name_ar": "هايتي",
+    "name_native": "Haïti",
+    "calling_codes": "509",
+    "currencies": "HTG,USD",
+    "languages": "fr,ht"
+  },
+  {
+    "iso_numeric": "348",
+    "iso_alpha_2": "HU",
+    "name_en": "Hungary",
+    "name_ar": "هنغاريا",
+    "name_native": "Magyarország",
+    "calling_codes": "36",
+    "currencies": "HUF",
+    "languages": "hu"
+  },
+  {
+    "iso_numeric": "360",
+    "iso_alpha_2": "ID",
+    "name_en": "Indonesia",
+    "name_ar": "إندونيسيا",
+    "name_native": "Indonesia",
+    "calling_codes": "62",
+    "currencies": "IDR",
+    "languages": "id"
+  },
+  {
+    "iso_numeric": "372",
+    "iso_alpha_2": "IE",
+    "name_en": "Ireland",
+    "name_ar": "أيرلندا",
+    "name_native": "Éire",
+    "calling_codes": "353",
+    "currencies": "EUR",
+    "languages": "ga,en"
+  },
+  {
+    "iso_numeric": "833",
+    "iso_alpha_2": "IM",
+    "name_en": "Isle of Man",
+    "name_ar": "جزيرة مان",
+    "name_native": "Isle of Man",
+    "calling_codes": "44",
+    "currencies": "GBP",
+    "languages": "en,gv"
+  },
+  {
+    "iso_numeric": "356",
+    "iso_alpha_2": "IN",
+    "name_en": "India",
+    "name_ar": "الهند",
+    "name_native": "भारत",
+    "calling_codes": "91",
+    "currencies": "INR",
+    "languages": "hi,en"
+  },
+  {
+    "iso_numeric": "86",
+    "iso_alpha_2": "IO",
+    "name_en": "British Indian Ocean Territory",
+    "name_ar": "الإقليم البريطاني في المحيط الهندي",
+    "name_native": "British Indian Ocean Territory",
+    "calling_codes": "246",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "368",
+    "iso_alpha_2": "IQ",
+    "name_en": "Iraq",
+    "name_ar": "العراق",
+    "name_native": "العراق",
+    "calling_codes": "964",
+    "currencies": "IQD",
+    "languages": "ar,ku"
+  },
+  {
+    "iso_numeric": "364",
+    "iso_alpha_2": "IR",
+    "name_en": "Iran",
+    "name_ar": "إيران",
+    "name_native": "ایران",
+    "calling_codes": "98",
+    "currencies": "IRR",
+    "languages": "fa"
+  },
+  {
+    "iso_numeric": "352",
+    "iso_alpha_2": "IS",
+    "name_en": "Iceland",
+    "name_ar": "آيسلندا",
+    "name_native": "Ísland",
+    "calling_codes": "354",
+    "currencies": "ISK",
+    "languages": "is"
+  },
+  {
+    "iso_numeric": "380",
+    "iso_alpha_2": "IT",
+    "name_en": "Italy",
+    "name_ar": "إيطاليا",
+    "name_native": "Italia",
+    "calling_codes": "39",
+    "currencies": "EUR",
+    "languages": "it"
+  },
+  {
+    "iso_numeric": "832",
+    "iso_alpha_2": "JE",
+    "name_en": "Jersey",
+    "name_ar": "جيرسي",
+    "name_native": "Jersey",
+    "calling_codes": "44",
+    "currencies": "GBP",
+    "languages": "en,fr"
+  },
+  {
+    "iso_numeric": "388",
+    "iso_alpha_2": "JM",
+    "name_en": "Jamaica",
+    "name_ar": "جامايكا",
+    "name_native": "Jamaica",
+    "calling_codes": "1876",
+    "currencies": "JMD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "400",
+    "iso_alpha_2": "JO",
+    "name_en": "Jordan",
+    "name_ar": "الأردن",
+    "name_native": "الأردن",
+    "calling_codes": "962",
+    "currencies": "JOD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "392",
+    "iso_alpha_2": "JP",
+    "name_en": "Japan",
+    "name_ar": "اليابان",
+    "name_native": "日本",
+    "calling_codes": "81",
+    "currencies": "JPY",
+    "languages": "ja"
+  },
+  {
+    "iso_numeric": "404",
+    "iso_alpha_2": "KE",
+    "name_en": "Kenya",
+    "name_ar": "كينيا",
+    "name_native": "Kenya",
+    "calling_codes": "254",
+    "currencies": "KES",
+    "languages": "en,sw"
+  },
+  {
+    "iso_numeric": "417",
+    "iso_alpha_2": "KG",
+    "name_en": "Kyrgyzstan",
+    "name_ar": "قيرغيزستان",
+    "name_native": "Кыргызстан",
+    "calling_codes": "996",
+    "currencies": "KGS",
+    "languages": "ky,ru"
+  },
+  {
+    "iso_numeric": "116",
+    "iso_alpha_2": "KH",
+    "name_en": "Cambodia",
+    "name_ar": "كمبوديا",
+    "name_native": "Kâmpŭchéa",
+    "calling_codes": "855",
+    "currencies": "KHR",
+    "languages": "km"
+  },
+  {
+    "iso_numeric": "296",
+    "iso_alpha_2": "KI",
+    "name_en": "Kiribati",
+    "name_ar": "كيريباتي",
+    "name_native": "Kiribati",
+    "calling_codes": "686",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "174",
+    "iso_alpha_2": "KM",
+    "name_en": "Comoros",
+    "name_ar": "جزر القمر",
+    "name_native": "Komori",
+    "calling_codes": "269",
+    "currencies": "KMF",
+    "languages": "ar,fr"
+  },
+  {
+    "iso_numeric": "659",
+    "iso_alpha_2": "KN",
+    "name_en": "Saint Kitts & Nevis",
+    "name_ar": "سانت كيتس ونيفيس",
+    "name_native": "Saint Kitts and Nevis",
+    "calling_codes": "1869",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "408",
+    "iso_alpha_2": "KP",
+    "name_en": "North Korea",
+    "name_ar": "كوريا الشمالية",
+    "name_native": "북한",
+    "calling_codes": "850",
+    "currencies": "KPW",
+    "languages": "ko"
+  },
+  {
+    "iso_numeric": "410",
+    "iso_alpha_2": "KR",
+    "name_en": "South Korea",
+    "name_ar": "كوريا الجنوبية",
+    "name_native": "대한민국",
+    "calling_codes": "82",
+    "currencies": "KRW",
+    "languages": "ko"
+  },
+  {
+    "iso_numeric": "414",
+    "iso_alpha_2": "KW",
+    "name_en": "Kuwait",
+    "name_ar": "الكويت",
+    "name_native": "الكويت",
+    "calling_codes": "965",
+    "currencies": "KWD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "136",
+    "iso_alpha_2": "KY",
+    "name_en": "Cayman Islands",
+    "name_ar": "جزر كايمان",
+    "name_native": "Cayman Islands",
+    "calling_codes": "1345",
+    "currencies": "KYD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "398",
+    "iso_alpha_2": "KZ",
+    "name_en": "Kazakhstan",
+    "name_ar": "كازاخستان",
+    "name_native": "Қазақстан",
+    "calling_codes": "76,77",
+    "currencies": "KZT",
+    "languages": "kk,ru"
+  },
+  {
+    "iso_numeric": "418",
+    "iso_alpha_2": "LA",
+    "name_en": "Laos",
+    "name_ar": "لاوس",
+    "name_native": "ສປປລາວ",
+    "calling_codes": "856",
+    "currencies": "LAK",
+    "languages": "lo"
+  },
+  {
+    "iso_numeric": "422",
+    "iso_alpha_2": "LB",
+    "name_en": "Lebanon",
+    "name_ar": "لبنان",
+    "name_native": "لبنان",
+    "calling_codes": "961",
+    "currencies": "LBP",
+    "languages": "ar,fr"
+  },
+  {
+    "iso_numeric": "662",
+    "iso_alpha_2": "LC",
+    "name_en": "Saint Lucia",
+    "name_ar": "سانت لوسيا",
+    "name_native": "Saint Lucia",
+    "calling_codes": "1758",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "438",
+    "iso_alpha_2": "LI",
+    "name_en": "Liechtenstein",
+    "name_ar": "ليختنشتاين",
+    "name_native": "Liechtenstein",
+    "calling_codes": "423",
+    "currencies": "CHF",
+    "languages": "de"
+  },
+  {
+    "iso_numeric": "144",
+    "iso_alpha_2": "LK",
+    "name_en": "Sri Lanka",
+    "name_ar": "سريلانكا",
+    "name_native": "śrī laṃkāva",
+    "calling_codes": "94",
+    "currencies": "LKR",
+    "languages": "si,ta"
+  },
+  {
+    "iso_numeric": "430",
+    "iso_alpha_2": "LR",
+    "name_en": "Liberia",
+    "name_ar": "ليبيريا",
+    "name_native": "Liberia",
+    "calling_codes": "231",
+    "currencies": "LRD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "426",
+    "iso_alpha_2": "LS",
+    "name_en": "Lesotho",
+    "name_ar": "ليسوتو",
+    "name_native": "Lesotho",
+    "calling_codes": "266",
+    "currencies": "LSL,ZAR",
+    "languages": "en,st"
+  },
+  {
+    "iso_numeric": "440",
+    "iso_alpha_2": "LT",
+    "name_en": "Lithuania",
+    "name_ar": "ليتوانيا",
+    "name_native": "Lietuva",
+    "calling_codes": "370",
+    "currencies": "EUR",
+    "languages": "lt"
+  },
+  {
+    "iso_numeric": "442",
+    "iso_alpha_2": "LU",
+    "name_en": "Luxembourg",
+    "name_ar": "لوكسمبورغ",
+    "name_native": "Luxembourg",
+    "calling_codes": "352",
+    "currencies": "EUR",
+    "languages": "fr,de,lb"
+  },
+  {
+    "iso_numeric": "428",
+    "iso_alpha_2": "LV",
+    "name_en": "Latvia",
+    "name_ar": "لاتفيا",
+    "name_native": "Latvija",
+    "calling_codes": "371",
+    "currencies": "EUR",
+    "languages": "lv"
+  },
+  {
+    "iso_numeric": "434",
+    "iso_alpha_2": "LY",
+    "name_en": "Libya",
+    "name_ar": "ليبيا",
+    "name_native": "‏ليبيا",
+    "calling_codes": "218",
+    "currencies": "LYD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "504",
+    "iso_alpha_2": "MA",
+    "name_en": "Morocco",
+    "name_ar": "المغرب",
+    "name_native": "المغرب",
+    "calling_codes": "212",
+    "currencies": "MAD",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "492",
+    "iso_alpha_2": "MC",
+    "name_en": "Monaco",
+    "name_ar": "موناكو",
+    "name_native": "Monaco",
+    "calling_codes": "377",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "498",
+    "iso_alpha_2": "MD",
+    "name_en": "Moldova",
+    "name_ar": "مولدوفا",
+    "name_native": "Moldova",
+    "calling_codes": "373",
+    "currencies": "MDL",
+    "languages": "ro"
+  },
+  {
+    "iso_numeric": "499",
+    "iso_alpha_2": "ME",
+    "name_en": "Montenegro",
+    "name_ar": "الجبل الأسود",
+    "name_native": "Црна Гора",
+    "calling_codes": "382",
+    "currencies": "EUR",
+    "languages": "sr,bs,sq,hr"
+  },
+  {
+    "iso_numeric": "663",
+    "iso_alpha_2": "MF",
+    "name_en": "Saint Martin",
+    "name_ar": "سان مارتن",
+    "name_native": "Saint-Martin",
+    "calling_codes": "590",
+    "currencies": "EUR",
+    "languages": "en,fr,nl"
+  },
+  {
+    "iso_numeric": "450",
+    "iso_alpha_2": "MG",
+    "name_en": "Madagascar",
+    "name_ar": "مدغشقر",
+    "name_native": "Madagasikara",
+    "calling_codes": "261",
+    "currencies": "MGA",
+    "languages": "fr,mg"
+  },
+  {
+    "iso_numeric": "584",
+    "iso_alpha_2": "MH",
+    "name_en": "Marshall Islands",
+    "name_ar": "جزر مارشال",
+    "name_native": "M̧ajeļ",
+    "calling_codes": "692",
+    "currencies": "USD",
+    "languages": "en,mh"
+  },
+  {
+    "iso_numeric": "807",
+    "iso_alpha_2": "MK",
+    "name_en": "North Macedonia",
+    "name_ar": "مقدونيا الشمالية",
+    "name_native": "Северна Македонија",
+    "calling_codes": "389",
+    "currencies": "MKD",
+    "languages": "mk"
+  },
+  {
+    "iso_numeric": "466",
+    "iso_alpha_2": "ML",
+    "name_en": "Mali",
+    "name_ar": "مالي",
+    "name_native": "Mali",
+    "calling_codes": "223",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "104",
+    "iso_alpha_2": "MM",
+    "name_en": "Myanmar (Burma)",
+    "name_ar": "ميانمار (بورما)",
+    "name_native": "မြန်မာ",
+    "calling_codes": "95",
+    "currencies": "MMK",
+    "languages": "my"
+  },
+  {
+    "iso_numeric": "496",
+    "iso_alpha_2": "MN",
+    "name_en": "Mongolia",
+    "name_ar": "منغوليا",
+    "name_native": "Монгол улс",
+    "calling_codes": "976",
+    "currencies": "MNT",
+    "languages": "mn"
+  },
+  {
+    "iso_numeric": "446",
+    "iso_alpha_2": "MO",
+    "name_en": "Macao",
+    "name_ar": "مكاو الصينية",
+    "name_native": "澳門",
+    "calling_codes": "853",
+    "currencies": "MOP",
+    "languages": "zh,pt"
+  },
+  {
+    "iso_numeric": "580",
+    "iso_alpha_2": "MP",
+    "name_en": "Northern Mariana Islands",
+    "name_ar": "جزر ماريانا الشمالية",
+    "name_native": "Northern Mariana Islands",
+    "calling_codes": "1670",
+    "currencies": "USD",
+    "languages": "en,ch"
+  },
+  {
+    "iso_numeric": "474",
+    "iso_alpha_2": "MQ",
+    "name_en": "Martinique",
+    "name_ar": "جزر المارتينيك",
+    "name_native": "Martinique",
+    "calling_codes": "596",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "478",
+    "iso_alpha_2": "MR",
+    "name_en": "Mauritania",
+    "name_ar": "موريتانيا",
+    "name_native": "موريتانيا",
+    "calling_codes": "222",
+    "currencies": "MRU",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "500",
+    "iso_alpha_2": "MS",
+    "name_en": "Montserrat",
+    "name_ar": "مونتسرات",
+    "name_native": "Montserrat",
+    "calling_codes": "1664",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "470",
+    "iso_alpha_2": "MT",
+    "name_en": "Malta",
+    "name_ar": "مالطا",
+    "name_native": "Malta",
+    "calling_codes": "356",
+    "currencies": "EUR",
+    "languages": "mt,en"
+  },
+  {
+    "iso_numeric": "480",
+    "iso_alpha_2": "MU",
+    "name_en": "Mauritius",
+    "name_ar": "موريشيوس",
+    "name_native": "Maurice",
+    "calling_codes": "230",
+    "currencies": "MUR",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "462",
+    "iso_alpha_2": "MV",
+    "name_en": "Maldives",
+    "name_ar": "جزر المالديف",
+    "name_native": "Maldives",
+    "calling_codes": "960",
+    "currencies": "MVR",
+    "languages": "dv"
+  },
+  {
+    "iso_numeric": "454",
+    "iso_alpha_2": "MW",
+    "name_en": "Malawi",
+    "name_ar": "ملاوي",
+    "name_native": "Malawi",
+    "calling_codes": "265",
+    "currencies": "MWK",
+    "languages": "en,ny"
+  },
+  {
+    "iso_numeric": "484",
+    "iso_alpha_2": "MX",
+    "name_en": "Mexico",
+    "name_ar": "المكسيك",
+    "name_native": "México",
+    "calling_codes": "52",
+    "currencies": "MXN",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "458",
+    "iso_alpha_2": "MY",
+    "name_en": "Malaysia",
+    "name_ar": "ماليزيا",
+    "name_native": "Malaysia",
+    "calling_codes": "60",
+    "currencies": "MYR",
+    "languages": "ms"
+  },
+  {
+    "iso_numeric": "508",
+    "iso_alpha_2": "MZ",
+    "name_en": "Mozambique",
+    "name_ar": "موزمبيق",
+    "name_native": "Moçambique",
+    "calling_codes": "258",
+    "currencies": "MZN",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "516",
+    "iso_alpha_2": "NA",
+    "name_en": "Namibia",
+    "name_ar": "ناميبيا",
+    "name_native": "Namibia",
+    "calling_codes": "264",
+    "currencies": "NAD,ZAR",
+    "languages": "en,af"
+  },
+  {
+    "iso_numeric": "540",
+    "iso_alpha_2": "NC",
+    "name_en": "New Caledonia",
+    "name_ar": "كاليدونيا الجديدة",
+    "name_native": "Nouvelle-Calédonie",
+    "calling_codes": "687",
+    "currencies": "XPF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "562",
+    "iso_alpha_2": "NE",
+    "name_en": "Niger",
+    "name_ar": "النيجر",
+    "name_native": "Niger",
+    "calling_codes": "227",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "574",
+    "iso_alpha_2": "NF",
+    "name_en": "Norfolk Island",
+    "name_ar": "جزيرة نورفولك",
+    "name_native": "Norfolk Island",
+    "calling_codes": "672",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "566",
+    "iso_alpha_2": "NG",
+    "name_en": "Nigeria",
+    "name_ar": "نيجيريا",
+    "name_native": "Nigeria",
+    "calling_codes": "234",
+    "currencies": "NGN",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "558",
+    "iso_alpha_2": "NI",
+    "name_en": "Nicaragua",
+    "name_ar": "نيكاراغوا",
+    "name_native": "Nicaragua",
+    "calling_codes": "505",
+    "currencies": "NIO",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "528",
+    "iso_alpha_2": "NL",
+    "name_en": "Netherlands",
+    "name_ar": "هولندا",
+    "name_native": "Nederland",
+    "calling_codes": "31",
+    "currencies": "EUR",
+    "languages": "nl"
+  },
+  {
+    "iso_numeric": "578",
+    "iso_alpha_2": "NO",
+    "name_en": "Norway",
+    "name_ar": "النرويج",
+    "name_native": "Norge",
+    "calling_codes": "47",
+    "currencies": "NOK",
+    "languages": "no,nb,nn"
+  },
+  {
+    "iso_numeric": "524",
+    "iso_alpha_2": "NP",
+    "name_en": "Nepal",
+    "name_ar": "نيبال",
+    "name_native": "नपल",
+    "calling_codes": "977",
+    "currencies": "NPR",
+    "languages": "ne"
+  },
+  {
+    "iso_numeric": "520",
+    "iso_alpha_2": "NR",
+    "name_en": "Nauru",
+    "name_ar": "ناورو",
+    "name_native": "Nauru",
+    "calling_codes": "674",
+    "currencies": "AUD",
+    "languages": "en,na"
+  },
+  {
+    "iso_numeric": "570",
+    "iso_alpha_2": "NU",
+    "name_en": "Niue",
+    "name_ar": "نيوي",
+    "name_native": "Niuē",
+    "calling_codes": "683",
+    "currencies": "NZD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "554",
+    "iso_alpha_2": "NZ",
+    "name_en": "New Zealand",
+    "name_ar": "نيوزيلندا",
+    "name_native": "New Zealand",
+    "calling_codes": "64",
+    "currencies": "NZD",
+    "languages": "en,mi"
+  },
+  {
+    "iso_numeric": "512",
+    "iso_alpha_2": "OM",
+    "name_en": "Oman",
+    "name_ar": "عُمان",
+    "name_native": "عمان",
+    "calling_codes": "968",
+    "currencies": "OMR",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "591",
+    "iso_alpha_2": "PA",
+    "name_en": "Panama",
+    "name_ar": "بنما",
+    "name_native": "Panamá",
+    "calling_codes": "507",
+    "currencies": "PAB,USD",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "604",
+    "iso_alpha_2": "PE",
+    "name_en": "Peru",
+    "name_ar": "بيرو",
+    "name_native": "Perú",
+    "calling_codes": "51",
+    "currencies": "PEN",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "258",
+    "iso_alpha_2": "PF",
+    "name_en": "French Polynesia",
+    "name_ar": "بولينيزيا الفرنسية",
+    "name_native": "Polynésie française",
+    "calling_codes": "689",
+    "currencies": "XPF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "598",
+    "iso_alpha_2": "PG",
+    "name_en": "Papua New Guinea",
+    "name_ar": "بابوا غينيا الجديدة",
+    "name_native": "Papua Niugini",
+    "calling_codes": "675",
+    "currencies": "PGK",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "608",
+    "iso_alpha_2": "PH",
+    "name_en": "Philippines",
+    "name_ar": "الفلبين",
+    "name_native": "Pilipinas",
+    "calling_codes": "63",
+    "currencies": "PHP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "586",
+    "iso_alpha_2": "PK",
+    "name_en": "Pakistan",
+    "name_ar": "باكستان",
+    "name_native": "Pakistan",
+    "calling_codes": "92",
+    "currencies": "PKR",
+    "languages": "en,ur"
+  },
+  {
+    "iso_numeric": "616",
+    "iso_alpha_2": "PL",
+    "name_en": "Poland",
+    "name_ar": "بولندا",
+    "name_native": "Polska",
+    "calling_codes": "48",
+    "currencies": "PLN",
+    "languages": "pl"
+  },
+  {
+    "iso_numeric": "666",
+    "iso_alpha_2": "PM",
+    "name_en": "Saint Pierre & Miquelon",
+    "name_ar": "سان بيير ومكويلون",
+    "name_native": "Saint-Pierre-et-Miquelon",
+    "calling_codes": "508",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "612",
+    "iso_alpha_2": "PN",
+    "name_en": "Pitcairn Islands",
+    "name_ar": "جزر بيتكيرن",
+    "name_native": "Pitcairn Islands",
+    "calling_codes": "64",
+    "currencies": "NZD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "630",
+    "iso_alpha_2": "PR",
+    "name_en": "Puerto Rico",
+    "name_ar": "بورتوريكو",
+    "name_native": "Puerto Rico",
+    "calling_codes": "17,871,939",
+    "currencies": "USD",
+    "languages": "es,en"
+  },
+  {
+    "iso_numeric": "275",
+    "iso_alpha_2": "PS",
+    "name_en": "Palestine",
+    "name_ar": "فلسطين",
+    "name_native": "فلسطين",
+    "calling_codes": "970",
+    "currencies": "ILS",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "620",
+    "iso_alpha_2": "PT",
+    "name_en": "Portugal",
+    "name_ar": "البرتغال",
+    "name_native": "Portugal",
+    "calling_codes": "351",
+    "currencies": "EUR",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "585",
+    "iso_alpha_2": "PW",
+    "name_en": "Palau",
+    "name_ar": "بالاو",
+    "name_native": "Palau",
+    "calling_codes": "680",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "600",
+    "iso_alpha_2": "PY",
+    "name_en": "Paraguay",
+    "name_ar": "باراغواي",
+    "name_native": "Paraguay",
+    "calling_codes": "595",
+    "currencies": "PYG",
+    "languages": "es,gn"
+  },
+  {
+    "iso_numeric": "634",
+    "iso_alpha_2": "QA",
+    "name_en": "Qatar",
+    "name_ar": "قطر",
+    "name_native": "قطر",
+    "calling_codes": "974",
+    "currencies": "QAR",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "638",
+    "iso_alpha_2": "RE",
+    "name_en": "Réunion",
+    "name_ar": "روينيون",
+    "name_native": "La Réunion",
+    "calling_codes": "262",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "642",
+    "iso_alpha_2": "RO",
+    "name_en": "Romania",
+    "name_ar": "رومانيا",
+    "name_native": "România",
+    "calling_codes": "40",
+    "currencies": "RON",
+    "languages": "ro"
+  },
+  {
+    "iso_numeric": "688",
+    "iso_alpha_2": "RS",
+    "name_en": "Serbia",
+    "name_ar": "صربيا",
+    "name_native": "Србија",
+    "calling_codes": "381",
+    "currencies": "RSD",
+    "languages": "sr"
+  },
+  {
+    "iso_numeric": "643",
+    "iso_alpha_2": "RU",
+    "name_en": "Russia",
+    "name_ar": "روسيا",
+    "name_native": "Россия",
+    "calling_codes": "7",
+    "currencies": "RUB",
+    "languages": "ru"
+  },
+  {
+    "iso_numeric": "646",
+    "iso_alpha_2": "RW",
+    "name_en": "Rwanda",
+    "name_ar": "رواندا",
+    "name_native": "Rwanda",
+    "calling_codes": "250",
+    "currencies": "RWF",
+    "languages": "rw,en,fr"
+  },
+  {
+    "iso_numeric": "682",
+    "iso_alpha_2": "SA",
+    "name_en": "Saudi Arabia",
+    "name_ar": "المملكة العربية السعودية",
+    "name_native": "المملكة العربية السعودية",
+    "calling_codes": "966",
+    "currencies": "SAR",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "90",
+    "iso_alpha_2": "SB",
+    "name_en": "Solomon Islands",
+    "name_ar": "جزر سليمان",
+    "name_native": "Solomon Islands",
+    "calling_codes": "677",
+    "currencies": "SBD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "690",
+    "iso_alpha_2": "SC",
+    "name_en": "Seychelles",
+    "name_ar": "سيشل",
+    "name_native": "Seychelles",
+    "calling_codes": "248",
+    "currencies": "SCR",
+    "languages": "fr,en"
+  },
+  {
+    "iso_numeric": "729",
+    "iso_alpha_2": "SD",
+    "name_en": "Sudan",
+    "name_ar": "السودان",
+    "name_native": "السودان",
+    "calling_codes": "249",
+    "currencies": "SDG",
+    "languages": "ar,en"
+  },
+  {
+    "iso_numeric": "752",
+    "iso_alpha_2": "SE",
+    "name_en": "Sweden",
+    "name_ar": "السويد",
+    "name_native": "Sverige",
+    "calling_codes": "46",
+    "currencies": "SEK",
+    "languages": "sv"
+  },
+  {
+    "iso_numeric": "702",
+    "iso_alpha_2": "SG",
+    "name_en": "Singapore",
+    "name_ar": "سنغافورة",
+    "name_native": "Singapore",
+    "calling_codes": "65",
+    "currencies": "SGD",
+    "languages": "en,ms,ta,zh"
+  },
+  {
+    "iso_numeric": "654",
+    "iso_alpha_2": "SH",
+    "name_en": "Saint Helena",
+    "name_ar": "سانت هيلينا",
+    "name_native": "Saint Helena",
+    "calling_codes": "290",
+    "currencies": "SHP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "705",
+    "iso_alpha_2": "SI",
+    "name_en": "Slovenia",
+    "name_ar": "سلوفينيا",
+    "name_native": "Slovenija",
+    "calling_codes": "386",
+    "currencies": "EUR",
+    "languages": "sl"
+  },
+  {
+    "iso_numeric": "744",
+    "iso_alpha_2": "SJ",
+    "name_en": "Svalbard & Jan Mayen",
+    "name_ar": "سفالبارد وجان ماين",
+    "name_native": "Svalbard og Jan Mayen",
+    "calling_codes": "4779",
+    "currencies": "NOK",
+    "languages": "no"
+  },
+  {
+    "iso_numeric": "703",
+    "iso_alpha_2": "SK",
+    "name_en": "Slovakia",
+    "name_ar": "سلوفاكيا",
+    "name_native": "Slovensko",
+    "calling_codes": "421",
+    "currencies": "EUR",
+    "languages": "sk"
+  },
+  {
+    "iso_numeric": "694",
+    "iso_alpha_2": "SL",
+    "name_en": "Sierra Leone",
+    "name_ar": "سيراليون",
+    "name_native": "Sierra Leone",
+    "calling_codes": "232",
+    "currencies": "SLL",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "674",
+    "iso_alpha_2": "SM",
+    "name_en": "San Marino",
+    "name_ar": "سان مارينو",
+    "name_native": "San Marino",
+    "calling_codes": "378",
+    "currencies": "EUR",
+    "languages": "it"
+  },
+  {
+    "iso_numeric": "686",
+    "iso_alpha_2": "SN",
+    "name_en": "Senegal",
+    "name_ar": "السنغال",
+    "name_native": "Sénégal",
+    "calling_codes": "221",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "706",
+    "iso_alpha_2": "SO",
+    "name_en": "Somalia",
+    "name_ar": "الصومال",
+    "name_native": "Soomaaliya",
+    "calling_codes": "252",
+    "currencies": "SOS",
+    "languages": "so,ar"
+  },
+  {
+    "iso_numeric": "740",
+    "iso_alpha_2": "SR",
+    "name_en": "Suriname",
+    "name_ar": "سورينام",
+    "name_native": "Suriname",
+    "calling_codes": "597",
+    "currencies": "SRD",
+    "languages": "nl"
+  },
+  {
+    "iso_numeric": "728",
+    "iso_alpha_2": "SS",
+    "name_en": "South Sudan",
+    "name_ar": "جنوب السودان",
+    "name_native": "South Sudan",
+    "calling_codes": "211",
+    "currencies": "SSP",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "678",
+    "iso_alpha_2": "ST",
+    "name_en": "São Tomé & Príncipe",
+    "name_ar": "ساو تومي وبرينسيبي",
+    "name_native": "São Tomé e Príncipe",
+    "calling_codes": "239",
+    "currencies": "STN",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "222",
+    "iso_alpha_2": "SV",
+    "name_en": "El Salvador",
+    "name_ar": "السلفادور",
+    "name_native": "El Salvador",
+    "calling_codes": "503",
+    "currencies": "SVC,USD",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "534",
+    "iso_alpha_2": "SX",
+    "name_en": "Sint Maarten",
+    "name_ar": "سانت مارتن",
+    "name_native": "Sint Maarten",
+    "calling_codes": "1721",
+    "currencies": "ANG",
+    "languages": "nl,en"
+  },
+  {
+    "iso_numeric": "760",
+    "iso_alpha_2": "SY",
+    "name_en": "Syria",
+    "name_ar": "سوريا",
+    "name_native": "سوريا",
+    "calling_codes": "963",
+    "currencies": "SYP",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "748",
+    "iso_alpha_2": "SZ",
+    "name_en": "Swaziland / Eswatini",
+    "name_ar": "إسواتيني",
+    "name_native": "Swaziland",
+    "calling_codes": "268",
+    "currencies": "SZL",
+    "languages": "en,ss"
+  },
+  {
+    "iso_numeric": "796",
+    "iso_alpha_2": "TC",
+    "name_en": "Turks & Caicos Islands",
+    "name_ar": "جزر توركس وكايكوس",
+    "name_native": "Turks and Caicos Islands",
+    "calling_codes": "1649",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "148",
+    "iso_alpha_2": "TD",
+    "name_en": "Chad",
+    "name_ar": "تشاد",
+    "name_native": "Tchad",
+    "calling_codes": "235",
+    "currencies": "XAF",
+    "languages": "fr,ar"
+  },
+  {
+    "iso_numeric": "260",
+    "iso_alpha_2": "TF",
+    "name_en": "French Southern Territories",
+    "name_ar": "الأقاليم الجنوبية الفرنسية",
+    "name_native": "Territoire des Terres australes et antarctiques fr",
+    "calling_codes": "262",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "768",
+    "iso_alpha_2": "TG",
+    "name_en": "Togo",
+    "name_ar": "توغو",
+    "name_native": "Togo",
+    "calling_codes": "228",
+    "currencies": "XOF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "764",
+    "iso_alpha_2": "TH",
+    "name_en": "Thailand",
+    "name_ar": "تايلاند",
+    "name_native": "ประเทศไทย",
+    "calling_codes": "66",
+    "currencies": "THB",
+    "languages": "th"
+  },
+  {
+    "iso_numeric": "762",
+    "iso_alpha_2": "TJ",
+    "name_en": "Tajikistan",
+    "name_ar": "طاجيكستان",
+    "name_native": "Тоҷикистон",
+    "calling_codes": "992",
+    "currencies": "TJS",
+    "languages": "tg,ru"
+  },
+  {
+    "iso_numeric": "772",
+    "iso_alpha_2": "TK",
+    "name_en": "Tokelau",
+    "name_ar": "توكيلو",
+    "name_native": "Tokelau",
+    "calling_codes": "690",
+    "currencies": "NZD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "626",
+    "iso_alpha_2": "TL",
+    "name_en": "East Timor / Timor-Leste",
+    "name_ar": "تيمور الشرقية - ليشتي",
+    "name_native": "Timor-Leste",
+    "calling_codes": "670",
+    "currencies": "USD",
+    "languages": "pt"
+  },
+  {
+    "iso_numeric": "795",
+    "iso_alpha_2": "TM",
+    "name_en": "Turkmenistan",
+    "name_ar": "تركمانستان",
+    "name_native": "Türkmenistan",
+    "calling_codes": "993",
+    "currencies": "TMT",
+    "languages": "tk,ru"
+  },
+  {
+    "iso_numeric": "788",
+    "iso_alpha_2": "TN",
+    "name_en": "Tunisia",
+    "name_ar": "تونس",
+    "name_native": "تونس",
+    "calling_codes": "216",
+    "currencies": "TND",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "776",
+    "iso_alpha_2": "TO",
+    "name_en": "Tonga",
+    "name_ar": "تونغا",
+    "name_native": "Tonga",
+    "calling_codes": "676",
+    "currencies": "TOP",
+    "languages": "en,to"
+  },
+  {
+    "iso_numeric": "792",
+    "iso_alpha_2": "TR",
+    "name_en": "Turkey",
+    "name_ar": "تركيا",
+    "name_native": "Türkiye",
+    "calling_codes": "90",
+    "currencies": "TRY",
+    "languages": "tr"
+  },
+  {
+    "iso_numeric": "780",
+    "iso_alpha_2": "TT",
+    "name_en": "Trinidad & Tobago",
+    "name_ar": "ترينيداد وتوباغو",
+    "name_native": "Trinidad and Tobago",
+    "calling_codes": "1868",
+    "currencies": "TTD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "798",
+    "iso_alpha_2": "TV",
+    "name_en": "Tuvalu",
+    "name_ar": "توفالو",
+    "name_native": "Tuvalu",
+    "calling_codes": "688",
+    "currencies": "AUD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "158",
+    "iso_alpha_2": "TW",
+    "name_en": "Taiwan",
+    "name_ar": "تايوان",
+    "name_native": "臺灣",
+    "calling_codes": "886",
+    "currencies": "TWD",
+    "languages": "zh"
+  },
+  {
+    "iso_numeric": "834",
+    "iso_alpha_2": "TZ",
+    "name_en": "Tanzania",
+    "name_ar": "تنزانيا",
+    "name_native": "Tanzania",
+    "calling_codes": "255",
+    "currencies": "TZS",
+    "languages": "sw,en"
+  },
+  {
+    "iso_numeric": "804",
+    "iso_alpha_2": "UA",
+    "name_en": "Ukraine",
+    "name_ar": "أوكرانيا",
+    "name_native": "Україна",
+    "calling_codes": "380",
+    "currencies": "UAH",
+    "languages": "uk"
+  },
+  {
+    "iso_numeric": "800",
+    "iso_alpha_2": "UG",
+    "name_en": "Uganda",
+    "name_ar": "أوغندا",
+    "name_native": "Uganda",
+    "calling_codes": "256",
+    "currencies": "UGX",
+    "languages": "en,sw"
+  },
+  {
+    "iso_numeric": "581",
+    "iso_alpha_2": "UM",
+    "name_en": "U.S. Minor Outlying Islands",
+    "name_ar": "جزر الولايات المتحدة النائية",
+    "name_native": "United States Minor Outlying Islands",
+    "calling_codes": "1",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "840",
+    "iso_alpha_2": "US",
+    "name_en": "United States",
+    "name_ar": "الولايات المتحدة",
+    "name_native": "United States",
+    "calling_codes": "1",
+    "currencies": "USD,USN,USS",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "858",
+    "iso_alpha_2": "UY",
+    "name_en": "Uruguay",
+    "name_ar": "أورغواي",
+    "name_native": "Uruguay",
+    "calling_codes": "598",
+    "currencies": "UYI,UYU",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "860",
+    "iso_alpha_2": "UZ",
+    "name_en": "Uzbekistan",
+    "name_ar": "أوزبكستان",
+    "name_native": "O‘zbekiston",
+    "calling_codes": "998",
+    "currencies": "UZS",
+    "languages": "uz,ru"
+  },
+  {
+    "iso_numeric": "336",
+    "iso_alpha_2": "VA",
+    "name_en": "Vatican City",
+    "name_ar": "الفاتيكان",
+    "name_native": "Vaticano",
+    "calling_codes": "39066,379",
+    "currencies": "EUR",
+    "languages": "it,la"
+  },
+  {
+    "iso_numeric": "670",
+    "iso_alpha_2": "VC",
+    "name_en": "Saint Vincent & Grenadines",
+    "name_ar": "سانت فنسنت وجزر غرينادين",
+    "name_native": "Saint Vincent and the Grenadines",
+    "calling_codes": "1784",
+    "currencies": "XCD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "862",
+    "iso_alpha_2": "VE",
+    "name_en": "Venezuela",
+    "name_ar": "فنزويلا",
+    "name_native": "Venezuela",
+    "calling_codes": "58",
+    "currencies": "VES",
+    "languages": "es"
+  },
+  {
+    "iso_numeric": "92",
+    "iso_alpha_2": "VG",
+    "name_en": "British Virgin Islands",
+    "name_ar": "جزر فيرجن البريطانية",
+    "name_native": "British Virgin Islands",
+    "calling_codes": "1284",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "850",
+    "iso_alpha_2": "VI",
+    "name_en": "U.S. Virgin Islands",
+    "name_ar": "جزر فيرجن التابعة للولايات المتحدة",
+    "name_native": "United States Virgin Islands",
+    "calling_codes": "1340",
+    "currencies": "USD",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "704",
+    "iso_alpha_2": "VN",
+    "name_en": "Vietnam",
+    "name_ar": "فيتنام",
+    "name_native": "Việt Nam",
+    "calling_codes": "84",
+    "currencies": "VND",
+    "languages": "vi"
+  },
+  {
+    "iso_numeric": "548",
+    "iso_alpha_2": "VU",
+    "name_en": "Vanuatu",
+    "name_ar": "فانواتو",
+    "name_native": "Vanuatu",
+    "calling_codes": "678",
+    "currencies": "VUV",
+    "languages": "bi,en,fr"
+  },
+  {
+    "iso_numeric": "876",
+    "iso_alpha_2": "WF",
+    "name_en": "Wallis & Futuna",
+    "name_ar": "جزر والس وفوتونا",
+    "name_native": "Wallis et Futuna",
+    "calling_codes": "681",
+    "currencies": "XPF",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "882",
+    "iso_alpha_2": "WS",
+    "name_en": "Samoa",
+    "name_ar": "ساموا",
+    "name_native": "Samoa",
+    "calling_codes": "685",
+    "currencies": "WST",
+    "languages": "sm,en"
+  },
+  {
+    "iso_numeric": "887",
+    "iso_alpha_2": "YE",
+    "name_en": "Yemen",
+    "name_ar": "اليمن",
+    "name_native": "اليَمَن",
+    "calling_codes": "967",
+    "currencies": "YER",
+    "languages": "ar"
+  },
+  {
+    "iso_numeric": "175",
+    "iso_alpha_2": "YT",
+    "name_en": "Mayotte",
+    "name_ar": "مايوت",
+    "name_native": "Mayotte",
+    "calling_codes": "262",
+    "currencies": "EUR",
+    "languages": "fr"
+  },
+  {
+    "iso_numeric": "710",
+    "iso_alpha_2": "ZA",
+    "name_en": "South Africa",
+    "name_ar": "جنوب أفريقيا",
+    "name_native": "South Africa",
+    "calling_codes": "27",
+    "currencies": "ZAR",
+    "languages": "af,en,nr,st,ss,tn,ts,ve,xh,zu"
+  },
+  {
+    "iso_numeric": "894",
+    "iso_alpha_2": "ZM",
+    "name_en": "Zambia",
+    "name_ar": "زامبيا",
+    "name_native": "Zambia",
+    "calling_codes": "260",
+    "currencies": "ZMK",
+    "languages": "en"
+  },
+  {
+    "iso_numeric": "716",
+    "iso_alpha_2": "ZW",
+    "name_en": "Zimbabwe",
+    "name_ar": "زيمبابوي",
+    "name_native": "Zimbabwe",
+    "calling_codes": "263",
+    "currencies": "USD,ZAR,BWP,GBP,AUD,CNY,INR,JPY",
+    "languages": "en,sn,nd"
+  }
+]
