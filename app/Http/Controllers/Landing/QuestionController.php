@@ -81,12 +81,12 @@ class QuestionController extends Controller
             foreach($questionBase->answers as $ans){
                 if(gettype($question['answer']) == 'array'){
                     foreach($question['answer'] as $questAns){
-                        if($ans['en'] == $questAns || $ans['ar'] == $questAns){
+                        if(($ans['en'] == $questAns || $ans['ar'] == $questAns) && isset($ans['score'])){
                             $score += $ans['score'];
                         }
                     }
                 }else{
-                    if($ans['en'] == $question['answer'] || $ans['ar'] == $question['answer']){
+                    if(($ans['en'] == $question['answer'] || $ans['ar'] == $question['answer']) && isset($ans['score'])){
                         $score += $ans['score'];
                     }
                 }
