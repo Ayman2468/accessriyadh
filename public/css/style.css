@@ -5,9 +5,20 @@
     src: url('../fonts/TatweerAlRiyadh-Regular.eot');
     src: url('../fonts/TatweerAlRiyadh-Regular.woff');
 }*/
+@font-face {
+    font-family: 'TatweerAlRiyadh';
+    font-weight: normal;
+    src: url('../fonts/TatweerAlRiyadh-Light.otf');
+}
+@font-face {
+    font-family: 'TatweerAlRiyadh';
+    font-weight: bold;
+    src: url('../fonts/TatweerAlRiyadh-Regular.otf');
+}
 
 body,html{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'TatweerAlRiyadh', sans-serif;
+    font-size: 18px;
 }
 
 a{
@@ -24,8 +35,8 @@ a{
 }
 
 .navbar-collapse{
-	background: linear-gradient(90deg, #5E9B47 0%, #247B3D 100%);
-
+	/* background: linear-gradient(90deg, #5E9B47 0%, #247B3D 100%); */
+	background-color: #00884e;
 }
 
 .header .nav-link{
@@ -73,7 +84,7 @@ a{
     height: 0;
     border-left: 0px solid transparent;
     border-right: 30px solid transparent;
-    border-bottom: 72px solid #fff;
+    border-bottom: 76px solid #fff;
 }
 
 .steps{
@@ -94,7 +105,8 @@ a{
 }
 
 .steps-label .progress-bar{
-	background: linear-gradient(90deg, #5E9B47 0%, #247B3D 100%);
+	/* background: linear-gradient(90deg, #5E9B47 0%, #247B3D 100%); */
+	background-color: #00884e;
 	border-top-left-radius: 19px;
 	border-bottom-left-radius: 19px;
 	z-index: 1;
@@ -215,19 +227,31 @@ a{
 .input-building label img:hover{
 	border: 1px solid #247B3D;
 }
+/* .welomeAfter{
+    width: 500px;
+} */
+.welomeAfter::after{
+    content: '';
+    position: absolute;
+    /* top: 0px;
+    left: 639px; */
+    height: 0;
+    width: 0;
+    border-left: 0px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 51px solid #00884e;
+}
 
 .btn-success{
-	background: rgb(94,155,71);
-	background: linear-gradient(0deg, rgba(94,155,71,1) 0%, rgba(68,141,67,1) 50%, rgba(52,131,64,1) 100%);
-	border-color: rgb(94,155,71);
-    border-radius: 15px;
+	background-color: #00884e;
+	border-color: #00884e;
     height: 55px;
     font-size: 20px;
 }
 
 .btn-success:hover{
-	background: rgb(94,155,71);
-	background: linear-gradient(180deg, rgba(94,155,71,1) 0%, rgba(68,141,67,1) 50%, rgba(52,131,64,1) 100%);
+	background-color: #00884e;
+    border: 1px solid #fff;
 }
 
 .btn-secondary{
@@ -337,8 +361,45 @@ a{
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before{
     border-right-color: #00884e!important;
 }
+.scroll-top-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  opacity: 0;
+}
+.scroll-top-button-rtl{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    padding: 8px 14px;
+    opacity: 0;
+}
+.fade-out {
+	animation: fadeOut 2s;
+  	opacity: 0;
+}
+.fade-out {
+	animation: fadeIn 2s;
+  	opacity: 1;
+}
 
-
+@keyframes fadeOut {
+  from {
+  	opacity: 1;
+  }
+  to {
+    opacity: 0;
+ }
+}
+@keyframes fadeIn {
+  from {
+  	opacity: 0;
+  }
+  to {
+    opacity: 1;
+ }
+}
 @media (max-width: 1399.9px){}
 
 @media (max-width: 1199.9px){

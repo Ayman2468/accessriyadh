@@ -11,7 +11,7 @@ class BuildingType extends Model
 {
     use HasFactory;
     protected $guarded = [];
-    protected $appends = ['image_url'];
+    protected $appends = ['image_url','name'];
 
     public function questions(): HasMany
     {
@@ -21,5 +21,9 @@ class BuildingType extends Model
     {
         if ($this->image) return url($this->image);
         return $this->image;
+    }
+    public function getNameAttribute(){
+        if(app()->getLocale() == 'en') return $this->name_en;
+        if(app()->getLocale() == 'ar') return $this->name_ar;
     }
 }

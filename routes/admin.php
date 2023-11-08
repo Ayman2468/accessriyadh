@@ -19,8 +19,14 @@ use Illuminate\Support\Facades\Route;
 */
 Route::group(['middleware'=>['auth','admin']],function(){
 
-        Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
-            Route::get('/auth', [UserController::class, 'auth'])->name('auth');
+    Route::get('/users', [UserController::class, 'index'])->name('user.index');
+
+    Route::group(['prefix' => 'user', 'as' => 'user.'], function () {
+        Route::get('/auth', [UserController::class, 'auth'])->name('auth');
+        Route::get('/profile', [UserController::class, 'showProfile'])->name('show');
+        Route::post('/update/{id}', [UserController::class, 'update'])->name('update');
+        Route::post('/change-password/{id}', [UserController::class, 'changePassword'])->name('changePassword');
+        Route::get('/delete/{id}', [UserController::class, 'destroy'])->name('destroy');
         });
         Route::group(['prefix' => 'building-type', 'as' => 'building-type.'], function () {
             Route::get('/', [BuildingTypeController::class, 'index'])->name('index');

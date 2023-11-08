@@ -145,7 +145,9 @@
                                         <td>{{ item.email }}</td>
                                         <td>{{ item.building_type.name_ar }}</td>
                                         <td>
-                                           <router-link class="btn btn-light" :to="'/admin/applications/'+(item.id)+''">عرض الطلب</router-link>
+                                           <router-link class="btn btn-light m-2" :to="'/admin/applications/'+(item.id)+''">عرض الطلب</router-link>
+                                           <a class="btn btn-light m-2" href="#" @click="print_item(item.id)">طباعة التقرير</a>
+                                           <a class="btn btn-danger m-2" href="#" @click="delete_item(item.id)">حذف الطلب</a>
                                         </td>
                                     </tr>
 
@@ -265,13 +267,28 @@ export default {
                 current_page: this.current_page,
             })
         },
-        delete_item(category, index) {
-            this.$root.$emit('selected_item_for_delete', {
-                item: category,
-                index: index,
-                search_value: this.search_value,
-                current_page: this.current_page,
+        delete_item(id) {
+            // this.$root.$emit('selected_item_for_delete', {
+            //     item: category,
+            //     index: index,
+            //     search_value: this.search_value,
+            //     current_page: this.current_page,
+            // })
+            axios.get('/admin/application/delete/'+id).then((response) => {
+                if(response.data.message == 'application deleted') this.showAlert(response.data.message);
+                else this.showAlert('Failed');
+                this.get_items();
             })
+        },
+        print_item(id){
+            axios.get('/application-export/'+id).then((response) => {
+                if(response?.data?.message == 'success') this.showAlert('Success');
+                else this.showAlert(response?.data?.message);
+            });
+        },
+        showAlert(msg) {
+            // Use sweetalert2
+            this.$swal(msg);
         },
         showError(error) {
             let message_title = error.response.data.message + '\n';

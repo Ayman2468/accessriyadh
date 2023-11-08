@@ -1,4 +1,4 @@
-html, body {
+html,body {
     width: 100%;
     height: 100%;
 }
@@ -53,7 +53,7 @@ ul {
     display: flex;
     align-content: center;
     flex-wrap: wrap;
-    background: url(/dashboard/images/footer-bac.jpg) no-repeat;
+    background: url(/dashboard../images/footer-bac.jpg) no-repeat;
     background-position: center;
     padding: 60px 70px;
     background-repeat: initial;
@@ -149,7 +149,7 @@ ul {
 }
 
 .form-select {
-    background: #F2F4F7 url(/images/angle2.svg) no-repeat;
+    background: #F2F4F7 url(../images/angle2.svg) no-repeat;
     -webkit-appearance: none;
     background-size: 15px !important;
     background-position: 97% 50%;
@@ -159,7 +159,7 @@ ul {
 .form-sign .form-select,
 .form-service .form-select,
 .block-details .form-select {
-    background: #F2F4F7 url(/images/angle.svg) no-repeat;
+    background: #F2F4F7 url(../images/angle.svg) no-repeat;
     background-size: 11px !important;
     background-position: 97% 50%;
 }
@@ -431,14 +431,14 @@ ul {
 /*mon css*/
 
 .sidebar li a i.my-icon {
-    background: url(/images/icon-home.svg);
+    background: url(../images/icon-home.svg);
     background-repeat: no-repeat !important;
     background-position: center !important;
     background-size: 25px !important;
 }
 
 .sidebar li a:hover i.icon-home, .sidebar li a.active i.icon-home {
-    background: url(/images/icon-home.svg);
+    background: url(../images/icon-home.svg);
 }
 
 .sidebar li a.active {
@@ -446,123 +446,123 @@ ul {
 }
 
 .sidebar li a i.icon-calender {
-    background: url(/images/icon-calender.svg);
+    background: url(../images/icon-calender.svg);
 }
 
 .sidebar li a:hover i.icon-calender, .sidebar li a.active i.icon-calender {
-    background: url(/images/icon-calender.svg);
+    background: url(../images/icon-calender.svg);
 }
 
 .sidebar li a i.icon-tag {
-    background: url(/images/icon-tag.svg);
+    background: url(../images/icon-tag.svg);
 }
 
 .sidebar li a:hover i.icon-tag, .sidebar li a.active i.icon-tag {
-    background: url(/images/icon-tag.svg);
+    background: url(../images/icon-tag.svg);
 }
 
 .sidebar li a i.icon-services {
-    background: url(/images/icon-services.svg);
+    background: url(../images/icon-services.svg);
 }
 
 .sidebar li a:hover i.icon-services, .sidebar li a.active i.icon-services {
-    background: url(/images/icon-services.svg);
+    background: url(../images/icon-services.svg);
 }
 
 .sidebar li a i.icon-service-provider-sidebar {
-    background: url(/images/service-provider-sidebar.svg);
+    background: url(../images/service-provider-sidebar.svg);
 }
 
 .sidebar li a:hover i.icon-service-provider-sidebar, .sidebar li a.active i.icon-service-provider-sidebar {
-    background: url(/images/service-provider-sidebar.svg);
+    background: url(../images/service-provider-sidebar.svg);
 }
 
 .sidebar li a i.icon-clients {
-    background: url(/images/icon-clients.svg);
+    background: url(../images/icon-clients.svg);
 }
 
 .sidebar li a:hover i.icon-clients, .sidebar li a.active i.icon-clients {
-    background: url(/images/icon-clients.svg);
+    background: url(../images/icon-clients.svg);
 }
 
 .sidebar li a i.icon-invoices {
-    background: url(/images/invoice-sidebar.svg);
+    background: url(../images/invoice-sidebar.svg);
 }
 
 .sidebar li a:hover i.icon-invoices, .sidebar li a.active i.icon-invoices {
-    background: url(/images/invoice-sidebar.svg);
+    background: url(../images/invoice-sidebar.svg);
 }
 
 .sidebar li a i.sales {
-    background: url(/images/store.png);
+    background: url(../images/store.png);
 }
 
 .sidebar li a:hover i.sales, .sidebar li a.active i.sales {
-    background: url(/images/store.png);
+    background: url(../images/store.png);
 }
 
 .sidebar li a i.icon-plans {
-    background: url(/images/plans-icon.svg);
+    background: url(../images/plans-icon.svg);
 }
 
 .sidebar li a:hover i.icon-plans, .sidebar li a.active i.icon-plans {
-    background: url(/images/plans-icon.svg);
+    background: url(../images/plans-icon.svg);
 }
 
 .sidebar li a i.iconost {
-    background: url(/images/iconost.svg);
+    background: url(../images/iconost.svg);
 }
 
 .sidebar li a:hover i.iconost, .sidebar li a.active i.iconost {
-    background: url(/images/iconost.svg);
+    background: url(../images/iconost.svg);
 }
 
 .sidebar li a i.icon-car {
-    background: url(/images/icon-car.png);
+    background: url(../images/icon-car.png);
 }
 
 .sidebar li a:hover i.icon-car, .sidebar li a.active i.icon-car {
-    background: url(/images/icon-car.png);
+    background: url(../images/icon-car.png);
 }
 
 .sidebar li a i.icon-car-type {
-    background: url(/images/icon-car-type.png);
+    background: url(../images/icon-car-type.png);
 }
 
 .sidebar li a:hover i.icon-car-type, .sidebar li a.active i.icon-car-type {
-    background: url(/images/icon-car-type.png);
+    background: url(../images/icon-car-type.png);
 }
 
 .sidebar li a i.icon-reports {
-    background: url(/images/icon-reports.svg);
+    background: url(../images/icon-reports.svg);
 }
 
 .sidebar li a:hover i.icon-reports, .sidebar li a.active i.icon-reports {
-    background: url(/images/icon-reports.svg);
+    background: url(../images/icon-reports.svg);
 }
 
 .sidebar li a i.icon-announcements {
-    background: url(/images/icon-announcements.svg);
+    background: url(../images/icon-announcements.svg);
 }
 
 .sidebar li a:hover i.icon-announcements, .sidebar li a.active i.icon-announcements {
-    background: url(/images/icon-announcements.svg);
+    background: url(../images/icon-announcements.svg);
 }
 
 .sidebar li a i.icon-staff {
-    background: url(/images/icon-staff.svg);
+    background: url(../images/icon-staff.svg);
 }
 
 .sidebar li a:hover i.icon-staff, .sidebar li a.active i.icon-staff {
-    background: url(/images/icon-staff.svg);
+    background: url(../images/icon-staff.svg);
 }
 
 .sidebar li a i.icon-settings {
-    background: url(/images/icon-settings.svg);
+    background: url(../images/icon-settings.svg);
 }
 
 .sidebar li a:hover i.icon-settings, .sidebar li a.active i.icon-settings {
-    background: url(/images/icon-settings.svg);
+    background: url(../images/icon-settings.svg);
 }
 
 
@@ -2018,7 +2018,7 @@ html > body #sortable li {
 }
 
 .date input[type="date"] {
-    background: #F2F4F7 url(/images/date.svg) no-repeat;
+    background: #F2F4F7 url(../images/date.svg) no-repeat;
     -webkit-appearance: none;
     background-size: 20px;
     background-position: 97% 50%;
@@ -2677,7 +2677,7 @@ html > body #sortable li {
 .choose-color input:checked {
     border: 2px solid #fff;
     box-shadow: 0px 0px 0px 3px #b21432;
-    background-image: url(/images/check.svg);
+    background-image: url(../images/check.svg);
 }
 
 
@@ -2897,7 +2897,7 @@ i.cale-color {
 }
 
 .filter-staff .daterange {
-    background: url(/images/calender3.svg) no-repeat;
+    background: url(../images/calender3.svg) no-repeat;
     -webkit-appearance: none;
     background-size: 20px;
     background-position: 95.5% 50%;
@@ -2986,7 +2986,7 @@ i.cale-color {
 }
 
 .find-gray {
-    background: #F2F4F7 url(/images/find-g.svg) no-repeat;
+    background: #F2F4F7 url(../images/find-g.svg) no-repeat;
     -webkit-appearance: none;
     background-size: 20px;
     background-position: 97% 50%;
@@ -3009,7 +3009,7 @@ i.cale-color {
 }
 
 .day-off {
-    background: url(/images/day-off.svg);
+    background: url(../images/day-off.svg);
 }
 
 .day-off label {
@@ -3128,7 +3128,7 @@ i.cale-color {
 }
 
 .calender-talents .off-slot {
-    background: url(/images/time-slot.png);
+    background: url(../images/time-slot.png);
     height: 33px;
     /*background-size: contain;*/
 }
@@ -3137,7 +3137,7 @@ i.cale-color {
     font-weight: 500;
     font-size: 12px;
     color: #7D76F4;
-    background: url(/images/shifts-time-slot.svg);
+    background: url(../images/shifts-time-slot.svg);
     background-size: cover;
 }
 
@@ -3239,7 +3239,7 @@ i.cale-color {
 }
 
 .filter-date .date-icon {
-    background: #fff url(/images/calender3.svg) no-repeat !important;
+    background: #fff url(../images/calender3.svg) no-repeat !important;
     background-size: 20px !important;
     background-position: 95.5% 50% !important;
 }
@@ -4018,7 +4018,7 @@ border-right: 1px solid #EAECF0;
 }
 
 .new-shift-staff .body-table .sub-column .sick-leave {
-    background: url(/images/day-off.svg);
+    background: url(../images/day-off.svg);
     font-weight: 500;
     font-size: 12px;
     color: #475467;
@@ -4047,7 +4047,7 @@ border-right: 1px solid #EAECF0;
 }
 
 .new-calender-day.shift-staff .body-table .sub-column .late {
-    background: url(/images/day-off.svg);
+    background: url(../images/day-off.svg);
     font-weight: 500;
     font-size: 12px;
     color: #475467;

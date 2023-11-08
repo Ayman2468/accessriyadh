@@ -1,18 +1,130 @@
 {
+  "public/img/banners/Access-Riyadh-landing-banners3-02.png": {
+    "file": "assets/Access-Riyadh-landing-banners3-02-f13b076e.png",
+    "src": "public/img/banners/Access-Riyadh-landing-banners3-02.png"
+  },
+  "public/img/banners/Access-Riyadh-landing-banners4-02.png": {
+    "file": "assets/Access-Riyadh-landing-banners4-02-3615046f.png",
+    "src": "public/img/banners/Access-Riyadh-landing-banners4-02.png"
+  },
+  "public/img/banners/Access-Riyadh-landing-banners5-02.png": {
+    "file": "assets/Access-Riyadh-landing-banners5-02-6c3db6a5.png",
+    "src": "public/img/banners/Access-Riyadh-landing-banners5-02.png"
+  },
+  "public/img/banners/Access-Riyadh-web-landing-banners-02.png": {
+    "file": "assets/Access-Riyadh-web-landing-banners-02-db7c8332.png",
+    "src": "public/img/banners/Access-Riyadh-web-landing-banners-02.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-01-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-01-1024x731-9ca015be.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-01-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-02-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-02-1024x731-afcb4b3f.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-02-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-03-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-03-1024x731-1629786b.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-03-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-04-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-04-1024x731-a5da6f6c.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-04-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-05-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-05-1024x731-9e79af49.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-05-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-06-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-06-1-1024x731-e4e59c67.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-06-1-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-07-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-07-1024x731-e12e29ac.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-07-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-08-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-08-1-1024x731-0059b316.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-08-1-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-09-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-09-1024x731-68be1bde.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-09-1024x731.png"
+  },
+  "public/img/benefits/Access-Riyadh-about-page-10-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-about-page-10-1-1024x731-82bf8af4.png",
+    "src": "public/img/benefits/Access-Riyadh-about-page-10-1-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-01-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-01-1-1024x731-c74c1c10.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-01-1-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-03-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-03-1-1024x731-bd6c46e0.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-03-1-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-04-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-04-1-1024x731-41948e78.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-04-1-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-05.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-05-e3c520c4.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-05.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-06-1-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-06-1-1024x731-57dcd3dc.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-06-1-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-07-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-07-1024x731-8293ef48.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-07-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-08-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-08-1024x731-d26d0b5b.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-08-1024x731.png"
+  },
+  "public/img/how-it-works/Access-Riyadh-how-it-works-page-09-1024x731.png": {
+    "file": "assets/Access-Riyadh-how-it-works-page-09-1024x731-b36f51a1.png",
+    "src": "public/img/how-it-works/Access-Riyadh-how-it-works-page-09-1024x731.png"
+  },
   "resources/css/app.css": {
     "file": "assets/app-179954eb.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-d2007874.css",
+    "file": "assets/app-29bc1cd7.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
-    "css": [
-      "assets/app-d2007874.css"
+    "assets": [
+      "assets/Access-Riyadh-about-page-01-1024x731-9ca015be.png",
+      "assets/Access-Riyadh-about-page-02-1024x731-afcb4b3f.png",
+      "assets/Access-Riyadh-about-page-05-1024x731-9e79af49.png",
+      "assets/Access-Riyadh-about-page-07-1024x731-e12e29ac.png",
+      "assets/Access-Riyadh-about-page-08-1-1024x731-0059b316.png",
+      "assets/Access-Riyadh-about-page-09-1024x731-68be1bde.png",
+      "assets/Access-Riyadh-about-page-03-1024x731-1629786b.png",
+      "assets/Access-Riyadh-about-page-06-1-1024x731-e4e59c67.png",
+      "assets/Access-Riyadh-about-page-10-1-1024x731-82bf8af4.png",
+      "assets/Access-Riyadh-about-page-04-1024x731-a5da6f6c.png",
+      "assets/Access-Riyadh-how-it-works-page-05-e3c520c4.png",
+      "assets/Access-Riyadh-how-it-works-page-08-1024x731-d26d0b5b.png",
+      "assets/Access-Riyadh-how-it-works-page-01-1-1024x731-c74c1c10.png",
+      "assets/Access-Riyadh-how-it-works-page-07-1024x731-8293ef48.png",
+      "assets/Access-Riyadh-how-it-works-page-03-1-1024x731-bd6c46e0.png",
+      "assets/Access-Riyadh-how-it-works-page-09-1024x731-b36f51a1.png",
+      "assets/Access-Riyadh-how-it-works-page-06-1-1024x731-57dcd3dc.png",
+      "assets/Access-Riyadh-how-it-works-page-04-1-1024x731-41948e78.png",
+      "assets/Access-Riyadh-landing-banners4-02-3615046f.png",
+      "assets/Access-Riyadh-landing-banners5-02-6c3db6a5.png",
+      "assets/Access-Riyadh-web-landing-banners-02-db7c8332.png",
+      "assets/Access-Riyadh-landing-banners3-02-f13b076e.png"
     ],
-    "file": "assets/app-76656672.js",
+    "css": [
+      "assets/app-29bc1cd7.css"
+    ],
+    "file": "assets/app-5dfd722f.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }

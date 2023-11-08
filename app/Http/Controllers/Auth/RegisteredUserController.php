@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Cookie;
 
 class RegisteredUserController extends Controller
 {
@@ -21,6 +22,7 @@ class RegisteredUserController extends Controller
      */
     public function create(): View
     {
+        app()->setLocale(Cookie::get('locale'));
         return view('auth.register');
     }
 

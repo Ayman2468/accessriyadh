@@ -513,13 +513,13 @@
             </form>
             <div class="d-grid gap-2 col-md-6 mx-auto mt-4 d-flex btns-form">
                 <router-link :to="prev_link"
-                             class="btn btn-secondary w-100 d-flex align-content-center justify-content-center"
+                             class="btn btn-secondary w-100 d-flex align-content-center justify-content-center rounded-0"
                              style="align-items: center;" type="button">
                     <i class="fa-solid fa-circle-chevron-left me-1"></i> {{ __('audit.Previous') }}
                 </router-link>
-                <button @click="register" v-if="$route.params.step < 5" class="btn btn-success w-100" type="button">{{ next_link_text }} <i
+                <button @click="register" v-if="$route.params.step < 5" class="btn btn-success w-100 rounded-0" type="button">{{ next_link_text }} <i
                     class="fa-solid fa-circle-chevron-right"></i></button>
-                <button @click="finish" v-if="$route.params.step == 5" class="btn btn-success w-100" type="button">{{ next_link_text }} <i
+                <button @click="finish" v-if="$route.params.step == 5" class="btn btn-success w-100 rounded-0" type="button">{{ next_link_text }} <i
                     class="fa-solid fa-circle-chevron-right"></i></button>
             </div>
             <a class="btn btn-outline-dark btn-sm mt-4" @click="register($event,true)" href="#"><i

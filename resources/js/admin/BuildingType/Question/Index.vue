@@ -91,6 +91,11 @@
                                        style="background: white;border: 1px solid #d0cece;"
                                        placeholder="اختر صورة">
                             </div>
+                            <div class="col-lg-3 col-md-12 mb-3">
+                                <input type="text" class="form-control" v-model="form.answers[index].score"
+                                    style="background: white;border: 1px solid #d0cece;"
+                                    placeholder="عدد النقاط">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -424,8 +429,8 @@ export default {
             const formData = new FormData();
             formData.append('question_name_ar', this.form.question_name_ar);
             formData.append('question_name_en', this.form.question_name_en);
-            formData.append('description_ar', this.form.description_ar);
-            formData.append('description_en', this.form.description_en);
+            formData.append('description_name_ar', this.form.description_name_ar);
+            formData.append('description_name_en', this.form.description_name_en);
             formData.append('type', this.form.type);
             formData.append('phase_id', this.form.phase_id);
             formData.append('web_id', this.form.web_id);
@@ -436,6 +441,7 @@ export default {
                 formData.append('answers[' + i + '][en]', this.form.answers[i].en);
                 formData.append('answers[' + i + '][ar]', this.form.answers[i].ar);
                 formData.append('answers[' + i + '][image]', this.form.answers[i].image);
+                formData.append('answers[' + i + '][score]', this.form.answers[i].score);
             }
             axios.post('/admin/building-type/' + (this.$route.params.id) + '/questions/store', formData).then((response) => {
                 this.loading = false;
@@ -444,6 +450,7 @@ export default {
                 this.form.question_name_en = '';
                 this.form.description_name_ar = '';
                 this.form.description_name_en = '';
+                this.$router.go();
             })
         },
         get_title_items(){
@@ -515,7 +522,7 @@ export default {
         },
 
         add_answer() {
-            this.form.answers.push({ar: '', en: '', image: ''})
+            this.form.answers.push({ar: '', en: '', image: '',score: ''})
         },
 
         edit_item(item,index) {

@@ -1,5 +1,14 @@
 <!doctype html>
-<html lang="ar" dir="rtl">
+@php
+    if(request()->cookie()['locale'] == 'ar'){
+        $locale = 'ar';
+        $dir = 'rtl';
+    }else{
+        $locale = 'en';
+        $dir = 'ltr';
+    }
+@endphp
+<html lang="{{ app()->setLocale($locale) }}" dir="{{ $dir }}">
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -18,7 +27,7 @@
     {{--    @if(session('locale') == 'ar')--}}
     <link rel="stylesheet" href="{{asset('dashboard/css/style-rtl.css')}}?v={{ now() }}">
     {{--    @endif--}}
-    <title>{{env("APP_NAME","anti-smoking")}} {{ $title ?? '' }}</title>
+    <title>@lang('Header.'.env("APP_NAME","Access_Riyadh")) {{ $title ?? '' }}</title>
     <link id="favicon" rel="shortcut icon" type="image/png" href="{{asset("dashboard/images/logo.webp")}}" src="{{asset("dashboard/images/logo.webp")}}">
 
     <style>
@@ -38,19 +47,20 @@
 
     </div>
     <div>
-        <a href="/" class="btn btn-light">الرئيسية</a>
+        <a href="/" class="btn btn-light">@lang('general.Home Page')</a>
     </div>
 </header>
 <section class="signup h-100 ">
     <div class="container-signup d-flex h-100">
         <div class="section-left">
             <h1 class=" d-flex mt-2" style="color: #267c3f;">
-                الوصول لمدينةالرياض
+                @lang('general.Access Riyadh')
             </h1>
-            <h3 class=" d-flex mt-4" style="color: #629d4b;">
-                لوحة تحكم ادارة الموقع
-            </h3>
-
+            @if(!isset($_GET['user']))
+                <h3 class=" d-flex mt-4" style="color: #629d4b;">
+                    @lang('general.Dashboard')
+                </h3>
+            @endif
         </div>
         <div class="section-right">
             <div class="form-sign card card-width p-5">
@@ -70,16 +80,15 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
-<script src="{{asset("js/jquery-3.6.0.min.js")}}"></script>
+<script src="{{asset("/dashboard/js/jquery-3.6.0.min.js")}}"></script>
 <script>
-    function ShowPass() {
-        var x = document.getElementById("myPassword");
-        if (x.type === "password") {
-            x.type = "text";
+    $('.show-pass').on('click',function(){
+        if ($(this).prev().attr('type') == "password") {
+            $(this).prev().attr('type','text');
         } else {
-            x.type = "password";
+            $(this).prev().attr('type','password');
         }
-    }
+    });
 </script>
 @yield("js_code")
 </body>

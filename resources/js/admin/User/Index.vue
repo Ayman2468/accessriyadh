@@ -6,10 +6,7 @@
                 <div>
                     <h2>إدارة المستخدمين</h2>
                 </div>
-                <a class="btn btn-primary mb-4" href="#" data-bs-toggle="modal"
-                   data-bs-target="#add-sub-admin"
-                   @click="add_item">إضافة مستخدم جديد
-
+                <a class="btn btn-primary mb-4 rounded-0" href="/register">إضافة مدير/مشرف جديد
                     <i class="fa fa-plus"></i>
                 </a>
             </div>
@@ -24,7 +21,7 @@
                                   placeholder="البحث من خلال الاسم او رقم الجوال">
                        </div>
                    </div>
-                   <div class="col-lg-3 col-md-12 mb-3">
+                   <!-- <div class="col-lg-3 col-md-12 mb-3">
 
                        <select name="" class="form-control" @change="get_search_items"
                                v-model="role_search">
@@ -37,7 +34,7 @@
                                }}
                            </option>
                        </select>
-                   </div>
+                   </div> -->
                </div>
             </form>
             <ContentLoader v-if="loading">
@@ -47,13 +44,13 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col" style="width: 25%;">الهوية</th>
                                     <th scope="col" style="width: 25%;">الاسم</th>
-                                    <th scope="col" style="width: 15%;">رقم الجوال</th>
+                                    <!-- <th scope="col" style="width: 25%;">الهوية</th> -->
+                                    <!-- <th scope="col" style="width: 15%;">رقم الجوال</th> -->
                                     <th scope="col" style="width: 20%;">الايميل</th>
-                                    <th scope="col" style="width: 20%;">الصلاحية</th>
-                                    <th scope="col" style="width: 15%;">{{ __('doctors.Active') }}</th>
-                                    <th scope="col" style="width: 25%;">{{ __('general.Actions') }}</th>
+                                    <!-- <th scope="col" style="width: 20%;">الصلاحية</th>
+                                    <th scope="col" style="width: 15%;">حالة النشاط</th> -->
+                                    <th scope="col" style="width: 25%;">الاجراءات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -132,7 +129,7 @@
                     </form>
                 </div>
             </ContentLoader>
-            <div v-else-if="!items.data.length"
+            <div v-else-if="itemsCount == 0"
                  class="no-services d-flex justify-content-center align-items-center flex-column">
                 <h3>لا يوجد مستخدمين.</h3>
 
@@ -144,19 +141,19 @@
                             <table class="table">
                                 <thead>
                                 <tr>
-                                    <th scope="col" style="width: 10%;">الهوية</th>
                                     <th scope="col" style="width: 25%;">الاسم</th>
-                                    <th scope="col" style="width: 10%;">رقم الجوال</th>
+                                    <!-- <th scope="col" style="width: 10%;">الهوية</th> -->
+                                    <!-- <th scope="col" style="width: 10%;">رقم الجوال</th> -->
                                     <th scope="col" style="width: 20%;">الايميل</th>
-                                    <th scope="col" style="width: 10%;">الصلاحية</th>
-                                    <th scope="col" style="width: 15%;">{{ __('doctors.Active') }}</th>
-                                    <th scope="col" style="width: 25%;">{{ __('general.Actions') }}</th>
+                                    <!-- <th scope="col" style="width: 10%;">الصلاحية</th> -->
+                                    <!-- <th scope="col" style="width: 15%;">حالة النشاط</th> -->
+                                    <th scope="col" style="width: 25%;">الاجراءات</th>
                                 </tr>
                                 </thead>
                                 <tbody>
-                                <tr v-for="(item,index) in items.data">
-                                    <td>{{ item.identity }}</td>
-                                    <td class="text-start">
+                                <tr v-for="(item,index) in items">
+                                    <td>{{ item.name }}</td>
+                                    <!-- <td class="text-start">
                                         <label class="form-check-label position-relative form-check"
                                                :for="'flexCheckDefault'+index">
                                             <img :title="item.full_name"
@@ -173,15 +170,15 @@
                                             {{ item.full_name  }}
                                         </label>
                                     </td>
-                                    <td>{{ item.mobile }}</td>
+                                    <td>{{ item.mobile }}</td> -->
                                     <td>{{ item.email }}</td>
-                                    <td>{{ item.user_type  }}</td>
-                                    <td>
+                                    <!-- <td>{{ item.user_type  }}</td> -->
+                                    <!-- <td>
                                         <div class="form-check form-switch">
                                             <input class="form-check-input form-check-input-custom " type="checkbox" :id="'active-'+index" :name="'active-'+index"
                                                    style="float: none !important;margin: auto !important;" @change="change_user_status(item.id)" :checked="item.status">
                                         </div>
-                                    </td>
+                                    </td> -->
                                     <td>
                                         <div class="dropdown">
                                             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -190,19 +187,13 @@
                                             </button>
                                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                                <!-- <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                        data-bs-target="#edit-sub-admin"
-                                                       @click="edit_item(item)"><img :src="'/images/edit.svg'">{{
-                                                        __('general.Edit')
-                                                    }}
-                                                </a>
-                                                </li>
+                                                       @click="edit_item(item)"><i class="fa-solid fa-pen mx-2"></i>تعديل</a>
+                                                </li> -->
                                                 <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
                                                        data-bs-target="#delete-sub-admin"
-                                                       @click="delete_item(item,index)"><img
-                                                    :src="'/images/delete.svg'">{{
-                                                        __('general.Delete')
-                                                    }} </a></li>
+                                                       @click="delete_item(item.id)"><i class="fa-solid fa-trash mx-2 text-danger"></i>حذف</a></li>
 
                                             </ul>
                                         </div>
@@ -219,12 +210,12 @@
                     <pagination :data="items" :limit="10"
                                 @pagination-change-page="get_page_items">
                         <template #prev-nav class="page-link ps-0" aria-label="Previous">
-                            <i class="fa-solid fa-arrow-left me-2"></i>
-                            {{ __('general.prev') }}
+                            <i class="fa fa-arrow-left me-2"></i>
+                            السابق
                         </template>
                         <template #next-nav class="page-link pe-0" aria-label="Next">
-                            {{ __('general.next') }}
-                            <i class="fa-solid fa-arrow-right ms-2"></i>
+                            التالى
+                            <i class="fa fa-arrow-right ms-2"></i>
                         </template>
 
                     </pagination>
@@ -246,17 +237,7 @@ export default {
     components: {},
     data() {
         return {
-            items: {
-                data: []
-            },
-            roles: [
-                {key:'super-admin',name:'مدير'},
-                {key:'doctor',name:'طبيب عام'},
-                {key:'reception',name:'موظف استقبال'},
-                {key:'psychologist',name:'طبيب نفسي'},
-                {key:'family',name:'طبيب ارشاد اسري'},
-                {key:'religious',name:'طبيب ارشاد ديني'},
-            ],
+            items: [],
             loading: true,
             all_current_page_items_selected: false,
             role_search: '',
@@ -273,27 +254,27 @@ export default {
         this.csrf_token = $('input[name="_token"]').val();
         await this.get_items();
 
-        this.$root.$on('clients_paginated_list', function (lists) {
-            this.items = lists.items
-            this.itemsCount = lists.itemsCount != undefined ? lists.itemsCount : this.itemsCount
-            //
-            // this.mark_selected_before()
-        }.bind(this))
-        this.$root.$on('refresh-list', function (lists) {
-            this.get_items();
-        }.bind(this))
+        // this.$root.$on('/admin/users', function (lists) {
+        //     this.items = lists.items
+        //     this.itemsCount = lists.itemsCount != undefined ? lists.itemsCount : this.itemsCount
+        //     //
+        //     // this.mark_selected_before()
+        // }.bind(this))
+        // this.$root.$on('refresh-list', function (lists) {
+        //     this.get_items();
+        // }.bind(this))
 
-        this.$root.$on('delete_selected_item', function (item) {
-            this.items.data.splice(item.index, 1)
-            this.itemsCount--;
-        }.bind(this))
-        this.$root.$on('delete_selected_multiple_item', function () {
-            this.itemsCount = this.itemsCount - this.selected_items.length;
+        // this.$root.$on('delete_selected_item', function (item) {
+        //     this.items.data.splice(item.index, 1)
+        //     this.itemsCount--;
+        // }.bind(this))
+        // this.$root.$on('delete_selected_multiple_item', function () {
+        //     this.itemsCount = this.itemsCount - this.selected_items.length;
 
-            this.selected_items = [];
-            this.is_all_items_selected = false;
-            this.all_current_page_items_selected = false;
-        }.bind(this))
+        //     this.selected_items = [];
+        //     this.is_all_items_selected = false;
+        //     this.all_current_page_items_selected = false;
+        // }.bind(this))
 
 
     },
@@ -304,78 +285,82 @@ export default {
             }
             this.loading = true;
             this.current_page = page;
-            axios.get('/vue/admin/user?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)).then((response) => {
+            axios.get('/admin/users').then((response) => {
+                //?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)
                 this.loading = false;
-                this.items = response.data.data;
-                this.itemsCount = response.data.itemsCount;
+                this.items = response.data.users;
+                console.log(response.data);
+                this.itemsCount = this.items.length;
             })
         },
 
-        get_page_items(page = 1) {
-            if (typeof page === 'undefined') {
-                page = 1;
-            }
-            this.loading = true;
-            this.current_page = page;
-            axios.get('/vue/admin/user/search/query?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)).then((response) => {
-                this.loading = false;
-                this.items = response.data.data;
+        // get_page_items(page = 1) {
+        //     if (typeof page === 'undefined') {
+        //         page = 1;
+        //     }
+        //     this.loading = true;
+        //     this.current_page = page;
+        //     axios.get('/vue/admin/user/search/query?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)).then((response) => {
+        //         this.loading = false;
+        //         this.items = response.data.data;
+        //     })
+        // },
+        // get_search_items(page = 1) {
+        //     if (typeof page === 'undefined') {
+        //         page = 1;
+        //     }
+        //     this.loading = true;
+        //     this.current_page = page;
+        //     if (!this.awaitingSearch) {
+        //         setTimeout(() => {
+        //             axios.get('/vue/admin/user/search/query?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)).then((response) => {
+        //                 this.loading = false;
+        //                 this.items = response.data.data;
+        //             })
+        //             this.awaitingSearch = false;
+        //         }, 500); // 1 sec delay
+        //     }
+        //     this.awaitingSearch = true;
+        // },
+        // edit_item(item) {
+        //     this.$root.$emit('selected_item_for_edit', {
+        //         item: item,
+        //         search_value: this.search_value,
+        //         current_page: this.current_page,
+        //     })
+        // },
+        delete_item(id) {
+            axios.get('/admin/user/delete/'+id).then((response) => {
+                if(response.data.message == 'success') this.showAlert('Success');
+                else this.showAlert('Failed');
+                this.get_items();
             })
         },
-        get_search_items(page = 1) {
-            if (typeof page === 'undefined') {
-                page = 1;
-            }
-            this.loading = true;
-            this.current_page = page;
-            if (!this.awaitingSearch) {
-                setTimeout(() => {
-                    axios.get('/vue/admin/user/search/query?q=' + this.search_value + '&page=' + page+'&role='+(this.role_search)).then((response) => {
-                        this.loading = false;
-                        this.items = response.data.data;
-                    })
-                    this.awaitingSearch = false;
-                }, 500); // 1 sec delay
-            }
-            this.awaitingSearch = true;
+        // add_item() {
+        //     this.$root.$emit('add_new_item', {
+        //         search_value: this.search_value,
+        //         current_page: this.current_page,
+        //     })
+        // },
+        // change_user_status(id) {
+        //     axios.put('/vue/admin/user/' + id + '/status').then((response) => {
+        //     })
+        // },
+        // showError(error) {
+        //     let message_title = error.response.data.message + '\n';
+        //     let message = message_title;
+        //     let errors = error.response.data.errors;
+        //     $.each(errors, function (key, val) {
+        //         $.each(val, function (key2, val2) {
+        //             message += val2 + '\n'
+        //         });
+        //     });
+        //     this.notify("error", message, 'fas fa-times p-1', 'danger')
+        // },
+        showAlert(msg) {
+            // Use sweetalert2
+            this.$swal(msg);
         },
-        edit_item(item) {
-            this.$root.$emit('selected_item_for_edit', {
-                item: item,
-                search_value: this.search_value,
-                current_page: this.current_page,
-            })
-        },
-        delete_item(category, index) {
-            this.$root.$emit('selected_item_for_delete', {
-                item: category,
-                index: index,
-                search_value: this.search_value,
-                current_page: this.current_page,
-            })
-        },
-        add_item() {
-            this.$root.$emit('add_new_item', {
-                search_value: this.search_value,
-                current_page: this.current_page,
-            })
-        },
-        change_user_status(id) {
-            axios.put('/vue/admin/user/' + id + '/status').then((response) => {
-            })
-        },
-        showError(error) {
-            let message_title = error.response.data.message + '\n';
-            let message = message_title;
-            let errors = error.response.data.errors;
-            $.each(errors, function (key, val) {
-                $.each(val, function (key2, val2) {
-                    message += val2 + '\n'
-                });
-            });
-            this.notify("error", message, 'fas fa-times p-1', 'danger')
-        },
-
     }
 }
 </script>

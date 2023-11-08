@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\ApplicationRequest;
+use App\Models\ApplicationRequestAnswer;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -20,12 +22,12 @@ class UserController extends Controller
         if (request()->has('q') and request()->get('q') != '') {
             $users = $users->where('name', 'like', '%' . request()->get('q') . '%');
             $users = $users->orWhere('email', 'like', '%' . request()->get('q') . '%');
-            $users = $users->orWhere('mobile', 'like', '%' . request()->get('q') . '%');
+            //$users = $users->orWhere('mobile', 'like', '%' . request()->get('q') . '%');
         }
-        if (request()->has('role') and request()->get('role') != '') {
-            $users = $users->role(request()->get('role'));
-        }
-        $users = $users->with('roles')->orderBy('id', 'desc')->get();
+        // if (request()->has('role') and request()->get('role') != '') {
+        //     $users = $users->role(request()->get('role'));
+        // }
+        $users = $users->where('user_type',null)->orderBy('id', 'desc')->get();
         return response()->json(['users' => $users]);
     }
 
@@ -65,12 +67,22 @@ class UserController extends Controller
     }
 
 
+    public function changePassword(Request $request, $id)
+    {
+        $user = User::find($id);
+        if(Hash::check($request->current_password,$user->password)){
+            if ($request->current_password) {
+                $user->password = Hash::make($request->new_password);
+            }
+            $user->save();
+        }
+        return response()->json(['message' => 'success']);
+    }
     public function update(Request $request, $id)
     {
         $request->validate([
             'name' => 'required',
-            'email' => 'email|required|unique:users,email,' . $id . ',id,deleted_at,NULL',
-            'selected_role' => 'required',
+            'email' => 'email|required|unique:users,email,' . $id ,
         ]);
         $user = User::find($id);
         $user->name = $request->name;
@@ -86,15 +98,18 @@ class UserController extends Controller
         //                , 'تغيير كلمة سر حسابك', ['randomPassword'=>$randomPassword]);
         }
         $user->save();
-        $user->syncRoles([$request->selected_role]);
-
-        return response()->json(['message' => 'success']);
+        return response()->json(['message' => 'success','user' => $user]);
     }
 
 
     public function destroy($id)
     {
         $user = User::find($id);
+        $applications = ApplicationRequest::where('email',$user->email)->get();
+        foreach($applications as $app){
+            $app->answers()->delete();
+            $app->delete();
+        }
         $user->delete();
         return response()->json(['message' => 'success']);
     }

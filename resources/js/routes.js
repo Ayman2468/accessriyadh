@@ -2,9 +2,13 @@ import BuildingTypes from "./Landing/Audit/BuildingTypes.vue";
 import RegisterInfo from "./Landing/Audit/RegisterInfo.vue";
 import Step from "./Landing/Audit/Step.vue";
 import Completed from "./Landing/Audit/Completed.vue";
+import Benefits from "./Landing/Benefits.vue";
+import HowItWorks from "./Landing/HowItWorks.vue";
+import Learn from "./Landing/Learn.vue";
+import Welcome from "./Landing/Home.vue";
 
 import Home from "./admin/Home.vue";
-import User from "./admin/User/Index.vue";
+import users from "./admin/User/Index.vue";
 import BuildingType from "./admin/BuildingType/Index.vue";
 import ApplicationIndex from "./admin/Application/Index.vue";
 import ApplicationShow from "./admin/Application/Show.vue";
@@ -27,7 +31,7 @@ export const routes = [
                     activeName: 'audit',
                 },
                 path: '/',
-                component: BuildingTypes
+                component: Welcome
             },
             {
                 name: 'building-types',
@@ -61,6 +65,30 @@ export const routes = [
                 path: '/audit/completed',
                 component: Completed
             },
+            {
+                name: 'benefits',
+                meta:{
+                    activeName: 'audit',
+                },
+                path: '/benefits',
+                component: Benefits
+            },
+            {
+                name: 'how it works',
+                meta:{
+                    activeName: 'audit',
+                },
+                path: '/how-it-works',
+                component: HowItWorks
+            },
+            {
+                name: 'learn',
+                meta:{
+                    activeName: 'audit',
+                },
+                path: '/learn',
+                component: Learn
+            },
         ]
     },
 
@@ -70,13 +98,6 @@ export const routes = [
         component:AdminLayout,
         redirect: '/',
         children:[
-            {
-                path: '/admin/home', component: BuildingType, meta: {
-                    breadcrumb: 'Home',
-                    meta: { requiresAuth: false, requiresRole: 'super-admin' },
-                    activeName: 'home'
-                }
-            },
             {
                 path: '/admin/home', component: BuildingType, meta: {
                     breadcrumb: 'Home',
@@ -122,8 +143,8 @@ export const routes = [
             },
 
             {
-                path: '/admin/users', component: User, name: "UserIndex", meta: {
-                    breadcrumb: 'User',
+                path: '/admin/UsersIndex', component: users,name:"UserIndex", meta: {
+                    breadcrumb: 'users',
                     meta: { requiresAuth: true, requiresRole: 'super-admin' },
                     activeName: 'users',
                     activeNameSub: 'users'

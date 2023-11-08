@@ -7,13 +7,20 @@
         <ul class="nav-list mt-3">
 
             <li>
+                <router-link to="/admin/UsersIndex" :class="[$route.meta.activeName === 'users' ? 'active' : '']">
+                    <i class='my-icon icon-home'></i>
+                    <span class="links_name">المستخدمين</span>
+                </router-link>
+                <span class="tooltip">المستخدمين</span>
+            </li>
+            <li>
                 <router-link to="/admin/home" :class="[$route.meta.activeName === 'home' ? 'active' : '']">
                     <i class='my-icon icon-home'></i>
                     <span class="links_name">أنواع المباني</span>
                 </router-link>
                 <span class="tooltip">أنواع المباني</span>
             </li>
-            <li class="d-none">
+            <li>
                 <router-link to="/admin/questions" :class="[$route.meta.activeName === 'questions' ? 'active' : '']">
                     <i class='my-icon icon-home'></i>
                     <span class="links_name">إدارة الاسئلة</span>
@@ -56,8 +63,8 @@
                     </span>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="d-none">
-                                <router-link class="dropdown-item" to="/control/profile">بيانات حسابي</router-link>
+                            <li>
+                                <router-link class="dropdown-item" :to="'/admin/profile'">بيانات حسابي</router-link>
                             </li>
                             <li><a class="dropdown-item" href="/logout"
                                    onclick="event.preventDefault();

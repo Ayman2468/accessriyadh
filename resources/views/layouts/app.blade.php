@@ -4,7 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" value="{{ csrf_token() }}"/>
-    <title>Laravel</title>
+    <link rel="icon" href="{{ asset('img/cropped-Access-2-rgb-02-32x32.jpg') }}" sizes="32x32" />
+    <link rel="icon" href="{{ asset('img/cropped-Access-2-rgb-02-192x192.jpg') }}" sizes="192x192" />
+    <link rel="apple-touch-icon" href="{{ asset('img/cropped-Access-2-rgb-02-180x180.jpg') }}" />
+    <title>@lang('Header.Access_Riyadh')</title>
 
     @if(app()->getLocale()== 'ar')
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css"
@@ -28,9 +31,13 @@
     @endif
     <script src="/lang-{{ app()->getLocale() }}.js?v={{ now() }}"></script>
     @if(!empty(auth()->user()))
-    <script>
-        window.sessionStorage.setItem('user',true);
-    </script>
+        <script>
+            window.sessionStorage.setItem('user',true);
+        </script>
+    @else
+        <script>
+            window.sessionStorage.removeItem('user');
+        </script>
     @endif
     @vite('resources/css/app.css')
     <style>
@@ -41,6 +48,9 @@
 </head>
 <body class="antialiased">
 <div id="app"></div>
+<form id="logout-form" action="/logout" method="POST" class="d-none">
+    @csrf
+</form>
 @vite('resources/js/app.js')
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

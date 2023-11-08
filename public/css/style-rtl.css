@@ -2,10 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
 
-body{
-	font-family: 'Noto Kufi Arabic', sans-serif;
+@font-face {
+    font-family: 'TatweerAlRiyadh';
+    font-weight: normal;
+    src: url('../fonts/TatweerAlRiyadh-Light.otf');
 }
-
+@font-face {
+    font-family: 'TatweerAlRiyadh';
+    font-weight: bold;
+    src: url('../fonts/TatweerAlRiyadh-Regular.otf');
+}
+body{
+    font-family: 'TatweerAlRiyadh', sans-serif;
+}
 .header .navbar-nav {
     padding: 15px 65px 15px 15px;
 }
@@ -17,7 +26,8 @@ body{
     border-left: 30px solid transparent;
 }
 .navbar-collapse {
-    background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%);
+    /* background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%); */
+    background-color: #00884e;
 }
 
 .header .nav-link:before {
@@ -26,7 +36,8 @@ body{
 }
 
 .steps-label .progress-bar {
-    background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%);
+    /* background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%); */
+    background-color: #00884e;
     border-radius: 0;
     border-top-right-radius: 19px;
     border-bottom-right-radius: 19px;
@@ -56,7 +67,17 @@ body{
     right: auto;
     left: -5px;
 }
-
+.welomeAfter::after{
+    content: '';
+    position: absolute;
+    /* top: 0px;
+    right: 639px; */
+    height: 0;
+    width: 0;
+    border-right: 0px solid transparent;
+    border-left: 30px solid transparent;
+    border-bottom: 51px solid #00884e;
+}
 
 @media (max-width: 991.9px){
 

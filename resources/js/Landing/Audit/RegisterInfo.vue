@@ -27,28 +27,30 @@
                 <div class="form-block mb-4">
                     <h2 class="title">{{ __('audit.Applicant Information') }}</h2>
                     <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label class="form-label">{{ __('audit.First name') }}</label>
                             <input type="text" v-model="form.first_name" class="form-control">
                             <div v-if="form.errors && form.errors.first_name" class="invalid-feedback">
                                 {{ form.errors.first_name[0] }}
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                             <label class="form-label">{{ __('audit.Last name') }}</label>
                             <input type="text" class="form-control" v-model="form.last_name">
                             <div v-if="form.errors && form.errors.last_name" class="invalid-feedback">
                                 {{ form.errors.last_name[0] }}
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <label class="form-label">{{ __('audit.Email') }} <small>{{ __('audit.if your an admin you must insert a different email') }}</small></label>
+                        <div class="col-md-6">
+                            <label class="form-label">{{ __('audit.Email') }}
+                                <!-- <small>{{ __('audit.if your an admin you must insert a different email') }}</small> -->
+                            </label>
                             <input type="email" class="form-control" v-model="form.email">
                             <div v-if="form.errors && form.errors.email" class="invalid-feedback">
                                 {{ form.errors.email[0] }}
                             </div>
                         </div>
-                        <div class="col-md-4" v-show="showPassword">
+                        <div class="col-md-6" v-show="showPassword">
                             <label class="form-label">{{ __('audit.Password') }}</label>
                             <input type="password" class="form-control" v-model="form.password">
                             <div v-if="form.errors && form.errors.password" class="invalid-feedback">
@@ -124,11 +126,11 @@
             </form>
             <div class="d-grid gap-2 col-md-6 mx-auto mt-4 d-flex btns-form">
                 <router-link :to="'/audit/building-types'"
-                             class="btn btn-secondary w-100 d-flex align-content-center justify-content-center"
+                             class="btn btn-secondary w-100 d-flex align-content-center justify-content-center rounded-0"
                              style="align-items: center;" type="button">
                     <i class="fa-solid fa-circle-chevron-left me-1"></i> {{ __('audit.Previous') }}
                 </router-link>
-                <button @click="register" class="btn btn-success w-100" type="button">{{ __('audit.Next') }} <i
+                <button @click="register" class="btn btn-success w-100 rounded-0" type="button">{{ __('audit.Next') }} <i
                     class="fa-solid fa-circle-chevron-right"></i></button>
             </div>
         </div>

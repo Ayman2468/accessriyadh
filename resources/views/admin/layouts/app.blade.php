@@ -27,8 +27,8 @@
 
     <link rel="stylesheet" type="text/css" href="{{asset('dashboard/css/select2.css')}}">
 
-    <script src="/lang-{{ auth()->user()->locale }}.js?v={{ now() }}"></script>
-    <title>{{env('APP_NAME',"Car rental")}}</title>
+    <script src="/lang-{{ app()->getLocale() }}.js?v={{ now() }}"></script>
+    <title>@lang('Header.'.env('APP_NAME',"ٌAccess_Riyadh"))</title>
     <style>
 
     </style>

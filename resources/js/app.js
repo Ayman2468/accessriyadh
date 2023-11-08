@@ -12,6 +12,8 @@ import EditQuestion from "./admin/BuildingType/Question/Edit.vue";
 import EditQuestionGeneral from "./admin/Question/Edit.vue";
 import EditBuildingType from "./admin/BuildingType/Edit.vue";
 import ContentLoader from "./admin/ContentLoader.vue";
+import VueSweetalert2 from 'vue-sweetalert2';
+import 'sweetalert2/dist/sweetalert2.min.css';
 const router = createRouter({
     history: createWebHistory(),
     routes: routes
@@ -33,6 +35,7 @@ app.config.globalProperties.__ = (str) => {
 };
 // end for local and translations
 app.use(router)
+app.use(VueSweetalert2)
 app.component('multiselect', Multiselect)
 app.component('edit-question',EditQuestion)
 app.component('edit-question-general',EditQuestionGeneral)

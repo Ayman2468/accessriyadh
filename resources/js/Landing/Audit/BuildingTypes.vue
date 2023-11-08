@@ -30,12 +30,12 @@
                 <label class="mb-2 py-3 h5 d-block text-center min-title">{{ __('audit.Select one building type') }}</label>
                 <div class="row">
                     <div v-for="item in items" class="col-lg-3 col-md-6 col-6">
-                        <div :class="['input-building',selected_type == item.id ? 'checked' : '']"
+                        <div :class="['input-building h-100',selected_type == item.id ? 'checked' : '']"
                              @click="select_type(item)">
                             <label class="text-center position-relative">
-                                <input type="radio" name="building">
-                                <img class="ratio ratio-1x1" :src="item.image_url">
-                                <span>{{ item.name_en }}</span>
+                                <input type="radio" name="building" class="h-100" required>
+                                <img class="ratio ratio-1x1 h-100" :src="item.image_url">
+                                <span>{{ item.name }}</span>
                                 <i class="fa-solid fa-circle-check"></i>
                             </label>
                         </div>
@@ -44,8 +44,8 @@
             </form>
             <div class="d-grid gap-2 col-6 mx-auto mt-5 d-flex btns-form">
                 <router-link :to="'/audit/building-types/'+selected_type+'/register-info'"
-                             :disabled="selected_type == ''" style="align-items: center;"
-                             :class="['btn','btn-success','d-flex align-content-center justify-content-center','w-100',selected_type == '' ? 'disabled' : '']"
+                             style="align-items: center;"
+                             :class="['btn','btn-success','d-flex align-content-center justify-content-center','rounded-0','w-100',selected_type == undefined ? 'disabled' : '']"
                              type="button">{{ __('audit.Next') }} <i class="fa-solid fa-circle-chevron-right ms-1"></i></router-link>
             </div>
         </div>
@@ -66,6 +66,9 @@ export default {
     },
     async mounted() {
         await this.get_items();
+        if(window.sessionStorage.getItem('user')){
+            this.get_application_request();
+        }
     },
     methods: {
         get_items() {
@@ -74,6 +77,13 @@ export default {
                 this.loading = false;
                 this.items = response.data.data;
                 console.log(this.items)
+            })
+        },
+        get_application_request() {
+            this.loading = true;
+            axios.get('/landing/audit/application/').then((response) => {
+                this.loading = false;
+                this.selected_type = response.data.data.building_type_id;
             })
         },
         select_type(item) {

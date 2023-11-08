@@ -71,7 +71,7 @@ class ApplicationRequestController extends Controller
         }else{
             $applicationRequest = ApplicationRequest::create($request->except('password'));
             $applicationRequest->update(['validation'=>$request->password]);
-            if(empty(auth()->user()) || $request->email != auth()->user()->email){
+            if((empty(auth()->user()) || $request->email != auth()->user()->email) && User::where('email',$request->email)->first() == null){
                 User::create([
                     'name' => $request->first_name.' '.$request->last_name,
                     'email' => $request->email,

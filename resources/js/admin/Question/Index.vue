@@ -5,7 +5,7 @@
             <div class="title-tab d-sm-flex align-items-start justify-content-between">
                 <div>
                     <h2 @click="">
-                        <a href="#" class="btn btn-outline-dark" @click="add_new_question_toggle"> سؤال جديد</a>
+                        <a href="#" class="btn btn-primary rounded-0" @click="add_new_question_toggle"> سؤال جديد</a>
                     </h2>
                 </div>
 
@@ -97,6 +97,11 @@
                                 <input type="file" class="form-control" @change="setImage($event,index)"
                                        style="background: white;border: 1px solid #d0cece;"
                                        placeholder="اختر صورة">
+                            </div>
+                            <div class="col-lg-3 col-md-12 mb-3">
+                                <input type="text" class="form-control" v-model="form.answers[index].score"
+                                    style="background: white;border: 1px solid #d0cece;"
+                                    placeholder="عدد النقاط">
                             </div>
                         </div>
                     </div>
@@ -548,7 +553,7 @@ export default {
             })
         },
         add_answer() {
-            this.form.answers.push({ar: '', en: '', image: ''})
+            this.form.answers.push({ar: '', en: '', image: '',score:''})
 
         },
         setImage(e, index) {
