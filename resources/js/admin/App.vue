@@ -1,8 +1,8 @@
 <template>
     <div class="sidebar open" style="overflow-y: auto">
         <div class="logo-details" style="padding: 20px 0;background: white">
-            <a class="logo_name"  style="text-align: center" href="/"><img  :src="'/dashboard/images/logo.webp'" style="    width: 75%;"></a>
-            <a class="min-logo" href="/"><img :src="'/dashboard/images/logo.webp'" style="width: 50px;"></a>
+            <a class="logo_name"  style="text-align: center" href="/"><img  :src="'/img/logos/وصول الرياض-07.png'" style="    width: 75%;"></a>
+            <a class="min-logo" href="/"><img :src="'/img/logos/وصول الرياض-07.png'" style="width: 50px;"></a>
         </div>
         <ul class="nav-list mt-3">
 

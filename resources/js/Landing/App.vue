@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid p-0 bg-white">
                 <a class="navbar-brand ps-3" href="/">
-                    <img :src="'/img/logo.webp'">
+                    <img :src="'/img/logos/وصول الرياض-07.png'">
                 </a>
                 <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -59,7 +59,7 @@
             <div class="row g-5">
                 <div class="col-md-4 d-flex align-items-center">
                     <a class="footer-brand" href="#">
-                        <img :src="'/img/logo.webp'">
+                        <img :src="'/img/logos/وصول الرياض-07.png'">
                     </a>
                 </div>
                 <div class="col-md-4">
