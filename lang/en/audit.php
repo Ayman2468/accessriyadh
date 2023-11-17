@@ -23,7 +23,7 @@ return array (
   'ZIP / Postal Code' => 'ZIP / Postal Code',
   'Country' => 'Country',
   'Audit completed' => 'Audit completed',
-  '👏 Congratulations! Your application will be reviewed expeditiously' => '👏 Congratulations! Your application will be reviewed expeditiously',
+  '👏 Congratulations! Your application will be reviewed expeditiously' => 'Congratulations! Your application will be reviewed expeditiously',
   'Completed' => 'Completed',
   'Finishing Audit' => 'Finish audit',
   'if your an admin you must insert a different email' => 'If You are An Admin You Must Insert A Different Email',

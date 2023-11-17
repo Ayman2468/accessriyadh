@@ -45,7 +45,7 @@
             <div class="d-grid gap-2 col-6 mx-auto mt-5 d-flex btns-form">
                 <router-link :to="'/audit/building-types/'+selected_type+'/register-info'"
                              style="align-items: center;"
-                             :class="['btn','btn-success','d-flex align-content-center justify-content-center','rounded-0','w-100',selected_type == undefined ? 'disabled' : '']"
+                             :class="['btn','btn-success','d-flex align-content-center justify-content-center','rounded-0','w-100',selected_type == undefined || selected_type == '' ? 'disabled' : '']"
                              type="button">{{ __('audit.Next') }} <i class="fa-solid fa-circle-chevron-right ms-1"></i></router-link>
             </div>
         </div>

@@ -22,7 +22,7 @@ return array (
   'Street Address' => 'عنوان الشارع',
   'ZIP / Postal Code' => 'الرمز البريدي',
   'of' => 'من',
-  '👏 Congratulations! Your application will be reviewed expeditiously' => '👏 تهانينا! ستتم مراجعة طلبك على وجه السرعة',
+  '👏 Congratulations! Your application will be reviewed expeditiously' => 'تهانينا! ستتم مراجعة طلبك على وجه السرعة',
   'Completed' => 'مكتمل',
   'Audit completed' => 'التدقيق مكتمل',
   'Finishing Audit' => 'إنهاء التدقيق',

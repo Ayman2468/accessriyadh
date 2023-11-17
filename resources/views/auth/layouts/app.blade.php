@@ -1,11 +1,17 @@
 <!doctype html>
 @php
-    if(request()->cookie()['locale'] == 'ar'){
-        $locale = 'ar';
-        $dir = 'rtl';
-    }else{
+    if(!isset(request()->cookie()['locale'])) {
+        cookie()->queue(cookie('locale','en'));
         $locale = 'en';
         $dir = 'ltr';
+    }else{
+        if(request()->cookie()['locale'] == 'ar'){
+            $locale = 'ar';
+            $dir = 'rtl';
+        }else{
+            $locale = 'en';
+            $dir = 'ltr';
+        }
     }
 @endphp
 <html lang="{{ app()->setLocale($locale) }}" dir="{{ $dir }}">

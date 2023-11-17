@@ -17,14 +17,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-05.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/001الخطوة-الاولى.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-08-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/002الخطوة-الثانية.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-2 lh-1">
@@ -53,14 +53,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-01-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/003الخطوة-الثالثة.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-07-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/004الخطوة-الرابعة.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-2 lh-1">
@@ -99,14 +99,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-03-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/005الخطوة-الخامسة.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-09-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/006الخطوة-الخامسة_نقطة-الثانية.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -132,14 +132,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-06-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/007الخطوة-السادسة.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/how-it-works/Access-Riyadh-how-it-works-page-04-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/how-it-works/الخطوة-السابعة.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">

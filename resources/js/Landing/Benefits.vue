@@ -13,14 +13,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-01-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/فوائد-امكانية-الوصول-الجيدة.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-02-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/حماية-المجتمعات-المتقدمة-في-السن.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -47,14 +47,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-05-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/توفير-الوصول-للجميع.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-07-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/الوصول-الجيد-هو-عمل-جيد.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -80,14 +80,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-08-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/جودة-حياه-عالية.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-09-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/المزيد-من-الزوار-ورجال-الاعمال.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -113,14 +113,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-03-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/التعليم-الشامل.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-06-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/قوة-عاملة-وشاملة.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -146,14 +146,14 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-10-1-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/شتجارب-التسوق-المادية.png" alt="benefits-1">
                 </div>
             </div>
         </div>
         <div class="my-3 py-3">
             <div class="container px-0 d-md-flex jsutify-content-center align-items-center mx-auto">
                 <div class="col-12 col-md-6 mx-auto">
-                    <img class="w-100" src="../../../public/img/benefits/Access-Riyadh-about-page-04-1024x731.png" alt="benefits-1">
+                    <img class="w-100" src="../../../public/img/benefits/متنقلون-بشكل-مستقل.png" alt="benefits-1">
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
                     <p class="fs-3 lh-1">
@@ -168,7 +168,6 @@
         </div>
     </div>
 </template>
-
 <script>
 export default {
     components: {},
