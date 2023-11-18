@@ -9,5 +9,5 @@ return array (
   'Register' => 'تسجيل الاشتراك',
   'Learn' => 'تعلم',
   'Access_Riyadh' => 'وصول الرياض',
-  'About' => 'عن',
+  'About' => 'عن وصول الرياض',
 );
