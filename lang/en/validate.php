@@ -1,0 +1,25 @@
+<?php
+
+return array (
+    'The first name field is required.' => 'The first name field is required.',
+    'The last name field is required.' => 'The last name field is required.',
+    'The email field is required.' => 'The email field is required.',
+    'The email field must be a valid email address.' => 'The email field must be a valid email address.',
+    'The password field is required.' => 'The password field is required.',
+    'The country field is required.' => 'The country field is required.',
+    'The building or business name field is required.' => 'The building or business name field is required.',
+    'The street address field is required.' => 'The street address field is required.',
+    'The city field is required.' => 'The city field is required.',
+    'The district field is required.' => 'The district field is required.',
+    'The postal code field is required.' => 'The postal code field is required.',
+    'The deed number field is required.' => 'The dial number field is required.',
+    'The plot number field is required.' => 'The plot number field is required.',
+    'The phase field is required' => 'The phase field is required',
+    'The building type field is required' => 'The building type field is required',
+    'The name field can\'t be numbers' => 'The name field can\'t be numbers',
+    'The name field can\'t be longer than 255 character' => 'The name field can\'t be longer than 255 character',
+    'The email field can\'t be longer than 255 character' => 'The email field can\'t be longer than 255 character',
+    'This email used before' => 'This email used before',
+    'The email field must be a string not numbers.' => 'The email field must be a string not numbers.',
+    'The password field must be a string not numbers.' => 'The password field must be a string not numbers.',
+);

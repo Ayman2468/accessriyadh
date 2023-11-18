@@ -33,8 +33,8 @@
                         <div :class="['input-building h-100',selected_type == item.id ? 'checked' : '']"
                              @click="select_type(item)">
                             <label class="text-center position-relative">
-                                <input type="radio" name="building" class="h-100" required>
-                                <img class="ratio ratio-1x1 h-100" :src="item.image_url">
+                                <input type="radio" name="building" required>
+                                <img class="ratio ratio-1x1" :src="item.image_url">
                                 <span>{{ item.name }}</span>
                                 <i class="fa-solid fa-circle-check"></i>
                             </label>

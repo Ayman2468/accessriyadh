@@ -1,7 +1,9 @@
-/*Style rtl*/
+/* Style rtl */
 
+/* Import Noto Kufi Arabic font from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@400;700&display=swap');
 
+/* Define custom fonts */
 @font-face {
     font-family: 'TatweerAlRiyadh';
     font-weight: normal;
@@ -12,77 +14,88 @@
     font-weight: bold;
     src: url('../fonts/TatweerAlRiyadh-Regular.otf');
 }
-body{
+
+/* Apply custom font to body */
+body {
     font-family: 'TatweerAlRiyadh', sans-serif;
 }
+
+/* Header styles */
 .header .navbar-nav {
     padding: 15px 65px 15px 15px;
 }
 
+/* Adjust navbar-collapse styles */
 .navbar-collapse:after {
     left: auto;
     right: 0;
-    border-right: 0px solid transparent;
+    border-right: 0 solid transparent;
     border-left: 30px solid transparent;
 }
 .navbar-collapse {
-    /* background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%); */
     background-color: #00884e;
 }
 
+/* Adjust nav-link styles */
 .header .nav-link:before {
     left: auto;
     right: 0;
 }
 
+/* Adjust progress-bar styles */
 .steps-label .progress-bar {
-    /* background: linear-gradient(270deg, #5E9B47 0%, #247B3D 100%); */
     background-color: #00884e;
     border-radius: 0;
     border-top-right-radius: 19px;
     border-bottom-right-radius: 19px;
 }
 
+/* Adjust progress styles */
 .steps-label .progress ul li i {
     right: -5px;
 }
 
+/* Adjust input-building styles */
 .input-building label i {
     right: auto;
     left: 15px;
 }
 
-.steps .btn-success .fa-circle-chevron-right:before{
+/* Adjust btn-success styles */
+.steps .btn-success .fa-circle-chevron-right:before {
     content: "\f137";
 }
 
-.steps .btn-secondary .fa-circle-chevron-left:before{
+/* Adjust btn-secondary styles */
+.steps .btn-secondary .fa-circle-chevron-left:before {
     content: "\f138";
 }
+
+/* Adjust form-label styles */
 .form-label i {
     transform: rotateY(180deg);
 }
 
+/* Adjust last-child styles */
 .steps-label .progress ul li:last-child i.active {
     right: auto;
     left: -5px;
 }
-.welomeAfter::after{
+
+/* Create a triangle for welomeAfter */
+.welomeAfter::after {
     content: '';
     position: absolute;
-    /* top: 0px;
-    right: 639px; */
     height: 0;
     width: 0;
-    border-right: 0px solid transparent;
+    border-right: 0 solid transparent;
     border-left: 30px solid transparent;
     border-bottom: 51px solid #00884e;
 }
 
-@media (max-width: 991.9px){
-
-	.header .navbar-nav{
-		padding: 15px;
-	}
-
+/* Media query for responsive design */
+@media (max-width: 991.9px) {
+    .header .navbar-nav {
+        padding: 15px;
+    }
 }

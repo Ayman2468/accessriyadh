@@ -31,6 +31,16 @@ class LoginRequest extends FormRequest
             'password' => ['required', 'string'],
         ];
     }
+    public function messages(): array
+    {
+        return [
+            'email.required' => __('validate.The email field is required'),
+            'email.string' => __('validate.The email field must be a string not numbers.'),
+            'email.email' => __('validate.The email field must be a valid email address.'),
+            'password.required' => __('validate.The password field is required.'),
+            'password.string' => __('validate.The password field must be a string not numbers.'),
+        ];
+    }
 
     /**
      * Attempt to authenticate the request's credentials.

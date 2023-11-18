@@ -20,4 +20,14 @@ class ProfileUpdateRequest extends FormRequest
             'email' => ['email', 'max:255', Rule::unique(User::class)->ignore($this->user()->id)],
         ];
     }
+    public function messages(): array
+    {
+        return [
+            'name.string'=>__('validate.The name field can\'t be numbers'),
+            'name.max'=>__('validate.The name field can\'t be longer than 255 character'),
+            'email.email'=>__('validate.The email field must be a valid email address.'),
+            'email.max'=>__('validate.The email field can\'t be longer than 255 character'),
+            'email.unique'=>__('validate.This email used before'),
+        ];
+    }
 }
