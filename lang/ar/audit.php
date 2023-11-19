@@ -28,4 +28,6 @@ return array (
   'Finishing Audit' => 'إنهاء التدقيق',
   'if your an admin you must insert a different email' => 'اذا كنت من ضمن فريق الادارة لابد ان تستخدم بريد الكترونى مختلف',
   'Password' => 'كلمة السر',
+  'Deed Number' => 'رقم السند',
+  'Plot Number' => 'رقم قطعة الارض',
 );

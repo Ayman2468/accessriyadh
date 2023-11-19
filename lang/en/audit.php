@@ -28,4 +28,6 @@ return array (
   'Finishing Audit' => 'Finish audit',
   'if your an admin you must insert a different email' => 'If You are An Admin You Must Insert A Different Email',
   'Password' => 'Password',
+  'Deed Number' => 'Deed Number',
+  'Plot Number' => 'Plot Number',
 );

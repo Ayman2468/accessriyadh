@@ -12,7 +12,7 @@ return array (
     'The city field is required.' => 'The city field is required.',
     'The district field is required.' => 'The district field is required.',
     'The postal code field is required.' => 'The postal code field is required.',
-    'The deed number field is required.' => 'The dial number field is required.',
+    'The deed number field is required.' => 'The deed number field is required.',
     'The plot number field is required.' => 'The plot number field is required.',
     'The phase field is required' => 'The phase field is required',
     'The building type field is required' => 'The building type field is required',

@@ -12,7 +12,7 @@ return array (
     'The city field is required.' => 'المدينة مطلوبة',
     'The district field is required.' => 'الحى مطلوب',
     'The postal code field is required.' => 'الرقم البريدى مطلوب',
-    'The deed number field is required.' => 'رقم الهاتف مطلوب',
+    'The deed number field is required.' => 'رقم السند مطلوب',
     'The plot number field is required.' => 'رقم قطعة الارض مطلوب',
     'The phase field is required' => 'رقم المرحلة مطلوب',
     'The building type field is required' => 'نوع المبنى مطلوب',
