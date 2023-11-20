@@ -79,7 +79,6 @@
                             <li><a href="https://riyadh.sa/en/">{{__('Footer.Riyadh City')}}</a></li>
                             <li><a href="http://riyadhmetro.sa/en/">{{__('Footer.Riyadh Metro')}}</a></li>
                             <li><a href="https://www.riyadhenv.gov.sa/en/">{{__('Footer.Arriyadh Environment')}}</a></li>
-                            <li><a href="https://riyadhgeoenv.rcrc.gov.sa/envogeoexplorer.app/">{{__('Footer.Riyadh GeoEnv Explorer')}}</a></li>
                             <li><a href="http://www.ruo.gov.sa/">{{__('Footer.Riyadh Urban Observatory')}}</a></li>
                         </ul>
                     </div>

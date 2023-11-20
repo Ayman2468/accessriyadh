@@ -8,7 +8,7 @@ return array (
   'Our sites' => 'Our sites',
   'Riyadh City' => 'Riyadh City',
   'Riyadh Metro' => 'Riyadh Metro',
-  'Arriyadh Environment' => 'Arriyadh Environment',
+  'Arriyadh Environment' => 'Riyadh Environment',
   'Riyadh GeoEnv Explorer' => 'Riyadh GeoEnv Explorer',
   'Riyadh Urban Observatory' => 'Riyadh Urban Observatory',
   'All rights reserved' => 'All rights reserved.',
