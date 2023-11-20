@@ -24,7 +24,7 @@
         </div>
         <div class="container">
             <form class="buildings">
-                <div class="form-block mb-4">
+                <div class="form-block mb-4" id="form_top">
                     <h2 class="title">{{ __('audit.Applicant Information') }}</h2>
                     <div class="row">
                         <div class="col-md-6">
@@ -45,9 +45,10 @@
                             <label class="form-label">{{ __('audit.Email') }}
                                 <!-- <small>{{ __('audit.if your an admin you must insert a different email') }}</small> -->
                             </label>
-                            <input type="email" class="form-control" v-model="form.email">
-                            <div v-if="form.errors && form.errors.email" class="invalid-feedback">
-                                {{ form.errors.email[0] }}
+                            <input type="email" class="form-control" v-model="form.email" @change="validateEmail($event)">
+                            <div v-if="msg" class="invalid-feedback">
+                                <p v-if="msg['email']">{{ __('validate.Please enter a valid email address') }}</p>
+                                <!-- <p v-else-if="form.errors?.email[0]">{{ form.errors.email[0] }}</p> -->
                             </div>
                         </div>
                         <div class="col-md-6" v-show="showPassword">
@@ -170,6 +171,7 @@ export default {
             selected_type: '',
             loading: false,
             showPassword: true,
+            msg:[],
         }
     },
     async mounted() {
@@ -212,6 +214,7 @@ export default {
             }).catch((error) => {
                 this.loading = false;
                 this.form.errors = error.response.data.errors
+                if(this.form.errors) document.getElementById('form_top').scrollIntoView();
                 if(this.form.errors?.first_name) console.log(this.form?.errors?.first_name[0])
             })
         },
@@ -226,7 +229,13 @@ export default {
             });
             this.notify("error", message, 'fas fa-times p-1', 'danger')
         },
-
+        validateEmail(event) {
+            if (/^[^@]+@\w+(\.\w+)+\w$/.test(event.target.value)) {
+                this.msg['email'] = '';
+            } else {
+                this.msg['email'] = 'Please enter a valid email address';
+            }
+        },
     }
 }
 </script>

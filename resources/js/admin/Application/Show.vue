@@ -102,7 +102,7 @@
                             <div class="fw-bold">{{ item.postal_code }}</div>
                         </div>
                         <div class="col-lg-3 col-md-12 mb-3">
-                            <label>رقم السند</label>
+                            <label>رقم المخطط</label>
                             <div class="fw-bold">{{ item.deed_number }}</div>
                         </div>
                         <div class="col-lg-3 col-md-12 mb-3">
@@ -113,7 +113,7 @@
                 </form>
                 <div class="title-tab d-sm-flex align-items-start justify-content-between mt-5">
                     <div>
-                        <h2>إجابات النموزج</h2>
+                        <h2>إجابات النموذج</h2>
                     </div>
                     </div>
                     <form class="">

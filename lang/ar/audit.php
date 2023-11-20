@@ -13,7 +13,7 @@ return array (
   'Enter Building Information' => 'أدخل معلومات البناء',
   'Finish audit' => 'إنهاء التدقيق',
   'First name' => 'الاسم الاول',
-  'Last name' => 'الاسم الثاني',
+  'Last name' => 'الاسم الاخير',
   'Next' => 'التالي',
   'Previous' => 'السابق',
   'Required' => 'مطلوب',
@@ -28,6 +28,6 @@ return array (
   'Finishing Audit' => 'إنهاء التدقيق',
   'if your an admin you must insert a different email' => 'اذا كنت من ضمن فريق الادارة لابد ان تستخدم بريد الكترونى مختلف',
   'Password' => 'كلمة السر',
-  'Deed Number' => 'رقم السند',
+  'Deed Number' => 'رقم المخطط',
   'Plot Number' => 'رقم قطعة الارض',
 );

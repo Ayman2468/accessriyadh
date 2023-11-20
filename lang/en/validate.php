@@ -12,7 +12,7 @@ return array (
     'The city field is required.' => 'The city field is required.',
     'The district field is required.' => 'The district field is required.',
     'The postal code field is required.' => 'The postal code field is required.',
-    'The deed number field is required.' => 'The deed number field is required.',
+    'The deed number field is required.' => 'The plan number field is required.',
     'The plot number field is required.' => 'The plot number field is required.',
     'The phase field is required' => 'The phase field is required',
     'The building type field is required' => 'The building type field is required',
@@ -22,4 +22,5 @@ return array (
     'This email used before' => 'This email used before',
     'The email field must be a string not numbers.' => 'The email field must be a string not numbers.',
     'The password field must be a string not numbers.' => 'The password field must be a string not numbers.',
+    'Please enter a valid email address' => 'Please enter a valid email address',
 );
