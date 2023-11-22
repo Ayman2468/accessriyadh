@@ -25,19 +25,7 @@
         <div class="container">
             <form class="buildings">
                 <template v-for="(question,index) in questions">
-                    <Title v-if="question.web_id == '1001'" :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '1014' && (answers.question1002 && answers.question1002.includes('Ramp'))"
-                        :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '1022' && (answers.question1002 && answers.question1002.includes('Stairs'))"
-                        :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '1026' && (answers.question1002 && answers.question1002.includes('Single step'))"
-                        :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '1028' && (answers.question1002 && answers.question1002.includes('Drop to side'))"
-                        :title="question"></Title>
+
                     <Title v-if="question.web_id == '1'" :title="question"></Title>
                     <Title v-if="question.web_id == '2'" :title="question"></Title>
                     <Title
@@ -45,27 +33,138 @@
                         :title="question"></Title>
                     <Title v-if="question.web_id == '4'" :title="question"></Title>
                     <Title
-                        v-if="question.web_id == '36' && (answers.question35 && answers.question35.includes('Ramp in route'))"
+                        v-if="question.web_id == '5' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :title="question"></Title>
+                    <!-- <Title
+                        v-if="question.web_id == '6' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in path'))"
+                        :title="question"></Title> -->
+                    <Title
+                        v-if="question.web_id == '7' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Single step in path'))"
                         :title="question"></Title>
                     <Title
-                        v-if="question.web_id == '313' && (answers.question35 && answers.question35.includes('Stairs in route'))"
-                        :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '317' && (answers.question35 && answers.question35.includes('Single step in route'))"
-                        :title="question"></Title>
-                    <Title
-                        v-if="question.web_id == '319' && (answers.question35 && answers.question35.includes('Drop to side of route'))"
+                        v-if="question.web_id == '8' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Drop to side of path'))"
                         :title="question"></Title>
 
+                    <QuestionYesNo
+                        v-if="question.web_id == '71' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Single step in path'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '81' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Drop to side of path'))"
+                        :question="question"></QuestionYesNoWithImage>
                     <QuestionYesNo v-if="question.web_id == '11'" :question="question"></QuestionYesNo>
                     <QuestionSelectBox v-if="question.web_id == '12' && answers.question11 == 'yes'"
                                        :question="question"></QuestionSelectBox>
 
                     <QuestionInput v-if="question.web_id == '13' && answers.question12 == '1-50'"
                                    :question="question"></QuestionInput>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '14' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
+                        :question="question"></QuestionMultipleChoice>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '15' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '16' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '17' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
+                        :question="question"></QuestionYesNoWithImage>
                     <QuestionYesNo
                         v-if="question.web_id == '18' && answers.question12 != '1-50' && answers.question12 != '' && answers.question12 != null"
                         :question="question"></QuestionYesNo>
+                    <QuestionYesNo v-if="question.web_id == '21'" :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage v-if="question.web_id == '22' && answers.question21 == 'yes'"
+                                            :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage v-if="question.web_id == '23' && answers.question21 == 'yes'"
+                                            :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage v-if="question.web_id == '24' && answers.question23 == 'yes'"
+                                            :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '31' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '32' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '33' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '34' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '35' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
+                        :question="question"></QuestionMultipleChoice>
+                    <Title
+                        v-if="question.web_id == '36' && (answers.question35 && answers.question35.includes('Ramp in route'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '37' && (answers.question35 && answers.question35.includes('Ramp in route')) "
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionInput style="float: left;width: 49%"
+                                   v-if="question.web_id == '38' && (answers.question35 && answers.question35.includes('Ramp in route')) "
+                                   :question="question"></QuestionInput>
+                    <QuestionInput style="float: right;width: 49%" classes="clearfix"
+                                   v-if="question.web_id == '39' && (answers.question35 && answers.question35.includes('Ramp in route')) "
+                                   :question="question"></QuestionInput>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '41'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '42' && answers.question41 == 'no'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '43' && answers.question41 == 'no'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '44' && answers.question41 == 'no'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '45' && answers.question41 == 'no'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '46' && answers.question41 == 'no'"
+                        :question="question"></QuestionMultipleChoice>
+
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '51' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionInput style="float: left;width: 49%"
+                                   v-if="question.web_id == '52' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                                   :question="question"></QuestionInput>
+                    <QuestionInput style="float: right;width: 49%" classes="clearfix"
+                                   v-if="question.web_id == '53' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                                   :question="question"></QuestionInput>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '54' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '55' && Number(answers.question52) >= 1000 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '56' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '57' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && (answers.question56) == 'yes' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '58' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '59' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
+                        :question="question"></QuestionYesNo>
+
+                    <!-- <QuestionYesNoWithImage
+                        v-if="question.web_id == '61' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in route'))"
+                        :question="question"></QuestionYesNoWithImage> -->
+                    <!-- <QuestionYesNoWithImage
+                        v-if="question.web_id == '62' && answers.question61 == 'yes' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in route'))"
+                        :question="question"></QuestionYesNoWithImage> -->
+                    <!-- <QuestionYesNoWithImage
+                        v-if="question.web_id == '63' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in route'))"
+                        :question="question"></QuestionYesNoWithImage> -->
+
+
+
                     <QuestionInput
                         v-if="question.web_id == '120' && answers.question12 == '51-100' && answers.question18 == 'yes'"
                         :question="question"></QuestionInput>
@@ -102,53 +201,7 @@
                     <QuestionYesNo
                         v-if="question.web_id == '131' && answers.question12 == 'over 1200' && answers.question18 == 'yes'"
                         :question="question"></QuestionYesNo>
-                    <QuestionMultipleChoice
-                        v-if="question.web_id == '14' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
-                        :question="question"></QuestionMultipleChoice>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '15' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '16' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '17' && (answers.question18 == 'yes' || answers.question13 == '1 or more')"
-                        :question="question"></QuestionYesNoWithImage>
 
-
-                    <QuestionYesNoWithImage v-if="question.web_id == '21'" :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage v-if="question.web_id == '22' && answers.question21 == 'yes'"
-                                            :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage v-if="question.web_id == '23' && answers.question21 == 'yes'"
-                                            :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage v-if="question.web_id == '24' && answers.question23 == 'yes'"
-                                            :question="question"></QuestionYesNoWithImage>
-
-                    <QuestionYesNo
-                        v-if="question.web_id == '31' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
-                        :question="question"></QuestionYesNo>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '32' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '33' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '34' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionMultipleChoice
-                        v-if="question.web_id == '35' && (answers.question18 == 'yes' || answers.question13 == '1 or more') "
-                        :question="question"></QuestionMultipleChoice>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '37' && (answers.question35 && answers.question35.includes('Ramp in route')) "
-                        :question="question"></QuestionYesNoWithImage>
-
-                    <QuestionInput style="float: left;width: 49%"
-                                   v-if="question.web_id == '38' && (answers.question35 && answers.question35.includes('Ramp in route')) "
-                                   :question="question"></QuestionInput>
-                    <QuestionInput style="float: right;width: 49%" classes="clearfix"
-                                   v-if="question.web_id == '39' && (answers.question35 && answers.question35.includes('Ramp in route')) "
-                                   :question="question"></QuestionInput>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '311' && (answers.question35 && answers.question35.includes('Ramp in route')) "
                         :question="question"></QuestionYesNoWithImage>
@@ -156,100 +209,36 @@
                     <QuestionYesNo
                         v-if="question.web_id == '312' && (Number(answers.question38) >= 1000 ) && answers.question35 && answers.question35.includes('Ramp in route') "
                         :question="question"></QuestionYesNo>
-
+                    <Title
+                        v-if="question.web_id == '6' && (answers.question35 && answers.question35.includes('Stairs in route'))"
+                        :title="question"></Title>
                     <QuestionYesNoWithImage
-                        v-if="question.web_id == '314' && (answers.question35 && answers.question35.includes('Stairs in route')) "
+                        v-if="question.web_id == '61' && (answers.question35 && answers.question35.includes('Stairs in route')) "
                         :question="question"></QuestionYesNoWithImage>
                     <QuestionYesNoWithImage
-                        v-if="question.web_id == '315' && (answers.question35 && answers.question35.includes('Stairs in route')) "
+                        v-if="question.web_id == '62' && (answers.question35 && answers.question35.includes('Stairs in route')) "
                         :question="question"></QuestionYesNoWithImage>
                     <QuestionYesNoWithImage
-                        v-if="question.web_id == '316' && (answers.question35 && answers.question35.includes('Stairs in route')) "
+                        v-if="question.web_id == '63' && (answers.question35 && answers.question35.includes('Stairs in route')) "
                         :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '317' && (answers.question35 && answers.question35.includes('Single step in route'))"
+                        :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '318' && (answers.question35 && answers.question35.includes('Single step in route')) "
                         :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '319' && (answers.question35 && answers.question35.includes('Drop to side of route'))"
+                        :title="question"></Title>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '320' && (answers.question35 && answers.question35.includes('Drop to side of route')) "
                         :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '41'"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNo
-                        v-if="question.web_id == '42' && answers.question41 == 'no'"
-                        :question="question"></QuestionYesNo>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '43' && answers.question41 == 'no'"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '44' && answers.question41 == 'no'"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '45' && answers.question41 == 'no'"
-                        :question="question"></QuestionYesNoWithImage>
-                    <QuestionMultipleChoice
-                        v-if="question.web_id == '46' && answers.question41 == 'no'"
-                        :question="question"></QuestionMultipleChoice>
-                    <Title
-                        v-if="question.web_id == '5' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></Title>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '51' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionInput style="float: left;width: 49%"
-                                   v-if="question.web_id == '52' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                                   :question="question"></QuestionInput>
-                    <QuestionInput style="float: right;width: 49%" classes="clearfix"
-                                   v-if="question.web_id == '53' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                                   :question="question"></QuestionInput>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '54' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionYesNo
-                        v-if="question.web_id == '55' && Number(answers.question52) >= 1000 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNo>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '58' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionYesNo
-                        v-if="question.web_id == '59' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNo>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '56' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '57' && Number(answers.question52) >= 1  && Number(answers.question52) >= 41 && (answers.question56) == 'yes' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Ramp in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <Title
-                        v-if="question.web_id == '6' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in path'))"
-                        :title="question"></Title>
 
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '61' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '62' && answers.question61 == 'yes' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '63' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Stairs in path'))"
-                        :title="question"></QuestionYesNoWithImage>
-
-                    <Title
-                        v-if="question.web_id == '7' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Single step in path'))"
-                        :title="question"></Title>
-                    <QuestionYesNo
-                        v-if="question.web_id == '71' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('StairsSingle step in path in path'))"
-                        :title="question"></QuestionYesNo>
-
-                    <Title
-                        v-if="question.web_id == '8' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Drop to side of path'))"
-                        :title="question"></Title>
-                    <QuestionYesNoWithImage
-                        v-if="question.web_id == '81' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Drop to side of path'))"
-                        :title="question"></QuestionYesNoWithImage>
+                    <Title v-if="question.web_id == '1001'" :title="question"></Title>
                     <QuestionMultipleChoice
                         v-if="question.web_id == '1002'"
                         :question="question"></QuestionMultipleChoice>
+
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '1003'"
                         :question="question"></QuestionYesNoWithImage>
@@ -282,6 +271,9 @@
                     <QuestionYesNo
                         v-if="question.web_id == '1013' && answers.question1012 == 'yes'"
                         :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '1014' && (answers.question1002 && answers.question1002.includes('Ramp'))"
+                        :title="question"></Title>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '1015' &&  (answers.question1002 && answers.question1002.includes('Ramp'))"
                         :question="question"></QuestionYesNoWithImage>
@@ -303,6 +295,9 @@
                     <QuestionYesNo
                         v-if="question.web_id == '1021' && Number(answers.question1017) >= 81 && (answers.question1002 && answers.question1002.includes('Ramp'))"
                         :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '1022' && (answers.question1002 && answers.question1002.includes('Stairs'))"
+                        :title="question"></Title>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '1023' && (answers.question1002 && answers.question1002.includes('Stairs'))"
                         :question="question"></QuestionYesNoWithImage>
@@ -312,9 +307,15 @@
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '1025' && (answers.question1002 && answers.question1002.includes('Stairs'))"
                         :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '1026' && (answers.question1002 && answers.question1002.includes('Single step'))"
+                        :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '1027' && (answers.question1002 && answers.question1002.includes('Single step'))"
                         :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '1028' && (answers.question1002 && answers.question1002.includes('Drop to side'))"
+                        :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '1029' && (answers.question1002 && answers.question1002.includes('Drop to side'))"
                         :question="question"></QuestionYesNo>
@@ -509,6 +510,252 @@
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '1088' && answers.question1085 == 'yes'"
                         :question="question"></QuestionYesNoWithImage>
+                    <!-- <QuestionYesNoWithImage
+                        v-if="question.web_id == '1089'"
+                        :question="question"></QuestionYesNoWithImage> -->
+                    <Title
+                        v-if="question.web_id == '400'"
+                        :title="question"></Title>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '401'"
+                        :question="question"></QuestionMultipleChoice>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '402'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '403'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionMoreThanTwoOption
+                        v-if="question.web_id == '404'"
+                        :question="question"></QuestionMoreThanTwoOption>
+                    <QuestionYesNoWithImage
+                            v-if="question.web_id == '405'"
+                            :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '406'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                            v-if="question.web_id == '407'"
+                            :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '408' &&  (answers.question404 && answers.question404.includes('revolving door'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '409'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '410' &&  (answers.question401 && answers.question401.includes('Ramp'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '411' && (answers.question401 && answers.question401.includes('Ramp'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionInput
+                        v-if="question.web_id == '412' && (answers.question401 && answers.question401.includes('Ramp'))"
+                        :question="question"></QuestionInput>
+                    <QuestionInput
+                        v-if="question.web_id == '413' && (answers.question401 && answers.question401.includes('Ramp'))"
+                        :question="question"></QuestionInput>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '414' && (answers.question401 && answers.question401.includes('Ramp'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '415' &&  (answers.question401 && answers.question401.includes('Stairs'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '416' &&  (answers.question401 && answers.question401.includes('Stairs'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '417' &&  (answers.question401 && answers.question401.includes('Stairs'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '418' &&  (answers.question401 && answers.question401.includes('Single step'))"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '419' &&  (answers.question401 && answers.question401.includes('Single step'))"
+                        :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '420' &&  (answers.question401 && answers.question401.includes('Drop to side'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '421' &&  (answers.question401 && answers.question401.includes('Drop to side'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '422'"
+                        :title="question"></Title>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '423'"
+                        :question="question"></QuestionMultipleChoice>
+                    <QuestionYesNo
+                        v-if="question.web_id == '424'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.web_id == '425'"
+                        :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '426' && (answers.question423 && answers.question423.includes('Ramp'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '427' &&  (answers.question423 && answers.question423.includes('Ramp'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionInput
+                        v-if="question.web_id == '428' &&  (answers.question423 && answers.question423.includes('Ramp'))"
+                        :question="question"></QuestionInput>
+                    <QuestionInput
+                        v-if="question.web_id == '429' &&  (answers.question423 && answers.question423.includes('Ramp'))"
+                        :question="question"></QuestionInput>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '430' &&  (answers.question423 && answers.question423.includes('Ramp'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '431' && (answers.question423 && answers.question423.includes('Stairs'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '432' &&  (answers.question423 && answers.question423.includes('Stairs'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '433' &&  (answers.question423 && answers.question423.includes('Stairs'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '434' && (answers.question423 && answers.question423.includes('Single step'))"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '435' && (answers.question423 && answers.question423.includes('Single step'))"
+                        :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '436' && (answers.question423 && answers.question423.includes('Drop to side'))"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '437' &&  (answers.question423 && answers.question423.includes('Drop to side'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '500'"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '501'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.web_id == '502' && answers.question501 == 'yes'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '503' && answers.question501 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '504'"
+                        :title="question"></Title>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '505'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '506'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '507'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '508'"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '509'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '510' && answers.question509 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '511' && answers.question509 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '512' && answers.question509 == 'yes'"
+                        :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '513'"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '514'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '515' && answers.question514 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '516' && answers.question514 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '517' && answers.question514 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '518' && answers.question514 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '519' && answers.question514 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '520' && answers.question519 == 'yes'"
+                        :question="question"></QuestionYesNoWithImage>
+                    <Title
+                        v-if="question.web_id == '600'"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '601'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.web_id == '602' && answers.question601 == 'yes'"
+                        :question="question"></QuestionYesNo>
+                    <QuestionMultipleChoice
+                        v-if="question.web_id == '603' && answers.question602 == 'yes'"
+                        :question="question"></QuestionMultipleChoice>
+                    <Title
+                        v-if="question.web_id == '604' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '605' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '606' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '607' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '608' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '609' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '610' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '611' &&  (answers.question603 && answers.question603.includes('Disabled washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <Title
+                        v-if="question.web_id == '612' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :title="question"></Title>
+                    <QuestionYesNo
+                        v-if="question.web_id == '613' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.web_id == '614' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.web_id == '615' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '616' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '617' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '618' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNo>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '619' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNoWithImage
+                        v-if="question.web_id == '620' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionYesNo
+                        v-if="question.web_id == '621' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
+                        :question="question"></QuestionYesNo>
                 </template>
             </form>
             <div class="d-grid gap-2 col-md-6 mx-auto mt-4 d-flex btns-form">
@@ -639,8 +886,8 @@ export default {
         define_answer_events() {
             for (let i = 0; i < this.questions.length; i++) {
                 if (this.questions[i].type === 'question') {
+                    if(this.questions[i].web_id == '71') console.log(this.questions[i].type)
                     emitter.$on('question' + (this.questions[i].web_id) + '-answer', (answer) => {
-                        // console.log(answer)
                         setTimeout(function () {
                             this.render_tooltip()
                         }.bind(this), 100)
@@ -651,7 +898,7 @@ export default {
                         // }
                         // this.answers.questions.push({id:this.questions[i].question_id,'answer':answer}) ;
                         //
-                        // console.log(this.answers)
+                        console.log(this.answers)
                     });
                 }
             }

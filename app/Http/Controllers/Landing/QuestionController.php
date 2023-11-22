@@ -22,6 +22,7 @@ class QuestionController extends Controller
         })
             ->join('building_type_questions', 'building_type_questions.question_id', '=', 'questions.id')
             ->where('building_type_questions.building_type_id', $buildingTypeId)
+            ->orderBy('questions.title_id')
             ->orderBy('building_type_questions.order')->get();
         return response()->json(['questions' => $questions]);
     }

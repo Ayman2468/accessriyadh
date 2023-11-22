@@ -526,8 +526,8 @@ export default {
             const formData = new FormData();
             formData.append('question_name_ar', this.form.question_name_ar);
             formData.append('question_name_en', this.form.question_name_en);
-            formData.append('description_ar', this.form.description_ar);
-            formData.append('description_en', this.form.description_en);
+            formData.append('description_name_ar', this.form.description_name_ar);
+            formData.append('description_name_en', this.form.description_name_en);
             formData.append('type', this.form.type);
             formData.append('phase_id', this.form.phase_id);
             formData.append('web_id', this.form.web_id);
@@ -550,6 +550,7 @@ export default {
                 this.form.question_name_en = '';
                 this.form.description_name_ar = '';
                 this.form.description_name_en = '';
+                this.$router.go();
             })
         },
         add_answer() {

@@ -47,13 +47,17 @@ export default {
     components: {},
     data() {
         return {
-            selected_value: ''
+            selected_value: '',
         }
     },
     async mounted() {
-        if (this.question.application_answer){
-            this.selected_value = this.question.application_answer.answer
-            this.change_answer(this.selected_value)
+        try {
+            if (this.question.application_answer){
+                this.selected_value = this.question.application_answer.answer
+                this.change_answer(this.selected_value)
+            }
+        } catch(e) {
+            console.log(e.message);
         }
     },
     methods: {

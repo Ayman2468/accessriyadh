@@ -1,15 +1,16 @@
 <template>
 
+    <div class="d-inline-block col-md-5 m-2">
+        <div :style="style" :class="classes">
+            <label class="form-label d-block text-center">
+                {{ question.name }}
+                <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" :data-bs-title="question.description" class="fa-solid fa-circle-question"></i>
+            </label>
+            <input type="text" v-model="selected_value" @keyup="change_answer" class="form-control">
+        </div>
+        <div v-if="classes" class="clearfix">
 
-    <div class="col-md-6 mb-2" :style="style" :class="classes">
-        <label class="form-label d-block text-center">
-            {{ question.name }}
-            <i data-bs-toggle="tooltip" data-bs-placement="top" data-bs-html="true" :data-bs-title="question.description" class="fa-solid fa-circle-question"></i>
-        </label>
-        <input type="text" v-model="selected_value" @keyup="change_answer" class="form-control">
-    </div>
-    <div v-if="classes" class="clearfix">
-
+        </div>
     </div>
 </template>
 

@@ -60,7 +60,6 @@ export default {
                     im.classList.remove("active");
                     im.classList.add("d-none");
                 }
-                console.log(im);
             });
             if (this.j == 0) imgList[this.j].classList.remove("d-none");
             if (this.j != 3) imgList[this.j + 1].classList.remove("d-none");

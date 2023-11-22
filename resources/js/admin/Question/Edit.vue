@@ -135,6 +135,7 @@ export default {
     async mounted() {
         emitter.$on('question-edit', (item) => {
             this.form = item
+            console.log(this.form);
         });
     },
 
@@ -151,6 +152,7 @@ export default {
             formData.append('phase_id', this.form.phase_id);
             formData.append('web_id', this.form.web_id);
             formData.append('score', this.form.score);
+            formData.append('title_id', this.form.title_id);
             for (let i = 0; i < this.form.answers_key_value.length; i++) {
                 formData.append('answers[' + i + '][en]', this.form.answers_key_value[i].en);
                 formData.append('answers[' + i + '][ar]', this.form.answers_key_value[i].ar);
@@ -161,6 +163,7 @@ export default {
                 this.loading = false;
                 emitter.$emit('refresh-list')
                 $('#edit-question-general').modal('toggle')
+                this.$router.go();
             })
         },
         add_answer(){

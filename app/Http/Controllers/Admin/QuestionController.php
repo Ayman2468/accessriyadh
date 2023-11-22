@@ -61,6 +61,8 @@ class QuestionController extends Controller
             if ($item['en'] != '' && $item['en'] != null) {
                 $answers['en'] = $item['en'];
                 $answers['ar'] = $item['ar'];
+            }
+            if(isset($item['score'])){
                 $answers['score'] = $item['score'];
             }
             if (count($answers))
@@ -69,7 +71,6 @@ class QuestionController extends Controller
             $answers = [];
         }
         $order = Question::orderBy('order', 'desc')->first()->order ?? null;
-
         $question = Question::create(
             [
                 'phase_id' => $request['phase_id'],
@@ -83,7 +84,7 @@ class QuestionController extends Controller
                 'type' => $request['type'],
                 'score' => $request['score'] ?? null,
 
-            ],
+            ]
         );
         if ($request['is_all_building'] == '0') {
             $buildingTypes = BuildingType::get();
@@ -103,7 +104,7 @@ class QuestionController extends Controller
                     'phase_id' => $question->phase_id,
                     'order' => $question->order,
 
-                ],
+                ]
             );
         }
 
@@ -140,6 +141,8 @@ class QuestionController extends Controller
             if ($item['en'] != '' && $item['en'] != null) {
                 $answers['en'] = $item['en'];
                 $answers['ar'] = $item['ar'];
+            }
+            if(isset($item['score'])){
                 $answers['score'] = $item['score'];
             }
             if (count($answers))
@@ -147,6 +150,7 @@ class QuestionController extends Controller
 
             $answers = [];
         }
+
         $question->update(
             [
                 'web_id' => $request['web_id'],
@@ -158,7 +162,7 @@ class QuestionController extends Controller
                 'type' => $request['type'],
                 'phase_id' => $request['phase_id'],
                 'score' => $request['score'] ?? null,
-            ],
+            ]
         );
 
         //        $questions = Question::orderBy('web_id')->get();

@@ -179,7 +179,7 @@ export default {
                 this.loading = false;
                 emitter.$emit('edited-item', {item:response.data.data,index:this.index})
                 $('#edit-question').modal('toggle')
-
+                this.$router.go();
 
             })
         },
