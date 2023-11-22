@@ -23,7 +23,7 @@
             <div class="loader"></div>
         </div>
         <div class="container">
-            <form class="buildings">
+            <form class="buildings" id="form_top">
                 <template v-for="(question,index) in questions">
 
                     <Title v-if="question.web_id == '1'" :title="question"></Title>
@@ -835,7 +835,6 @@ export default {
     },
     async mounted() {
         window.scrollTo(0, 0);
-
         if (window.localStorage.getItem('request_id')) {
             this.request_id = window.localStorage.getItem('request_id');
         }
@@ -854,6 +853,7 @@ export default {
                 console.log(this.questions);
                 this.define_answer_events();
                 this.render_tooltip()
+                document.getElementById('form_top').scrollIntoView();
             })
         },
         register($event,save_continue_later = false) {

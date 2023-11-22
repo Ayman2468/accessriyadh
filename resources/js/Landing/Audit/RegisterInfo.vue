@@ -188,6 +188,7 @@ export default {
             axios.get('/landing/lists?lists[]=countries').then((response) => {
                 this.loading = false;
                 this.countries = response.data.data.countries;
+                document.getElementById('form_top').scrollIntoView();
             })
         },
         get_application_request() {
