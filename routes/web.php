@@ -31,7 +31,7 @@ Route::get('/lang-{locale}.js', [HomeController::class, "getLocales"]);
 
 Route::get('/', function () {
     return view('layouts.app');
-})->middleware('localization');
+})->middleware('localization')->name('home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

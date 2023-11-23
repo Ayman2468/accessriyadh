@@ -10,4 +10,6 @@ return array (
   'Learn' => 'تعلم',
   'Access_Riyadh' => 'وصول الرياض',
   'About' => 'عن وصول الرياض',
+  'Review Applications' => 'مراجعة الطلبات',
+  'You have an incomplete application' => 'لديك طلب غير مكتمل',
 );

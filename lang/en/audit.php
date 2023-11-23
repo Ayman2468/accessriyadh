@@ -28,6 +28,12 @@ return array (
   'Finishing Audit' => 'Finish audit',
   'if your an admin you must insert a different email' => 'If You are An Admin You Must Insert A Different Email',
   'Password' => 'Password',
-  'Deed Number' => 'Plan Number',
+  'Deed Number' => 'Plot Plan Number',
   'Plot Number' => 'Plot Number',
+  'answer_questions_first' => 'Answer Questions First',
+  'Show Application Data' => 'Show Application Data',
+  'Full Name' => 'Full Name',
+  'Application Information' => 'Application Information',
+  'Application Answers' => 'Application Answers',
+  'No Completed Applications Found' => 'No Completed Applications Found To Review',
 );

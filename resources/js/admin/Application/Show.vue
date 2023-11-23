@@ -115,7 +115,7 @@
                     <div>
                         <h2>إجابات النموذج</h2>
                     </div>
-                    </div>
+                </div>
                     <form class="">
                         <div class="row mt-2">
                             <div v-for="(item,index) in answers" class="col-lg-12 col-md-12 mb-3">
@@ -180,15 +180,19 @@ export default {
                 this.item = response.data.data;
                 this.answers = response.data.answers;
                 this.answers.forEach(el => {
-                    JSON.parse(el.answers).forEach(e=>{
-                        if(e.en == el.answer) el.answer_ar = e.ar;
-                        if(el.answer.includes(',') && el.answer.includes(e.en)){
-                            if(el.answer_ar == undefined) el.answer_ar = '';
-                            if(el.answer_ar != '') el.answer_ar += ','+e.ar;
-                            else el.answer_ar += e.ar;
-                        }
-                        console.log(el.answer_ar);
-                    });
+                    if(!isNumeric(el.answer)){
+                        JSON.parse(el.answers).forEach(e=>{
+                            if(e.en == el.answer) el.answer_ar = e.ar;
+                            if(el.answer.includes(',') && el.answer.includes(e.en)){
+                                if(el.answer_ar == undefined) el.answer_ar = '';
+                                if(el.answer_ar != '') el.answer_ar += ','+e.ar;
+                                else el.answer_ar += e.ar;
+                            }
+                            console.log(el.answer_ar);
+                        });
+                    }else{
+                        el.answer_ar = el.answer;
+                    }
                 });
             })
         },

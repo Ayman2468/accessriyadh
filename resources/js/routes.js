@@ -4,6 +4,7 @@ import Step from "./Landing/Audit/Step.vue";
 import Completed from "./Landing/Audit/Completed.vue";
 import Benefits from "./Landing/Benefits.vue";
 import HowItWorks from "./Landing/HowItWorks.vue";
+import Review from "./Landing/Review.vue";
 import Learn from "./Landing/Learn.vue";
 import Welcome from "./Landing/Home.vue";
 
@@ -88,6 +89,14 @@ export const routes = [
                 },
                 path: '/learn',
                 component: Learn
+            },
+            {
+                name: 'review',
+                meta:{
+                    activeName: 'audit',
+                },
+                path: '/audit/review',
+                component: Review
             },
         ]
     },

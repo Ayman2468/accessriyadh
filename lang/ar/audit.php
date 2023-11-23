@@ -28,6 +28,12 @@ return array (
   'Finishing Audit' => 'إنهاء التدقيق',
   'if your an admin you must insert a different email' => 'اذا كنت من ضمن فريق الادارة لابد ان تستخدم بريد الكترونى مختلف',
   'Password' => 'كلمة السر',
-  'Deed Number' => 'رقم المخطط',
+  'Deed Number' => 'رقم مخطط قطعة الارض',
   'Plot Number' => 'رقم قطعة الارض',
+  'answer_questions_first' => 'اجب على الاسئلة اولا',
+  'Show Application Data' => 'عرض بيانات الطلب',
+  'Full Name' => 'الاسم الكامل',
+  'Application Information' => 'بيانات طلب',
+  'Application Answers' => 'اجابات النموذج',
+  'No Completed Applications Found' => 'لا توجد طلبات مكتمله لمراجعتها',
 );

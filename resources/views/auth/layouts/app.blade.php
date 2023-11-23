@@ -47,8 +47,8 @@
 
 <header class="header position-fixed w-100 d-flex justify-content-between align-items-start p-4">
     <div class="brand mt-2">
-        <a href="#" class="logo d-table">
-            <img style="width: 120px;" src="{{asset("dashboard/images/logo.webp")}}">
+        <a href="{{ route('home') }}" class="logo d-table">
+            <img style="width: 120px;" src="{{asset("img/logos/وصول الرياض-07.png")}}">
         </a>
 
     </div>

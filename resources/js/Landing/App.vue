@@ -10,7 +10,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
-                        <div class="col-7 d-md-flex">
+                        <div class="col-9 d-md-flex">
                             <li class="nav-item">
                                 <router-link class="nav-link" aria-current="page" to="/benefits">{{__('Header.About')}}</router-link>
                                 <!-- <a class="nav-link" aria-current="page" href="/benefits">{{__('Header.Benefits')}}</a> -->
@@ -21,15 +21,24 @@
                             <!-- <li class="nav-item">
                                 <router-link class="nav-link" aria-current="page" to="/learn">{{__('Header.Learn')}}</router-link>
                             </li> -->
-                            <li class="nav-item">
-                                <router-link :class="['nav-link']" :to="'/audit/building-types'">{{__('Header.Audit')}}</router-link>
+                            <li class="nav-item d-flex col-4">
+                                <router-link :class="['nav-link','mx-1']" :to="'/audit/building-types'">{{__('Header.Audit')}}</router-link>
+                                <!-- ,$route.meta.activeName === 'audit' ? 'active' : '' -->
+                                <div v-if="isLogged && found" class="alert alert-light text-center px-1 py-0 m-0 d-flex align-items-center">
+                                    <span v-if="isLangArabic" class="col-1">&#8594</span>
+                                    <span v-if="isLangEnglish" class="col-1">&#8592</span>
+                                    <p class="col-11" style="font-size: 12px;margin: 0 2px;">{{ __('Header.You have an incomplete application') }}</p>
+                                </div>
+                            </li>
+                            <li class="nav-item" v-if="isLogged">
+                                <router-link :class="['nav-link']" :to="'/audit/review'">{{__('Header.Review Applications')}}</router-link>
                                 <!-- ,$route.meta.activeName === 'audit' ? 'active' : '' -->
                             </li>
                         </div>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#">{{__('Header.Register')}}</a>
                         </li> -->
-                        <div class="col-5 d-md-flex">
+                        <div class="col-3 d-md-flex">
                             <li class="nav-item" v-if="!isLogged">
                                 <a class="nav-link" href="/login?user=userLogin">{{__('Header.Log In')}}</a>
                             </li>
@@ -98,6 +107,11 @@
 import { Transition } from 'vue';
 
 export default {
+    data() {
+        return{
+            found:false,
+        }
+    },
     computed: {
         isLangEnglish() {
             // Access the HTML lang attribute and check if it's "en"
@@ -119,6 +133,7 @@ export default {
             document.getElementById('scroll').classList.add('scroll-top-button');
         }
         window.addEventListener("scroll", this.checkScrollPosition);
+        this.get_uncomplete();
     },
     beforeDestroy() {
         window.removeEventListener("scroll", this.checkScrollPosition);
@@ -130,6 +145,12 @@ export default {
 
             // Redirect to the current page to apply the selected locale
             window.location.reload();
+        },
+        get_uncomplete() {
+            axios.get('/landing/audit/application').then((response) => {
+                this.loading = false;
+                if(Object.keys(response.data).length > 0) this.found = true;
+            })
         },
         scrollToTop() {
             window.scrollTo({

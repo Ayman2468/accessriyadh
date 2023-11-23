@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Landing;
 
 use App\Http\Controllers\Controller;
 use App\Models\ApplicationRequest;
+use App\Models\ApplicationRequestAnswer;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -23,7 +24,29 @@ class ApplicationRequestController extends Controller
         }
         return response()->json(['data' => $applicationRequest]);
     }
-
+    public function get_user_applications(){
+        $applications = ApplicationRequest::where('email',auth()->user()->email)->where('is_applied',1)->latest()->get();
+        foreach($applications as $application){
+            $application->answers = ApplicationRequestAnswer::join('questions','application_request_answers.question_id','=','questions.id')
+            ->join('building_type_questions','building_type_questions.question_id','=','questions.id')
+            ->where('application_request_id',$application->id)->where('building_type_questions.building_type_id',$application->building_type_id)->orderBy('building_type_questions.order')->get();
+            foreach($application->answers as $ans){
+                if(!is_numeric($ans->answer)){
+                    foreach(json_decode($ans->answers) as $an){
+                        if($an->en == $ans->answer) $ans->answer_ar = $an->ar;
+                        if(str_contains($ans->answer,',') && str_contains($ans->answer,$an->en)){
+                            if(!isset($ans->answer_ar)) $ans->answer_ar = '';
+                            if(!empty($ans->answer_ar)) $ans->answer_ar = $ans->answer_ar.','.$an->ar;
+                            else $ans->answer_ar = $ans->answer_ar.$an->ar;
+                        }
+                    }
+                }else{
+                    $ans->answer_ar = $ans->answer;
+                }
+            }
+        }
+        return response()->json(['data' => $applications]);
+    }
     public function register(Request $request)
     {
         $fields = [

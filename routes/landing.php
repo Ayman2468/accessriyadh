@@ -21,6 +21,7 @@ Route::group(['prefix' => 'audit', 'as' => 'audit.','middleware'=>'localization'
     Route::get('/building-types', [BuildingTypeController::class, 'index'])->name('index');
     Route::post('/register', [ApplicationRequestController::class, 'register'])->name('index');
     Route::get('/application', [ApplicationRequestController::class, 'show'])->name('show');
+    Route::get('/userApplications', [ApplicationRequestController::class, 'get_user_applications'])->name('get_user_applications');
     Route::get('/questions', [QuestionController::class, 'index'])->name('index');
     Route::post('/answer', [QuestionController::class, 'answer'])->name('answer');
     Route::post('/finish', [QuestionController::class, 'finish'])->name('finish');

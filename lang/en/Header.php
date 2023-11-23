@@ -10,4 +10,6 @@ return array (
   'Learn' => 'Learn',
   'Access_Riyadh' => 'Access Riyadh',
   'About' => 'About',
+  'Review Applications' => 'Review Applications',
+  'You have an incomplete application' => 'You have an incomplete application',
 );

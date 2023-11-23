@@ -51,7 +51,7 @@
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '81' && answers.question41 == 'no' && (answers.question46 && answers.question46.includes('Drop to side of path'))"
                         :question="question"></QuestionYesNoWithImage>
-                    <QuestionYesNo v-if="question.web_id == '11'" :question="question"></QuestionYesNo>
+                    <QuestionYesNo v-if="question.web_id == '11'" :question="question" id="question11"></QuestionYesNo>
                     <QuestionSelectBox v-if="question.web_id == '12' && answers.question11 == 'yes'"
                                        :question="question"></QuestionSelectBox>
 
@@ -72,7 +72,7 @@
                     <QuestionYesNo
                         v-if="question.web_id == '18' && answers.question12 != '1-50' && answers.question12 != '' && answers.question12 != null"
                         :question="question"></QuestionYesNo>
-                    <QuestionYesNo v-if="question.web_id == '21'" :question="question"></QuestionYesNo>
+                    <QuestionYesNo v-if="question.web_id == '21'" :question="question" id="question21"></QuestionYesNo>
                     <QuestionYesNoWithImage v-if="question.web_id == '22' && answers.question21 == 'yes'"
                                             :question="question"></QuestionYesNoWithImage>
                     <QuestionYesNoWithImage v-if="question.web_id == '23' && answers.question21 == 'yes'"
@@ -108,7 +108,7 @@
                                    :question="question"></QuestionInput>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '41'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question41"></QuestionYesNoWithImage>
                     <QuestionYesNo
                         v-if="question.web_id == '42' && answers.question41 == 'no'"
                         :question="question"></QuestionYesNo>
@@ -518,31 +518,31 @@
                         :title="question"></Title>
                     <QuestionMultipleChoice
                         v-if="question.web_id == '401'"
-                        :question="question"></QuestionMultipleChoice>
+                        :question="question" id="question401"></QuestionMultipleChoice>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '402'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question402"></QuestionYesNoWithImage>
                     <QuestionYesNo
                         v-if="question.web_id == '403'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question403"></QuestionYesNo>
                     <QuestionMoreThanTwoOption
                         v-if="question.web_id == '404'"
-                        :question="question"></QuestionMoreThanTwoOption>
+                        :question="question" id="question404"></QuestionMoreThanTwoOption>
                     <QuestionYesNoWithImage
                             v-if="question.web_id == '405'"
-                            :question="question"></QuestionYesNoWithImage>
+                            :question="question" id="question405"></QuestionYesNoWithImage>
                     <QuestionYesNo
                         v-if="question.web_id == '406'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question406"></QuestionYesNo>
                     <QuestionYesNoWithImage
                             v-if="question.web_id == '407'"
-                            :question="question"></QuestionYesNoWithImage>
+                            :question="question" id="question407"></QuestionYesNoWithImage>
                     <QuestionYesNo
                         v-if="question.web_id == '408' &&  (answers.question404 && answers.question404.includes('revolving door'))"
                         :question="question"></QuestionYesNo>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '409'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question409"></QuestionYesNoWithImage>
                     <Title
                         v-if="question.web_id == '410' &&  (answers.question401 && answers.question401.includes('Ramp'))"
                         :title="question"></Title>
@@ -584,13 +584,13 @@
                         :title="question"></Title>
                     <QuestionMultipleChoice
                         v-if="question.web_id == '423'"
-                        :question="question"></QuestionMultipleChoice>
+                        :question="question" id="question423"></QuestionMultipleChoice>
                     <QuestionYesNo
                         v-if="question.web_id == '424'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question424"></QuestionYesNo>
                     <QuestionYesNo
                         v-if="question.web_id == '425'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question425"></QuestionYesNo>
                     <Title
                         v-if="question.web_id == '426' && (answers.question423 && answers.question423.includes('Ramp'))"
                         :title="question"></Title>
@@ -632,7 +632,7 @@
                         :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '501'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question501"></QuestionYesNo>
                     <QuestionYesNo
                         v-if="question.web_id == '502' && answers.question501 == 'yes'"
                         :question="question"></QuestionYesNo>
@@ -644,19 +644,19 @@
                         :title="question"></Title>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '505'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question505"></QuestionYesNoWithImage>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '506'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question506"></QuestionYesNoWithImage>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '507'"
-                        :question="question"></QuestionYesNoWithImage>
+                        :question="question" id="question507"></QuestionYesNoWithImage>
                     <Title
                         v-if="question.web_id == '508'"
                         :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '509'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question509"></QuestionYesNo>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '510' && answers.question509 == 'yes'"
                         :question="question"></QuestionYesNoWithImage>
@@ -671,7 +671,7 @@
                         :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '514'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question514"></QuestionYesNo>
                     <QuestionYesNoWithImage
                         v-if="question.web_id == '515' && answers.question514 == 'yes'"
                         :question="question"></QuestionYesNoWithImage>
@@ -695,7 +695,7 @@
                         :title="question"></Title>
                     <QuestionYesNo
                         v-if="question.web_id == '601'"
-                        :question="question"></QuestionYesNo>
+                        :question="question" id="question601"></QuestionYesNo>
                     <QuestionYesNo
                         v-if="question.web_id == '602' && answers.question601 == 'yes'"
                         :question="question"></QuestionYesNo>
@@ -815,6 +815,7 @@ export default {
             selected_type: '',
             next_link_text: this.$route.params.step == 5 ? this.$root.__('audit.Finishing Audit') : this.$root.__('audit.Next') ,
             loading: false,
+            notAnswered: true,
         }
     },
     watch: {
@@ -859,16 +860,67 @@ export default {
         register($event,save_continue_later = false) {
             // this.loading = true;
             this.answers.update_request_id = window.localStorage.getItem('request_id');
-            axios.post('/landing/audit/answer?save_continue_later=' + (save_continue_later), this.answers).then((response) => {
-                this.loading = false;
+            let fids_step1 = [11,21,41];
+            let fids_step2 = [401,402,403,404,405,406,407,409,423,424,425];
+            let fids_step3 = [501,505,506,507,509,514];
+            let fids_step4 = [601];
+            if(this.$route.params.step == 1){
+                console.log(this.answers);
+                fids_step1.forEach(t=>{
+                    console.log(this.answers.hasOwnProperty('question'+t));
+                    if(!this.answers.hasOwnProperty('question'+t)) this.notAnswered = false;
+                    if(this.notAnswered == false){
+                        document.getElementById('question'+t).classList.add('alert');
+                        document.getElementById('question'+t).classList.add('alert-danger');
+                    }
+                })
+            }
+            if(this.$route.params.step == 2){
+                console.log('step2');
+                fids_step2.forEach(t=>{
+                    if(!this.answers.hasOwnProperty('question'+t)) this.notAnswered = false;
+                    if(this.notAnswered == false){
+                        document.getElementById('question'+t).classList.add('alert');
+                        document.getElementById('question'+t).classList.add('alert-danger');
+                    }
+                })
+            }
+            if(this.$route.params.step == 3){
+                console.log('step3');
+                fids_step3.forEach(t=>{
+                    if(!this.answers.hasOwnProperty('question'+t)) this.notAnswered = false;
+                    if(this.notAnswered == false){
+                        document.getElementById('question'+t).classList.add('alert');
+                        document.getElementById('question'+t).classList.add('alert-danger');
+                    }
+                })
+            }
+            if(this.$route.params.step == 4){
+                console.log('step4');
+                fids_step4.forEach(t=>{
+                    if(!this.answers.hasOwnProperty('question'+t)) this.notAnswered = false;
+                    if(this.notAnswered == false){
+                        document.getElementById('question'+t).classList.add('alert');
+                        document.getElementById('question'+t).classList.add('alert-danger');
+                    }
+                })
+            }
+            if(this.notAnswered == true){
+                axios.post('/landing/audit/answer?save_continue_later=' + (save_continue_later), this.answers).then((response) => {
+                    this.loading = false;
 
-                if (!save_continue_later)
-                    this.$router.push({
-                        path: this.next_link, replace: true
-                    })
-            }).catch((error) => {
-                this.answers.errors = error.response.data.errors
-            })
+                    if (!save_continue_later)
+                        this.$router.push({
+                            path: this.next_link, replace: true
+                        })
+                }).catch((error) => {
+                    this.answers.errors = error.response.data.errors
+                })
+            }else{
+                this.$swal(i18n.audit.answer_questions_first,);
+                this.notAnswered = true;
+            }
+            console.log(this.notAnswered)
         },
         finish() {
 
@@ -886,7 +938,6 @@ export default {
         define_answer_events() {
             for (let i = 0; i < this.questions.length; i++) {
                 if (this.questions[i].type === 'question') {
-                    if(this.questions[i].web_id == '71') console.log(this.questions[i].type)
                     emitter.$on('question' + (this.questions[i].web_id) + '-answer', (answer) => {
                         setTimeout(function () {
                             this.render_tooltip()
