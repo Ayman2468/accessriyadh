@@ -37,7 +37,7 @@ class ApplicationController extends Controller
                 $where->orwhere('plot_number', 'like', '%' . \request()->q . '%');
             });
         }
-        $applications = $applications->paginate(20);
+        $applications = $applications->latest()->paginate(20);
         return response()->json(['data' => $applications]);
     }
 

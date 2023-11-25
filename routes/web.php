@@ -4,6 +4,7 @@ use App\Helpers\AppHelpers;
 use App\Http\Controllers\Landing\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Models\ApplicationRequest;
+use App\Models\ApplicationRequestAnswer;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,11 +19,30 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get("locale/{locale}", [HomeController::class, "changeLocale"])->name("changeLocale");
 Route::get("application-export/{id}", function ($id) {
+    app()->setLocale(request()->locale);
     $application = ApplicationRequest::find($id);
     if(!empty($application)){
-    if($application->complianceScore < 60) $application->update(['is_applied'=>0]);
-    $pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('exports.application', ['application'=>$application]);
-    return $pdf->download('application-'.$application->id.'.pdf');
+        $application->answers = ApplicationRequestAnswer::join('questions','application_request_answers.question_id','=','questions.id')
+        ->join('building_type_questions','building_type_questions.question_id','=','questions.id')
+        ->where('application_request_id',$application->id)->where('building_type_questions.building_type_id',$application->building_type_id)->orderBy('building_type_questions.order')->get();
+        if($application->compliance_score < 50) $application->update(['is_applied'=>0]);
+        foreach($application->answers as $ans){
+            if(!is_numeric($ans->answer)){
+                foreach(json_decode($ans->answers) as $an){
+                    if($an->en == $ans->answer) $ans->answer_ar = $an->ar;
+                    if(str_contains($ans->answer,',') && str_contains($ans->answer,$an->en)){
+                        if(!isset($ans->answer_ar)) $ans->answer_ar = '';
+                        if(!empty($ans->answer_ar)) $ans->answer_ar = $ans->answer_ar.','.$an->ar;
+                        else $ans->answer_ar = $ans->answer_ar.$an->ar;
+                    }
+                }
+            }else{
+                $ans->answer_ar = $ans->answer;
+            }
+        }
+        //$pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('exports.application', ['application'=>$application]);
+        $pdf = Mccarlosen\LaravelMpdf\Facades\LaravelMpdf::loadView('exports.application', ['application'=>$application]);
+        return $pdf->download('application-'.$application->id.'.pdf');
     }else{
         return response()->json(['message'=>'Not Found']);
     }

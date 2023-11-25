@@ -11,19 +11,20 @@
         <div class="content" style="margin: 0 40px;">
             <div class="home-services card py-4 px-10" style="height: auto;    border-radius: 10px;min-height: initial;">
                 <div class="title-tab d-sm-flex align-items-start justify-content-between">
-                    <div>
+                    <div class="px-2 d-flex justify-content-between w-100">
                         <h2>{{ __('audit.Show Application Data') }}</h2>
+                        <a class="btn btn-secondary" style="height: initial;" href="#" @click="print_item(application.id)">{{ __('audit.print_application') }}</a>
                     </div>
                 </div>
             </div>
             <div class="content">
                 <div class="home-services card py-4 px-10" style="height: auto;    border-radius: 10px;">
-                    <div class="title-tab d-sm-flex align-items-start justify-content-between">
+                    <div class="px-2 title-tab d-sm-flex align-items-start justify-content-between">
                         <div>
                             <h2>{{ __('audit.Applicant Information') }}</h2>
                         </div>
                     </div>
-                    <div class="row mt-2">
+                    <div class="px-2 row mt-2">
                         <div class="col-lg-3 col-md-12 mb-3">
                             <label>{{ __('audit.Full Name') }}</label>
                             <div class="fw-bold">{{ application.full_name }}</div>
@@ -62,12 +63,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="title-tab d-sm-flex align-items-start justify-content-between mt-5">
+                <div class="px-2 title-tab d-sm-flex align-items-start justify-content-between mt-5">
                     <div>
                         <h2>{{ __('audit.Application Answers') }}</h2>
                     </div>
                 </div>
-                <div class="row mt-2">
+                <div class="px-2 row mt-2">
                     <div v-for="(item,index) in application.answers" class="col-lg-12 col-md-12 mb-3">
                         <label v-if="lang == 'ar'">{{item.question_name_ar}}</label>
                         <label v-else>{{item.question_name_en}}</label>
@@ -108,6 +109,12 @@ export default {
                 this.applications = response.data;
                 // console.log(this.applications.data[0]);
             })
+        },
+        print_item(id){
+            axios.get('/application-export/'+id+'?locale='+this.lang).then((response) => {
+                if(response?.data?.message == 'success') this.showAlert('Success');
+                else this.showAlert(response?.data?.message);
+            });
         },
     },
 };

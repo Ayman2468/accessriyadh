@@ -37,7 +37,7 @@ class HomeController extends Controller
         // Set a cookie with the selected locale that expires in 30 days
         Cookie::queue(Cookie::make('locale', $locale, 30 * 24 * 60));
 
-        return back();
+        return redirect()->back();
     }
     public function getLocales($locale)
     {

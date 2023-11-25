@@ -161,18 +161,12 @@
             </template>
             <div class="pagination-box mt-4">
                 <nav aria-label="Page navigation example">
-                    <pagination :data="items" :limit="10"
-                                @pagination-change-page="get_page_items">
-                        <template #prev-nav class="page-link ps-0" aria-label="Previous">
-                            <i class="fa-solid fa-arrow-left me-2"></i>
-                            {{ __('general.prev') }}
-                        </template>
-                        <template #next-nav class="page-link pe-0" aria-label="Next">
-                            {{ __('general.next') }}
-                            <i class="fa-solid fa-arrow-right ms-2"></i>
-                        </template>
-
-                    </pagination>
+                    <pagination
+                    v-if="items.total > 20"
+                    :totalItems="items.total"
+                    :itemsPerPage="20"
+                    @page-change="get_page_items"
+                    ></pagination>
                 </nav>
             </div>
 
@@ -184,9 +178,13 @@
 
 <script>
 import Delete from "./Delete.vue";
+import pagination from '../pagination.vue';
+
 //
 export default {
-    components: {},
+    components: {
+        pagination,
+    },
     data() {
         return {
             items: {

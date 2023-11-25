@@ -3,7 +3,7 @@
 return array (
     'Edit' => 'Edit',
     'Delete' => 'Delete',
-    'Pre' => 'Pre',
+    'Prev' => 'Prev',
     'Next' => 'Next',
     'Home Page' => 'Home Page',
     'Dashboard' => 'Dashboard',

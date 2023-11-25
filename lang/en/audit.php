@@ -36,4 +36,19 @@ return array (
   'Application Information' => 'Application Information',
   'Application Answers' => 'Application Answers',
   'No Completed Applications Found' => 'No Completed Applications Found To Review',
+  'after_complete' => 'After Successful completion of a building audit, the above building has',
+  'PASSED' => 'PASSED',
+  'NEED AUDIT' => 'NEED AUDIT',
+  'AUDIT SCORE' => 'AUDIT SCORE',
+  'out of 100' => 'out of 100',
+  'DATE OF AWARD' => 'DATE OF AWARD',
+  'BUILDING TYPE' => 'BUILDING TYPE',
+  'quote' => 'The award has been granted based on the completion of an audit by the applicant. All information provided has been accurate to the knowledge of the applicant. The Royal
+  Commission for Riyadh City reserves the right to make routine inspections of the premises to inspect the results of the survey and enforce any changes that were required
+  as part of the audit.',
+  'Building Type Selection' => 'Building Type Selection',
+  'Compliance Score' => 'Compliance Score',
+  'Selected building type' => 'Selected building type',
+  'Enter Building Information' => 'Enter Building Information',
+  'print_application' => 'Print Application',
 );

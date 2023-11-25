@@ -756,6 +756,27 @@
                     <QuestionYesNo
                         v-if="question.web_id == '621' &&  (answers.question603 && answers.question603.includes('Stall within washroom'))"
                         :question="question"></QuestionYesNo>
+                    <QuestionYesNo
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length == 2 && !question.answers[0].image && (question.answers[0].en == 'yes' || question.answers[0].en == 'no')"
+                        :question="question"></QuestionYesNo>
+                    <QuestionSelectBox
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length > 1 && !question.answers[0].image && question.answers[0].en != 'yes' && question.answers[0].en != 'no'"
+                        :question="question"></QuestionSelectBox>
+                    <QuestionYesNoWithImage
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length == 2 && question.answers[0].image"
+                        :question="question"></QuestionYesNoWithImage>
+                    <QuestionMoreThanTwoOption
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length > 2 && question.answers[0].image && question.answers[0].score == question.answers[1].score"
+                        :question="question"></QuestionMoreThanTwoOption>
+                    <QuestionMultipleChoice
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length > 1 && question.answers[0].image && question.answers[0].score != question.answers[1].score"
+                        :question="question"></QuestionMultipleChoice>
+                    <QuestionInput
+                        v-if="question.type == 'question' && question.web_id > '621' && question.answers.length == 0"
+                        :question="question"></QuestionInput>
+                    <Title
+                        v-if="question.type == 'title' && question.web_id > '621'"
+                        :title="question"></Title>
                 </template>
             </form>
             <div class="d-grid gap-2 col-md-6 mx-auto mt-4 d-flex btns-form">
@@ -851,7 +872,7 @@ export default {
             axios.get('/landing/audit/questions?building_type_id=' + this.$route.params.type + '&step_id=' + this.$route.params.step + '&request_id=' + this.request_id).then((response) => {
                 this.loading = false;
                 this.questions = response.data.questions;
-                console.log(this.questions);
+                console.log(!this.questions[2].answers[0].image);
                 this.define_answer_events();
                 this.render_tooltip()
                 document.getElementById('form_top').scrollIntoView();

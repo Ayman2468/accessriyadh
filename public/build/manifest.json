@@ -93,7 +93,7 @@
     "src": "resources/css/app.css"
   },
   "resources/js/app.css": {
-    "file": "assets/app-67e7b3e9.css",
+    "file": "assets/app-995690e9.css",
     "src": "resources/js/app.css"
   },
   "resources/js/app.js": {
@@ -122,9 +122,9 @@
       "assets/Access-Riyadh-landing-banners3-02-f13b076e.png"
     ],
     "css": [
-      "assets/app-67e7b3e9.css"
+      "assets/app-995690e9.css"
     ],
-    "file": "assets/app-8f8c5383.js",
+    "file": "assets/app-48e7ceca.js",
     "isEntry": true,
     "src": "resources/js/app.js"
   }
