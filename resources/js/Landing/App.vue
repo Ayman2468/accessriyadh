@@ -44,6 +44,7 @@
                             </li>
                             <li class="nav-item" v-if="isLogged">
                                 <a class="nav-link" href="/logout" onclick="event.preventDefault();
+                                                         localStorage.removeItem('reloaded');
                                                          document.getElementById('logout-form').submit();">{{__('Header.Log Out')}}</a>
                             </li>
                             <li class="nav-item dropdown">

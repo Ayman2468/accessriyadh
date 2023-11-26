@@ -856,6 +856,11 @@ export default {
         },
     },
     async mounted() {
+        const reloaded = localStorage.getItem('reloaded');
+        if (reloaded !== 'true') {
+            localStorage.setItem('reloaded', 'true');
+            this.$router.go();
+        }
         window.scrollTo(0, 0);
         if (window.localStorage.getItem('request_id')) {
             this.request_id = window.localStorage.getItem('request_id');
