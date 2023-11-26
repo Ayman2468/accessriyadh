@@ -8,6 +8,8 @@ use App\Models\ApplicationRequestAnswer;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Auth\Events\Registered;
+use Illuminate\Support\Facades\Auth;
 
 class ApplicationRequestController extends Controller
 {
@@ -96,11 +98,14 @@ class ApplicationRequestController extends Controller
             $applicationRequest = ApplicationRequest::create($request->except('password'));
             $applicationRequest->update(['validation'=>$request->password]);
             if((empty(auth()->user()) || $request->email != auth()->user()->email) && User::where('email',$request->email)->first() == null){
-                User::create([
+                $user = User::create([
                     'name' => $request->first_name.' '.$request->last_name,
                     'email' => $request->email,
                     'password' => Hash::make($request->password),
                 ]);
+                event(new Registered($user));
+
+                Auth::login($user);
             }
         }
         return response()->json(['data' => $applicationRequest]);
