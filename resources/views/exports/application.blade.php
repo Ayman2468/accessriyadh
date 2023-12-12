@@ -21,9 +21,9 @@
 
 <hr>
 <p style="text-align: center;font-size: 14px">@lang('audit.after_complete'):</p>
-<h1 style="text-align: center;font-size: 18px">{{$application->compliance_score > 50 ? __('audit.PASSED') : __('audit.NEED AUDIT')}}</h1>
+<h1 style="text-align: center;font-size: 18px">{{$compliance_score > 50 ? __('audit.PASSED') : __('audit.NEED AUDIT')}}</h1>
 <h1 style="text-align: center;font-size: 14px">
-    <span style="text-transform: uppercase;">@lang('audit.AUDIT SCORE') </span>  <span style="font-weight: normal">@lang('audit.out of 100'): {{number_format($application->compliance_score,2)}}</span>
+    <span style="text-transform: uppercase;">@lang('audit.AUDIT SCORE') </span>  <span style="font-weight: normal">@lang('audit.out of 100'): {{number_format($compliance_score,2)}}</span>
 </h1>
 <h1 style="text-align: center;font-size: 14px">
     <span style="text-transform: uppercase;">@lang('audit.DATE OF AWARD'): </span><span style="font-weight: normal">{{$application->created_at}}</span>
@@ -56,7 +56,7 @@
 </h1>
 <h1 style="font-size: 13px;background: #c2d6b6;margin-left: 5px;padding-left: 10px;margin-top: 0">
     <span style="margin-left: 5px">@lang('audit.Compliance Score') </span>
-    <span>{{number_format($application->compliance_score,2)}}</span>
+    <span>{{number_format($compliance_score,2)}}</span>
 </h1>
 <h1 style="font-size: 13px;background: #ffffff;margin-left: 5px;padding-left: 10px;margin-top: 0">
     <span style="margin-left: 5px;display: block;width: 100%">@lang('audit.Selected building type') </span><br>

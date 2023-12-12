@@ -22,7 +22,8 @@ Route::get("application-export/{id}", function ($id) {
     app()->setLocale(request()->locale);
     $application = ApplicationRequest::find($id);
     if(!empty($application)){
-        if($application->compliance_score < 50) $application->update(['is_applied'=>0]);
+        $compliance_score = $application->compliance_score;
+        if($compliance_score < 50) $application->update(['is_applied'=>0]);
         $application->answers = ApplicationRequestAnswer::join('questions','application_request_answers.question_id','=','questions.id')
         ->join('building_type_questions','building_type_questions.question_id','=','questions.id')
         ->where('application_request_id',$application->id)->where('building_type_questions.building_type_id',$application->building_type_id)->orderBy('building_type_questions.order')->get();
@@ -41,7 +42,7 @@ Route::get("application-export/{id}", function ($id) {
             }
         }
         //$pdf = \Barryvdh\DomPDF\Facade\Pdf::loadView('exports.application', ['application'=>$application]);
-        $pdf = Mccarlosen\LaravelMpdf\Facades\LaravelMpdf::loadView('exports.application', ['application'=>$application]);
+        $pdf = Mccarlosen\LaravelMpdf\Facades\LaravelMpdf::loadView('exports.application', ['application'=>$application,'compliance_score'=>$compliance_score]);
         return $pdf->download('application-'.$application->id.'.pdf');
     }else{
         return response()->json(['message'=>'Not Found']);

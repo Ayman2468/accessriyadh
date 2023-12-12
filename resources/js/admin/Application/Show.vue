@@ -179,8 +179,10 @@ export default {
                 this.loading = false;
                 this.item = response.data.data;
                 this.answers = response.data.answers;
+                const numbers = /\d/;
                 this.answers.forEach(el => {
-                    if(!isNumeric(el.answer)){
+                    console.log(el.answer);
+                    if(!numbers.test(el.answer)){
                         JSON.parse(el.answers).forEach(e=>{
                             if(e.en == el.answer) el.answer_ar = e.ar;
                             if(el.answer.includes(',') && el.answer.includes(e.en)){
