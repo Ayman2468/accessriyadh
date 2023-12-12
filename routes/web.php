@@ -22,10 +22,10 @@ Route::get("application-export/{id}", function ($id) {
     app()->setLocale(request()->locale);
     $application = ApplicationRequest::find($id);
     if(!empty($application)){
+        if($application->compliance_score < 50) $application->update(['is_applied'=>0]);
         $application->answers = ApplicationRequestAnswer::join('questions','application_request_answers.question_id','=','questions.id')
         ->join('building_type_questions','building_type_questions.question_id','=','questions.id')
         ->where('application_request_id',$application->id)->where('building_type_questions.building_type_id',$application->building_type_id)->orderBy('building_type_questions.order')->get();
-        if($application->compliance_score < 50) $application->update(['is_applied'=>0]);
         foreach($application->answers as $ans){
             if(!is_numeric($ans->answer)){
                 foreach(json_decode($ans->answers) as $an){
