@@ -151,7 +151,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="my-3 py-3 text-center">
+            <router-link :class="['btn btn-success col-6']" :to="'/audit/building-types'">{{__('audit.Apply Now')}}</router-link>
+        </div>
         <div class="col-12 text-center">
             <iframe style="width:65vw;margin:30px 20px;aspect-ratio: 16/9;" src="https://www.youtube.com/embed/7QJzTq8xA9Y?si=jZT2huk755IwkVoS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>

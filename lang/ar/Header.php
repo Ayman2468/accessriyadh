@@ -12,4 +12,5 @@ return array (
   'About' => 'عن وصول الرياض',
   'Review Applications' => 'مراجعة الطلبات',
   'You have an incomplete application' => 'لديك طلب غير مكتمل',
+  'Reset Password' => 'تغيير كلمة السر',
 );

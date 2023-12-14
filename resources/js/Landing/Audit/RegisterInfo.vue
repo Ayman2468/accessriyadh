@@ -102,7 +102,7 @@
                         <div class="col-md-6 mb-3">
                             <label class="form-label">{{ __('audit.Country') }}</label>
                             <select class="form-select" v-model="form.country_id">
-                                <option v-for="country in countries" :value="country.id">{{ country.name_en }}</option>
+                                <option v-for="country in countries" :value="country.id">{{ country.name }}</option>
                             </select>
                             <div v-if="form.errors && form.errors.country_id" class="invalid-feedback">
                                 {{ form.errors.country_id[0] }}
@@ -188,6 +188,16 @@ export default {
             axios.get('/landing/lists?lists[]=countries').then((response) => {
                 this.loading = false;
                 this.countries = response.data.data.countries;
+                if(document.documentElement.lang === 'en'){
+                    this.countries.forEach(country=>{
+                        country.name = country.name_en;
+                    });
+                }
+                if(document.documentElement.lang === 'ar'){
+                    this.countries.forEach(country=>{
+                        country.name = country.name_ar;
+                    });
+                }
                 document.getElementById('form_top').scrollIntoView();
             })
         },

@@ -51,4 +51,8 @@ return array (
   'Selected building type' => 'Selected building type',
   'Enter Building Information' => 'Enter Building Information',
   'print_application' => 'Print Application',
+  'Apply Now' => 'Apply Now',
+  'application_completed' => 'Passed',
+  'application_not_complete' => 'Rejected',
+  'Status' => 'Status',
 );

@@ -1,6 +1,8 @@
-<x-guest-layout>
+@extends('auth.layouts.app', ['title' => '-' . __('Header.Reset Password')])
+
+@section('content')
     <div class="mb-4 text-sm text-gray-600">
-        {{ __('Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
+        {{ __('general.Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.') }}
     </div>
 
     <!-- Session Status -->
@@ -10,16 +12,22 @@
         @csrf
 
         <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">@lang('general.Email')</label>
+            <input type="email" name="email" value="{{ old('email') }}" required autofocus
+                class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1"
+                aria-describedby="emailHelp">
+            @if ($errors->has('email'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Email Password Reset Link') }}
-            </x-primary-button>
+            <button class="btn btn-success">
+                {{ __('general.Email Password Reset Link') }}
+            </button>
         </div>
     </form>
-</x-guest-layout>
+@endsection

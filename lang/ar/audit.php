@@ -50,4 +50,8 @@ return array (
   'Selected building type' => 'نوع المبنى المختار',
   'Enter Building Information' => 'بيانات المبنى المدخل',
   'print_application' => 'طباعة التقرير',
+  'Apply Now' => 'قدم الآن',
+  'application_completed' => 'مقبول',
+  'application_not_complete' => 'مرفوض',
+  'Status' => 'الحالة',
 );

@@ -28,7 +28,7 @@
         </div>
         <div class="mb-3">
             @if (Route::has('password.request'))
-                <a href="{{ route('password.request') }}" class="text-primary">@lang('users.did you forget your password?')</a>
+                <a href="@if(isset($_GET['user'])) {{ route('password.request',['user'=>'userLogin']) }} @else {{ route('password.request') }} @endif" class="text-primary">@lang('users.did you forget your password?')</a>
             @endif
         </div>
         <div class="d-grid">

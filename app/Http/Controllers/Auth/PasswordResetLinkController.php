@@ -7,6 +7,7 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Password;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Cookie;
 
 class PasswordResetLinkController extends Controller
 {
@@ -15,6 +16,7 @@ class PasswordResetLinkController extends Controller
      */
     public function create(): View
     {
+        app()->setLocale(Cookie::get('locale'));
         return view('auth.forgot-password');
     }
 

@@ -1,5 +1,5 @@
 <template>
-    <div class="steps-label my-5">
+    <div class="steps-label my-5" id="page_top">
         <div class="container-lg">
             <label class="mb-1">{{ __('audit.Step') }} 1 {{ __('audit.of') }} 7</label>
             <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25"
@@ -66,6 +66,7 @@ export default {
     },
     async mounted() {
         await this.get_items();
+        document.getElementById('page_top').scrollIntoView();
         if(window.sessionStorage.getItem('user')){
             this.get_application_request();
         }
