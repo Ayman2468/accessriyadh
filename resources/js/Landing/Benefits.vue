@@ -8,8 +8,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.first_paragraph_content1") }}</p>
-                        <p>{{ __("pages.first_paragraph_content2") }}</p>
-                        <p>{{ __("pages.first_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.first_paragraph_content2") }}</p>
+                        <p>{{ __("pages.first_paragraph_content3") }}</p> -->
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
@@ -28,8 +28,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.second_paragraph_content1") }}</p>
-                        <p>{{ __("pages.second_paragraph_content2") }}</p>
-                        <p>{{ __("pages.second_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.second_paragraph_content2") }}</p>
+                        <p>{{ __("pages.second_paragraph_content3") }}</p> -->
                     </div>
                 </div>
             </div>
@@ -42,8 +42,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.third_paragraph_content1") }}</p>
-                        <p>{{ __("pages.third_paragraph_content2") }}</p>
-                        <p>{{ __("pages.third_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.third_paragraph_content2") }}</p>
+                        <p>{{ __("pages.third_paragraph_content3") }}</p> -->
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
@@ -62,8 +62,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.fourth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.fourth_paragraph_content2") }}</p>
-                        <p>{{ __("pages.fourth_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.fourth_paragraph_content2") }}</p>
+                        <p>{{ __("pages.fourth_paragraph_content3") }}</p> -->
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.fifth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.fifth_paragraph_content2") }}</p>
+                        <!-- <p>{{ __("pages.fifth_paragraph_content2") }}</p> -->
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
@@ -95,8 +95,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.sixth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.sixth_paragraph_content2") }}</p>
-                        <p>{{ __("pages.sixth_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.sixth_paragraph_content2") }}</p>
+                        <p>{{ __("pages.sixth_paragraph_content3") }}</p> -->
                     </div>
                 </div>
             </div>
@@ -109,7 +109,7 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.seventh_paragraph_content1") }}</p>
-                        <p>{{ __("pages.seventh_paragraph_content2") }}</p>
+                        <!-- <p>{{ __("pages.seventh_paragraph_content2") }}</p> -->
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
@@ -128,7 +128,7 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.eighth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.eighth_paragraph_content2") }}</p>
+                        <!-- <p>{{ __("pages.eighth_paragraph_content2") }}</p> -->
                     </div>
                 </div>
             </div>
@@ -141,8 +141,8 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.ninth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.ninth_paragraph_content2") }}</p>
-                        <p>{{ __("pages.ninth_paragraph_content3") }}</p>
+                        <!-- <p>{{ __("pages.ninth_paragraph_content2") }}</p>
+                        <p>{{ __("pages.ninth_paragraph_content3") }}</p> -->
                     </div>
                 </div>
                 <div class="col-12 col-md-6 mx-auto">
@@ -161,7 +161,7 @@
                     </p>
                     <div class="col-12 col-md-8">
                         <p>{{ __("pages.tenth_paragraph_content1") }}</p>
-                        <p>{{ __("pages.tenth_paragraph_content2") }}</p>
+                        <!-- <p>{{ __("pages.tenth_paragraph_content2") }}</p> -->
                     </div>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <?php
 
 return array (
-  'About Access Riyadh' => 'معلومات عن الوصول الى مدينة الرياض',
+  'About Access Riyadh' => 'معلومات عن شمولية الوصول للرياض',
   'About the Royal Commission for Riyadh City' => 'عن الهيئة الملكية لمدينة الرياض',
   'Arriyadh Environment' => 'استدامة الرياض',
   'How it works' => 'كيف تعمل',
