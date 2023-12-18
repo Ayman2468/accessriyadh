@@ -13,4 +13,5 @@ return array (
   'Review Applications' => 'Review Applications',
   'You have an incomplete application' => 'You have an incomplete application',
   'Reset Password' => 'Reset Password',
+  'Forgot Password' => 'Forgot Password',
 );

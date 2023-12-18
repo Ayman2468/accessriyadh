@@ -62,7 +62,7 @@
             <h1 class=" d-flex mt-2" style="color: #267c3f;">
                 @lang('general.Access Riyadh')
             </h1>
-            @if(!isset($_GET['user']))
+            @if(!isset($_GET['user']) && !str_contains(url()->current(),'reset-password'))
                 <h3 class=" d-flex mt-4" style="color: #629d4b;">
                     @lang('general.Dashboard')
                 </h3>

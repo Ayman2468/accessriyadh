@@ -1,4 +1,6 @@
-<x-guest-layout>
+@extends('auth.layouts.app', ['title' => '-' . __('Header.Reset Password')])
+
+@section('content')
     <form method="POST" action="{{ route('password.store') }}">
         @csrf
 
@@ -6,34 +8,48 @@
         <input type="hidden" name="token" value="{{ $request->route('token') }}">
 
         <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email', $request->email)" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">@lang('general.Email')</label>
+            <input type="email" name="email" value="{{ request()->email }}" required autofocus
+                class="form-control {{ $errors->has('email') ? ' is-invalid' : '' }}" id="exampleInputEmail1"
+                aria-describedby="emailHelp" readonly>
+            @if ($errors->has('email'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('email') }}</strong>
+                </span>
+            @endif
         </div>
 
         <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-            <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        <div class="mb-4 position-relative">
+            <label for="Password" class="form-label">@lang('users.Password')</label>
+            <input type="password" class="form-control {{ $errors->has('password') ? ' is-invalid' : '' }}" id="Password"
+                name="password" required>
+            <a class="show-pass d-block" href="#"><i class="fa-solid fa-eye"></i></a>
+            @if ($errors->has('password'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('password') }}</strong>
+                </span>
+            @endif
         </div>
 
         <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
-
-            <x-text-input id="password_confirmation" class="block mt-1 w-full"
-                                type="password"
-                                name="password_confirmation" required autocomplete="new-password" />
-
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
+        <div class="mb-4 position-relative">
+            <label for="Password_Confirmation" class="form-label">@lang('users.Password_Confirmation')</label>
+            <input type="password" class="form-control {{ $errors->has('password_confirmation') ? ' is-invalid' : '' }}" id="Password_Confirmation"
+                name="password_confirmation" required>
+            <a class="show-pass d-block" href="#"><i class="fa-solid fa-eye"></i></a>
+            @if ($errors->has('password_confirmation'))
+                <span class="invalid-feedback">
+                    <strong>{{ $errors->first('password_confirmation') }}</strong>
+                </span>
+            @endif
         </div>
 
         <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Reset Password') }}
-            </x-primary-button>
+            <button class="ml-4 btn btn-primary mx-2">
+                {{ __('Header.Reset Password') }}
+            </button>
         </div>
     </form>
-</x-guest-layout>
+@endsection

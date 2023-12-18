@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use Illuminate\Support\Facades\Cookie;
 
 class NewPasswordController extends Controller
 {
@@ -19,6 +20,7 @@ class NewPasswordController extends Controller
      */
     public function create(Request $request): View
     {
+        app()->setLocale(Cookie::get('locale'));
         return view('auth.reset-password', ['request' => $request]);
     }
 

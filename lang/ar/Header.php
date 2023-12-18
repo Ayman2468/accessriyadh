@@ -13,4 +13,5 @@ return array (
   'Review Applications' => 'مراجعة الطلبات',
   'You have an incomplete application' => 'لديك طلب غير مكتمل',
   'Reset Password' => 'تغيير كلمة السر',
+  'Forgot Password' => 'نسيت كلمة السر',
 );

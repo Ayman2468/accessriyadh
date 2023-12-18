@@ -1,4 +1,4 @@
-@extends('auth.layouts.app', ['title' => '-' . __('Header.Reset Password')])
+@extends('auth.layouts.app', ['title' => '-' . __('Header.Forgot Password')])
 
 @section('content')
     <div class="mb-4 text-sm text-gray-600">
